@@ -300,7 +300,7 @@ footer.footer-dark {
     padding: 0;
 }
 .main-menu.menu-light .navigation > li > a {
-    padding: 12px 36px 12px 18px;
+    padding: 5px 15px 12px 18px;
 }
 .main-menu.menu-light .navigation > li > a .label {
     margin-top: 4px;
@@ -399,7 +399,7 @@ footer.footer-dark {
     background: 0 0;
 }
 .main-menu.menu-light .navigation > li ul li > a {
-    padding: 10px 18px 10px 90px;
+    padding: 10px 18px 10px 50px;
 }
 .main-menu.menu-light .navigation > li ul .open > a {
     color: #2b345f;
