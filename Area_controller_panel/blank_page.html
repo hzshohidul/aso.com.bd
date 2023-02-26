@@ -3,7 +3,7 @@
    <head>
       <meta charset=UTF-8">
       <title>ASO</title>
-      <link rel="apple-touch-icon" href="../assets/images/ico/apple-icon-120.png">
+	  <link rel="shortcut icon" type="image/x-icon" href="../assets/images/ico/favicon-32.png" />
       <link rel="shortcut icon" type="image/x-icon" href="">
       <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700" rel="stylesheet">
       <!-- BEGIN: Vendor CSS-->
@@ -26,14 +26,21 @@
       <link rel="stylesheet" type="text/css" href="../assets/css/pages/chat-application.css">
       <link rel="stylesheet" type="text/css" href="../assets/css/pages/dashboard-analytics.min.css">
       <!-- END: Page CSS-->
+	  <!-- BEGIN: Font CSS-->
+      <link rel="stylesheet" type="text/css" href="../assets/fonts/simple-line-icons/style.min.css">
+      <!-- END: Font CSS-->
+	  
       <!-- BEGIN: Materual Icon-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	  
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!-- END: Materual Icon-->
 	  
+	  <!-- BEGIN: Designer Custom CSS-->
+	  <link rel="stylesheet" type="text/css" href="../assets/css/custom.min.css">
+      <!-- END: Designer Custom CSS-->
+	  
       <!-- BEGIN: Developer Custom CSS-->
-	        <link rel="stylesheet" type="text/css" href="../assets/css/custom.min.css">
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
       <!-- END: Developer Custom CSS-->
    </head>
@@ -311,7 +318,7 @@
          <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
                <li class="nav-item mr-auto">
-                  <a class="navbar-brand" href="index-2.html">
+                  <a class="navbar-brand" href="dashboard.html">
                      <img class="brand-logo" alt="logo"
                         src="../assets/images/logo/logo.png" />
                      <h3 class="brand-text">ASO</h3>
@@ -323,34 +330,96 @@
          <div class="navigation-background"></div>
          <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+			
+				<li class="nav-item">
+				   <a href="dashboard.html">
+					   <i class="material-icons">home</i>
+					   <span class="menu-title" data-i18n="">
+							Dashboard
+					   </span>
+				   </a>
+				</li>
+				<li class=" nav-item">
+				  <a href="#">
+					  <i class="material-icons">location_searching</i>
+					  <span class="menu-title" data-i18n="">Area</span>
+				  </a>
+				  <ul class="menu-content">
+					 <li>
+						<a class="menu-item" href="#">Pouroshobha/Union/Area</a>
+					 </li>
+					 <li><a class="menu-item" href="#">Ward/Road/Name</a>
+					 </li>
+				  </ul>
+				</li>
+				<li class=" nav-item">
+				  <a href="#">
+				  <i class="material-icons">open_in_new</i>
+				  <span class="menu-title"
+					 data-i18n="">Gigs/Page/Service</span></a>
+				  <ul class="menu-content">
+					 <li>
+						 <a class="menu-item" href="#">
+							Worker Gig
+						 </a>
+					 </li>
+					 <li>
+						 <a class="menu-item" href="#">
+							Worker Page
+						 </a>
+					 </li>
+					 <li>
+						 <a class="menu-item" href="#">
+							Worker Service
+						 </a>
+					 </li>
+				  </ul>
+				</li>
+				<li class="nav-item">
+				   <a href="#">
+					   <i class="material-icons">people_outline</i>
+					   <span class="menu-title" data-i18n="">
+							Users
+					   </span>
+				   </a>
+				</li>
+				<li class="nav-item">
+				   <a href="#">
+					   <i class="material-icons">portrait</i>
+					   <span class="menu-title" data-i18n="">
+							Customer complain
+					   </span>
+				   </a>
+				</li>
+				<li class="nav-item">
+				   <a href="#">
+					   <i class="material-icons">spellcheck</i>
+					   <span class="menu-title" data-i18n="">
+							Ads.
+					   </span>
+				   </a>
+				</li>
+				<li class="nav-item">
+				   <a href="#">
+					   <i class="material-icons">star_border</i>
+					   <span class="menu-title" data-i18n="">
+							Special
+					   </span>
+				   </a>
+				</li>
+				<li class="nav-item">
+				   <a href="#">
+					   <i class="material-icons">border_all</i>
+					   <span class="menu-title" data-i18n="">
+							Special Service Order
+					   </span>
+				   </a>
+				</li>
                <li class=" nav-item">
                   <a href="#">
-                  <i class="material-icons">home</i>
-                  <span class="menu-title" data-i18n="">Dashboard</span>
-                  </a>
-                  <ul class="menu-content">
-                     <li><a class="menu-item" href="dashboard-ecommerce.html">Mehu</a>
-                     </li>
-                     <li class="active"><a class="menu-item" href="dashboard-analytics.html">Menu</a>
-                     </li>
-                  </ul>
-               </li>
-               <li class=" nav-item">
-                  <a href="#">
-                  <i class="material-icons">business</i>
-                  <span class="menu-title"
-                     data-i18n="">Order Manage</span></a>
-                  <ul class="menu-content">
-                     <li><a class="menu-item" href="dashboard-ecommerce.html">Mehu</a>
-                     </li>
-                     <li><a class="menu-item" href="dashboard-ecommerce.html">Mehu</a>
-                     </li>
-                  </ul>
-               </li>
-			   
-               <li class=" nav-item">
-                  <a href="#"><i class="material-icons">tv</i><span class="menu-title"
-                     data-i18n="">Templates</span></a>
+					<i class="ft-life-buoy"></i>
+					<span class="menu-title" data-i18n="">Templates</span>
+				  </a>
                   <ul class="menu-content">
                      <li>
                         <a class="menu-item" href="#">Vertical</a>
@@ -381,29 +450,19 @@
          </div>
       </div>
       <!-- END: Main Menu-->
-      <!-- BEGIN: Main Content-->
+      <!-- BEGIN: Main Content start-->
       <div class="app-content content">
          <div class="content-wrapper">
-            <div class="content-body">
-               <!-- Revenue, Hit Rate & Deals -->
-               <div class="row">
-                  <div class="col-lg-12 col-md-12">
-                     <div class="card">
-                        <div class="card-header">
-                           <h3>something</h3>
-                        </div>
-						
-						<div class="card-body">
-							content
-						</div>
-                     </div>
-                  </div>
-               </div>
-               <!--/ Revenue, Hit Rate & Deals -->
-            </div>
+			<div class="content-header row">
+				<div class="content-body  container-fluid">
+					
+               <h1>Insert Content</h1>
+
+				</div>
+			</div>
          </div>
       </div>
-      <!-- END: Main Content-->
+      <!-- END: Main Content end-->
       <!-- BEGIN: Customizer-->
       <div class="customizer border-left-blue-grey border-left-lighten-4 d-none d-xl-block">
          <a class="customizer-close"
