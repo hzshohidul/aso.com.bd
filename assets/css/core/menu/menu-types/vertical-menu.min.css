@@ -25,17 +25,17 @@ body.vertical-layout.vertical-menu.menu-expanded .navbar.navbar-brand-center .na
     width: auto;
 }
 body.vertical-layout.vertical-menu.menu-expanded .navbar .navbar-brand .brand-text {
-    -webkit-animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
-    -moz-animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
-    -o-animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
-    animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
+    -webkit-animation: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
+    -moz-animation: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
+    -o-animation: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
+    animation: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
 }
 body.vertical-layout.vertical-menu.menu-expanded .main-menu {
     width: 260px;
-    -webkit-transition: 0.3s ease all;
-    -moz-transition: 0.3s ease all;
-    -o-transition: 0.3s ease all;
-    transition: 0.3s ease all;
+    -webkit-transition: 0.25s ease all;
+    -moz-transition: 0.25s ease all;
+    -o-transition: 0.25s ease all;
+    transition: 0.25s ease all;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -47,12 +47,12 @@ body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation > li > a
     font-size: 1.5rem;
 }
 body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation > li > a > span {
-    -webkit-transition: -webkit-transform 0.3s ease;
-    -moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;
-    -o-transition: -o-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
+    -webkit-transition: -webkit-transform 0.25s ease;
+    -moz-transition: transform 0.25s ease, -moz-transform 0.25s ease;
+    -o-transition: -o-transform 0.25s ease;
+    transition: -webkit-transform 0.25s ease;
+    transition: transform 0.25s ease;
+    transition: transform 0.25s ease, -webkit-transform 0.25s ease, -moz-transform 0.25s ease, -o-transform 0.25s ease;
 }
 body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation > li > a > span.badge {
     position: absolute;
@@ -114,6 +114,9 @@ body.vertical-layout.vertical-menu.menu-expanded .main-menu.menu-light .navigati
 body.vertical-layout.vertical-menu.menu-expanded .main-menu.menu-light .navigation:hover > a > i {
     -webkit-box-shadow: 0 0 20px rgba(253, 99, 107, 0.3);
     box-shadow: 0 0 20px rgba(253, 99, 107, 0.3);
+    background-image: linear-gradient(310deg,#17ad37 0%, #98ec2d 100%);
+    color: #fff;
+    transition: .25s all;
 }
 body.vertical-layout.vertical-menu.menu-expanded .main-menu.menu-dark .navigation > li > a > i {
     line-height: 40px;
@@ -127,12 +130,14 @@ body.vertical-layout.vertical-menu.menu-expanded .main-menu.menu-dark .navigatio
     background: #2c303b;
     -webkit-box-shadow: 0 0 10px #000;
     box-shadow: 0 0 10px #000;
+    transition: .25s all;
 }
 body.vertical-layout.vertical-menu.menu-expanded .main-menu.menu-dark .navigation .hover > a > i,
 body.vertical-layout.vertical-menu.menu-expanded .main-menu.menu-dark .navigation .open > a > i,
 body.vertical-layout.vertical-menu.menu-expanded .main-menu.menu-dark .navigation:hover > a > i {
     -webkit-box-shadow: 0 0 20px rgba(253, 99, 107, 0.3);
     box-shadow: 0 0 20px rgba(253, 99, 107, 0.3);
+    transition: .25s all;
 }
 body.vertical-layout.vertical-menu.menu-expanded .navbar-brand-center .content,
 body.vertical-layout.vertical-menu.menu-expanded .navbar-brand-center .footer {
@@ -156,17 +161,17 @@ body.vertical-layout.vertical-menu.menu-collapsed .navbar .navbar-brand {
     padding: 17px 0;
 }
 body.vertical-layout.vertical-menu.menu-collapsed .navbar .navbar-brand .brand-text {
-    -webkit-animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
-    -moz-animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
-    -o-animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
-    animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
+    -webkit-animation: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
+    -moz-animation: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
+    -o-animation: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
+    animation: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
 }
 body.vertical-layout.vertical-menu.menu-collapsed .main-menu {
     width: 60px;
-    -webkit-transition: 0.3s ease all;
-    -moz-transition: 0.3s ease all;
-    -o-transition: 0.3s ease all;
-    transition: 0.3s ease all;
+    -webkit-transition: 0.25s ease all;
+    -moz-transition: 0.25s ease all;
+    -o-transition: 0.25s ease all;
+    transition: 0.25s ease all;
     -webkit-transform: translateZ(-160px) translateX(-160px);
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translateZ(-160px) translateX(-160px);
@@ -198,8 +203,8 @@ body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content 
     text-align: left;
     text-transform: uppercase;
     color: #fff;
-    border-color: #fa626b;
-    background-color: #fa626b;
+    border-color: #17ad37;
+    background-image: linear-gradient(310deg,#17ad37 0%, #98ec2d 100%);
 }
 body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content > ul.menu-content {
     left: 60px;
@@ -226,7 +231,7 @@ body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content 
     transition: all 0.2s ease;
 }
 body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content > ul.menu-content li.active a {
-    color: #fa626b;
+    color: #17ad37;
 }
 body.vertical-layout.vertical-menu.menu-collapsed .main-menu .main-menu-content > ul.menu-content li.has-sub > a:not(.mm-next):after {
     font-family: LineAwesome;
@@ -565,6 +570,8 @@ body.vertical-layout.vertical-menu.menu-collapsed.menu-flipped .navbar-header {
 .vertical-overlay-menu.menu-open .main-menu.menu-light .navigation:hover > a > i {
     -webkit-box-shadow: 0 0 20px rgba(253, 99, 107, 0.3);
     box-shadow: 0 0 20px rgba(253, 99, 107, 0.3);
+    background-image: linear-gradient(310deg,#82d616 0%,#82d616 100%);
+    transition: .25s all;
 }
 .vertical-overlay-menu.menu-open .main-menu.menu-dark .navigation > li > a > i {
     line-height: 40px;
@@ -578,12 +585,14 @@ body.vertical-layout.vertical-menu.menu-collapsed.menu-flipped .navbar-header {
     background: #2c303b;
     -webkit-box-shadow: 0 0 10px #000;
     box-shadow: 0 0 10px #000;
+    transition: .25s all;
 }
 .vertical-overlay-menu.menu-open .main-menu.menu-dark .navigation .hover > a > i,
 .vertical-overlay-menu.menu-open .main-menu.menu-dark .navigation .open > a > i,
 .vertical-overlay-menu.menu-open .main-menu.menu-dark .navigation:hover > a > i {
     -webkit-box-shadow: 0 0 20px rgba(253, 99, 107, 0.3);
     box-shadow: 0 0 20px rgba(253, 99, 107, 0.3);
+    background-image: linear-gradient(310deg,#82d616 0%,#82d616 100%);
 }
 .vertical-overlay-menu.menu-flipped .main-menu {
     right: -260px;
