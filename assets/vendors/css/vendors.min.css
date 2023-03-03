@@ -1521,7 +1521,10 @@
     content: "\f1c3";
 }
 .la-ellipsis-v:before {
-    content: "\f1c4";
+    content: "\f141";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
 }
 .la-empire:before,
 .la-ge:before {

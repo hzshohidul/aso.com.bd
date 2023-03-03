@@ -632,7 +632,10 @@ select.form-control {
 .dropdown-toggle::after {
     right: 4px;
     margin: 0 0.3em 0 0;
-    content: "\f110" !important;
+    content: "\f141" !important;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
 }
 .dropdown-toggle.nav-hide-arrow::after {
     display: none;

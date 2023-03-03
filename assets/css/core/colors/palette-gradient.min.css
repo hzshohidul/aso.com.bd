@@ -1048,7 +1048,7 @@
     background-image: -webkit-linear-gradient(310deg,#98ec2d 0%,#17ad37 100%);
     background-image: -moz-linear-gradient(310deg,#98ec2d 0%,#17ad37 100%);
     background-image: -o-linear-gradient(310deg,#98ec2d 0%,#17ad37 100%);
-    background-image: linear-gradient(to right, #98ec2d, #17ad37);
+    /* background-image: linear-gradient(to right, #98ec2d, #17ad37); */
     background-repeat: repeat-x;
 }
 .btn-bg-gradient-x-purple-green {
@@ -1057,7 +1057,7 @@
     background-image: -webkit-linear-gradient(left, #17ad37 0, #98ec2d 50%, #17ad37 100%);
     background-image: -moz-linear-gradient(left, #17ad37 0, #98ec2d 50%, #17ad37 100%);
     background-image: -o-linear-gradient(left, #17ad37 0, #98ec2d 50%, #17ad37 100%);
-    background-image: linear-gradient(90deg, #17ad37 0, #98ec2d 50%, #17ad37 100%);
+    background-image: linear-gradient(310deg, #17ad37 0, #98ec2d 50%, #17ad37 100%);
     background-size: 200% auto;
 }
 .btn-bg-gradient-x-purple-green.btn-glow {
@@ -1071,7 +1071,7 @@
     background-image: -webkit-linear-gradient(left, #17ad37 0, #98ec2d 50%, #17ad37 100%) !important;
     background-image: -moz-linear-gradient(left, #17ad37 0, #98ec2d 50%, #17ad37 100%) !important;
     background-image: -o-linear-gradient(left, #17ad37 0, #98ec2d 50%, #17ad37 100%) !important;
-    background-image: linear-gradient(90deg, #17ad37 0, #98ec2d 50%, #17ad37 100%) !important;
+    background-image: linear-gradient(310deg, #17ad37 0, #98ec2d 50%, #17ad37 100%) !important;
     background-position: right center;
     color: #fff;
 }
@@ -1082,8 +1082,8 @@ body.vertical-layout[data-color="bg-gradient-x-purple-green"] .navbar-container 
     background-image: -webkit-gradient(linear, left top, right top, from(#17ad37), to(#98ec2d));
     background-image: -webkit-linear-gradient(left, #17ad37, #98ec2d);
     background-image: -moz-linear-gradient(left, #17ad37, #98ec2d);
-    background-image: -o-linear-gradient(310deg,#17ad37 0%,#98ec2d 100%);;
-    background-image: linear-gradient(310deg,#17ad37 0%,#98ec2d 100%);;
+    background-image: -o-linear-gradient(310deg,#17ad37 0%,#98ec2d 100%);
+    background-image: linear-gradient(310deg,#17ad37 0%,#98ec2d 100%);
     background-repeat: repeat-x;
     color: #fff;
 }
@@ -1140,19 +1140,19 @@ body.vertical-layout[data-color="bg-gradient-x-purple-red"] .navbar-container {
 }
 .bg-gradient-x-blue-green {
     background-image: -webkit-gradient(linear, left top, right top, from(#00cef9), to(#00e6af));
-    background-image: -webkit-linear-gradient(left, #00cef9, #00e6af);
-    background-image: -moz-linear-gradient(left, #00cef9, #00e6af);
-    background-image: -o-linear-gradient(left, #00cef9, #00e6af);
-    background-image: linear-gradient(to right, #00cef9, #00e6af);
+    background-image: -webkit-linear-gradient(310deg, #141727 0%, #3A416F 100%);
+    background-image: -moz-linear-gradient(310deg, #141727 0%, #3A416F 100%);
+    background-image: -o-linear-gradient(310deg, #141727 0%, #3A416F 100%);
+    background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%);
     background-repeat: repeat-x;
 }
 .btn-bg-gradient-x-blue-green {
     transition: 0.5s;
     background-image: -webkit-gradient(linear, left top, right top, from(#00cef9), color-stop(50%, #00e6af), to(#00cef9));
-    background-image: -webkit-linear-gradient(left, #00cef9 0, #00e6af 50%, #00cef9 100%);
-    background-image: -moz-linear-gradient(left, #00cef9 0, #00e6af 50%, #00cef9 100%);
-    background-image: -o-linear-gradient(left, #00cef9 0, #00e6af 50%, #00cef9 100%);
-    background-image: linear-gradient(90deg, #00cef9 0, #00e6af 50%, #00cef9 100%);
+    background-image: -webkit-linear-gradient(310deg, #141727 0%, #3A416F 100%);
+    background-image: -moz-linear-gradient(310deg, #141727 0%, #3A416F 100%);
+    background-image: -o-linear-gradient(310deg, #141727 0%, #3A416F 100%);
+    background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%);
     background-size: 200% auto;
 }
 .btn-bg-gradient-x-blue-green.btn-glow {
@@ -1163,21 +1163,21 @@ body.vertical-layout[data-color="bg-gradient-x-purple-red"] .navbar-container {
 .btn-bg-gradient-x-blue-green:active,
 .btn-bg-gradient-x-blue-green:hover {
     background-image: -webkit-gradient(linear, left top, right top, from(#00cef9), color-stop(50%, #00e6af), to(#00cef9)) !important;
-    background-image: -webkit-linear-gradient(left, #00cef9 0, #00e6af 50%, #00cef9 100%) !important;
-    background-image: -moz-linear-gradient(left, #00cef9 0, #00e6af 50%, #00cef9 100%) !important;
-    background-image: -o-linear-gradient(left, #00cef9 0, #00e6af 50%, #00cef9 100%) !important;
-    background-image: linear-gradient(90deg, #00cef9 0, #00e6af 50%, #00cef9 100%) !important;
-    background-position: right center;
+    background-image: -webkit-linear-gradient(310deg, #141727 0%, #3A416F 100%); !important;
+    background-image: -moz-linear-gradient(310deg, #141727 0%, #3A416F 100%); !important;
+    background-image: -o-linear-gradient(310deg, #141727 0%, #3A416F 100%); !important;
+    background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%); !important;
+    /* background-position: right center; */
 }
 body.horizontal-layout[data-color="bg-gradient-x-blue-green"] .content-wrapper-before,
 body.horizontal-layout[data-color="bg-gradient-x-blue-green"] .navbar-horizontal,
 body.vertical-layout[data-color="bg-gradient-x-blue-green"] .content-wrapper-before,
 body.vertical-layout[data-color="bg-gradient-x-blue-green"] .navbar-container {
     background-image: -webkit-gradient(linear, left top, right top, from(#00cef9), to(#00e6af));
-    background-image: -webkit-linear-gradient(left, #00cef9, #00e6af);
-    background-image: -moz-linear-gradient(left, #00cef9, #00e6af);
-    background-image: -o-linear-gradient(left, #00cef9, #00e6af);
-    background-image: linear-gradient(to right, #00cef9, #00e6af);
+    background-image: -webkit-linear-gradient(310deg, #141727 0%, #3A416F 100%);
+    background-image: -moz-linear-gradient(310deg, #141727 0%, #3A416F 100%);
+    background-image: -o-linear-gradient(310deg, #141727 0%, #3A416F 100%);
+    background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%);
     background-repeat: repeat-x;
 }
 .bg-gradient-x-orange-yellow {

@@ -3390,7 +3390,8 @@ td.details-control {
     display: block;
     color: #6967ce;
     border-radius: 8px 0 0 8px;
-    background-image: linear-gradient(310deg,#17ad37 0%, #98ec2d 100%);
+    /* background-image: linear-gradient(310deg,#17ad37 0%, #98ec2d 100%); */
+	background-color: #fff;
 }
 .note-popover.popover,
 .note-toolbar .dropdown-toggle::after,
@@ -4157,4 +4158,9 @@ tr.shown td.details-control {
     padding: 0.5rem 1rem;
     border-width: 1px;
     border-radius: 2rem;
+}
+
+
+img.img-circle {
+    width: 80px;
 }
