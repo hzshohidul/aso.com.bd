@@ -1050,6 +1050,7 @@
     background-image: -o-linear-gradient(310deg,#98ec2d 0%,#17ad37 100%);
     /* background-image: linear-gradient(to right, #98ec2d, #17ad37); */
     background-repeat: repeat-x;
+    color: #fff;
 }
 .btn-bg-gradient-x-purple-green {
     transition: 0.5s;

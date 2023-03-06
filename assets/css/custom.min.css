@@ -323,7 +323,7 @@ footer.footer-dark {
 .main-menu.menu-light .navigation > li.open .hover > a:before {
     position: absolute;
     top: 50%;
-    left: 75px;
+    /* left: 75px; */
     display: block;
     width: 7px;
     height: 7px;

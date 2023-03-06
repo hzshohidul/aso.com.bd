@@ -547,20 +547,20 @@ body.horizontal-layout[data-color="bg-primary"] .content-wrapper-before {
 }
 .btn-primary {
     color: #fff;
-    background-color: #6967ce;
+    background-image: linear-gradient(310deg,#141727 0%,#3A416F 100%);;
 }
 .btn-primary:hover {
     color: #fff;
-    border-color: #7473d2;
-    background-color: #7473d2;
+    border-color: #141727;
+    background-image: linear-gradient(310deg,#141727 0%,#3A416F 100%);
     -webkit-box-shadow: 0 1px 2px 0 rgba(105, 103, 206, 0.451), 0 1px 3px 1px rgba(105, 103, 206, 0.302);
     box-shadow: 0 1px 2px 0 rgba(105, 103, 206, 0.451), 0 1px 3px 1px rgba(105, 103, 206, 0.302);
 }
 .btn-primary:active,
 .btn-primary:focus {
     color: #fff;
-    border-color: #7473d2;
-    background-color: #7473d2;
+    border-color: #141727;
+    background-image: linear-gradient(310deg,#141727 0%,#3A416F 100%);
     -webkit-box-shadow: 0 1px 2px 0 rgba(105, 103, 206, 0.451), 0 1px 3px 1px rgba(105, 103, 206, 0.302) !important;
     box-shadow: 0 1px 2px 0 rgba(105, 103, 206, 0.451), 0 1px 3px 1px rgba(105, 103, 206, 0.302) !important;
 }
@@ -570,19 +570,19 @@ body.horizontal-layout[data-color="bg-primary"] .content-wrapper-before {
     box-shadow: 0 1px 20px 1px rgba(105, 103, 206, 0.6);
 }
 .btn-outline-primary {
-    color: #6967ce;
-    border-color: #6967ce;
+    color: #344767;
+    border-color: #344767;
     background-color: transparent;
 }
 .btn-outline-primary:hover {
     color: #fff !important;
-    background-color: #6967ce;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(105, 103, 206, 0.451), 0 1px 3px 1px rgba(105, 103, 206, 0.302) !important;
-    box-shadow: 0 1px 2px 0 rgba(105, 103, 206, 0.451), 0 1px 3px 1px rgba(105, 103, 206, 0.302) !important;
+    background-image: linear-gradient(310deg,#141727 0%,#3A416F 100%);
+    -webkit-box-shadow: 0 1px 2px 0 rgb(20, 23, 39), 0 1px 3px 1px rgba(51, 50, 111, 0.302) !important;
+    box-shadow: 0 1px 2px 0 rgb(20, 23, 39), 0 1px 3px 1px rgba(105, 103, 206, 0.302) !important;
 }
 .btn-outline-primary.btn-glow {
-    -webkit-box-shadow: 0 1px 20px 1px rgba(105, 103, 206, 0.6);
-    box-shadow: 0 1px 20px 1px rgba(105, 103, 206, 0.6);
+    -webkit-box-shadow: 0 1px 20px 1px rgb(20, 23, 39);
+    box-shadow: 0 1px 20px 1px rgb(20, 23, 39) 8% 85%)
 }
 input[type="checkbox"].bg-primary + .custom-control-label:before,
 input[type="radio"].bg-primary + .custom-control-label:before {
