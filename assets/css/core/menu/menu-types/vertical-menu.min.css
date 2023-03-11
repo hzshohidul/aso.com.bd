@@ -31,7 +31,7 @@ body.vertical-layout.vertical-menu.menu-expanded .navbar .navbar-brand .brand-te
     animation: 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
 }
 body.vertical-layout.vertical-menu.menu-expanded .main-menu {
-    width: 260px;
+    width: 300px;
     -webkit-transition: 0.25s ease all;
     -moz-transition: 0.25s ease all;
     -o-transition: 0.25s ease all;
