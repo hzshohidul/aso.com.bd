@@ -303,7 +303,7 @@ footer.footer-dark {
     padding: 0;
 }
 .main-menu.menu-light .navigation > li > a {
-    padding: 10px 15px 12px 18px;
+    padding: 10px 15px 12px 4px;
     margin-bottom: 10px;
 }
 .main-menu.menu-light .navigation > li > a .label {
@@ -4164,3 +4164,51 @@ tr.shown td.details-control {
 img.img-circle {
     width: 80px;
 }
+
+/* ------------------------------------------ */
+            /* Design start*/
+/* ------------------------------------------ */
+
+.font-weight-bolder {
+    font-size: 26px;
+    font-weight: 700!important;
+    font-family: sans-serif;
+    color: #344767;
+}
+
+.icon-design-blue {
+    background-image: linear-gradient(310deg,#141727 0%,#3A416F 100%);
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    line-height: 48px;
+    border-radius: 8px;
+}
+.icon-design-green {
+    background-image: linear-gradient(310deg, #98ec2d, #17ad37);
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    line-height: 48px;
+    border-radius: 8px;
+}
+.icon-design-red {
+    background-image: linear-gradient(310deg, #98ec2d, #ff0000);
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    line-height: 48px;
+    border-radius: 8px;
+}
+.green{
+    color: #3ABE34;
+}
+.red{
+    color: red;
+}
+/* ------------------------------------------ */
+            /* Design end */
+/* ------------------------------------------ */

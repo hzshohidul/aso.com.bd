@@ -1060,7 +1060,7 @@ select.form-control {
 }
 .header-navbar .navbar-container ul.nav li a.menu-toggle,
 .header-navbar .navbar-container ul.nav li a.nav-link-label {
-    padding: 1.7rem 1.8rem 1.6rem;
+    padding: 1.7rem 1.3rem 1.6rem;
 }
 .header-navbar .navbar-container ul.nav li a.dropdown-user-link .user-name {
     display: inline-block;
