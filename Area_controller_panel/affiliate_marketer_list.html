@@ -13,6 +13,13 @@
       <link rel="stylesheet" type="text/css" href="../assets/css/core/colors/palette-switch.min.css">
       <link rel="stylesheet" type="text/css" href="../assets/vendors/css/charts/chartist.css">
       <link rel="stylesheet" type="text/css" href="../assets/vendors/css/charts/chartist-plugin-tooltip.css">
+      <link rel="stylesheet" type="text/css" href="../assets/vendors/css/tables/datatable/datatables.min.css">
+
+      <link rel="stylesheet" type="text/css" href="../assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
+      <link rel="stylesheet" type="text/css" href="../assets/vendors/css/tables/extensions/rowReorder.dataTables.min.css">
+      <link rel="stylesheet" type="text/css" href="../assets/vendors/css/tables/extensions/responsive.dataTables.min.css">
+      <link rel="stylesheet" type="text/css" href="../assets/vendors/css/forms/icheck/icheck.css">
+      <link rel="stylesheet" type="text/css" href="../assets/vendors/css/forms/icheck/custom.css">
       <!-- END: Vendor CSS-->
       <!-- BEGIN: Theme CSS-->
       <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
@@ -47,7 +54,7 @@
    <!-- END: Head-->
    <!-- BEGIN: Body-->
    <body class="vertical-layout vertical-menu 2-columns fixed-navbar" data-open="click" data-menu="vertical-menu"
-      data-color="bg-gradient-x-purple-blue" data-col="2-columns">
+      data-color="bg-gradient-x-blue-green" data-col="2-columns">
       <!-- BEGIN: Header-->
       <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light">
          <div class="navbar-wrapper">
@@ -475,82 +482,357 @@
          </div>
       </div>
       <!-- END: Main Menu-->
-	  
+      
       <!-- BEGIN: Main Content start-->
       <div class="app-content content">
          <div class="content-wrapper">
 			<div class="content-header row">
 				<div class="content-body  container-fluid">
-					
-               <h1>Insert Content</h1>
+               
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="float-right mb-1">
+                     <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#new_create">
+                        <i class="fa fa-plus"></i>  Create New Ward/Road Name
+                     </button>
 
+                     <div class="modal fade" id="new_create" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel">
+                                    Add a new Ward/Road
+                                 </h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+
+                              <div class="modal-body">
+                                 <form action="#" method="POST">
+                                    <div class="form-group">
+                                       <label for="name" class="col-form-label">Name</label>
+                                       <input type="text" class="form-control" placeholder="Enter Ward/Road Name" id="name">
+                                    </div>
+									<div class="form-group">
+                                       <label for="pouroshobha" class="col-form-label">Pouroshobha</label>
+									   
+                                       <select name="" id="pouroshobha" class="form-control">
+											<option value="">-select-</option>
+											<option value="">Feni Union</option>
+											<option value="">Feni Pouroshobha</option>
+											<option value="">Sonagazi</option>
+                                       </select>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                       <button type="submit" class="btn btn-primary">Add New Ward/Road</button>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+
+               <!-- Zero configuration table -->
+               <section id="configuration">
+                  <!-- select option row start -->
+                  <div class="row">
+                     <div class="col-md-12">
+                         <div class="card card-background-blue">
+                           <div class="card-content">
+                              <div class="card-body select-card-design">
+                                 <h4 class="select-title white">Area</h4>
+
+                                 <select name="month" class="form-control width-30-percent">
+                                    <option value=''>--Select Month--</option>
+                                    <option selected value='1'>Janaury</option>
+                                    <option value='2'>February</option>
+                                    <option value='3'>March</option>
+                                    <option value='4'>April</option>
+                                    <option value='5'>May</option>
+                                    <option value='6'>June</option>
+                                    <option value='7'>July</option>
+                                    <option value='8'>August</option>
+                                    <option value='9'>September</option>
+                                    <option value='10'>October</option>
+                                    <option value='11'>November</option>
+                                    <option value='12'>December</option>
+                                  </select>
+                                  <select name="year" class="form-control width-30-percent">
+                                    <option value=''>--Select Year--</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2024">2024</option>
+                                    <option selected value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                  </select>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- select option row end -->
+
+                  <div class="row">
+                     <div class="col-12">
+                        <div class="card">
+                           <div class="card-head">
+                              <div class="card-header">
+                                 <h4 class="card-title">Ward/Road Table</h4>
+                                 <div class="heading-elements visible">
+                                    <ul class="list-inline mb-0">
+                                        <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                        <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                    </ul>
+                                </div>
+                              </div>
+                           </div>
+                           <div class="card-content">
+                              <div class="card-body">
+                                 <!-- Task List table -->
+                                 <div class="table-responsive">
+                                    <table id="users-contacts" class="table table-white-space table-bordered table-striped row-grouping display no-wrap icheck table-middle">
+                                       <thead>
+                                          <tr>
+                                             <th>No.</th>
+                                             <th>Pouroshoba/Union/Area</th>
+                                             <th>Ward/Road Name</th>
+                                             <th>Customer</th>
+                                             <th>Worker</th>
+                                             <th>Member</th>
+                                             <th>Marketer</th>
+                                             <th>Actions</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td class="text-center"> 01</td>
+                                             <td class="text-center">
+                                                Feni Pouroshobha
+                                             </td>
+                                             <td class="text-center">
+                                                3 No. Ward. Trung road
+                                             </td>
+                                             <td class="text-center">
+                                                122
+                                             </td>
+                                             <td class="text-center">
+                                                20
+                                             </td>
+                                             <td class="text-center">
+                                                30
+                                             </td>
+                                             <td class="text-center">
+                                                22
+                                             </td>
+                                             <td class="text-center">
+                                                <span class="dropdown">
+                                                   <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                      <i class="ft-more-vertical"></i>
+                                                   </button>
+
+                                                   <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-check-circle"></i>
+                                                         Enable
+                                                      </a>
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-disc"></i>
+                                                         Disable
+                                                      </a>
+                                                      <a href="#" class="dropdown-item deleted-click">
+                                                         <i class="ft-trash-2"></i>
+                                                         Delete
+                                                      </a>
+                                                      <a href="#" data-toggle="modal" data-target="#edit" class="dropdown-item">
+                                                         <i class="ft-edit-2"></i> Edit</a>
+                                                   </span>
+                                                </span>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="text-center"> 02</td>
+                                             <td class="text-center">
+                                                Feni Pouroshobha
+                                             </td>
+                                             <td class="text-center">
+                                                3 No. Ward. Trung road
+                                             </td>
+                                             <td class="text-center">
+                                                122
+                                             </td>
+                                             <td class="text-center">
+                                                20
+                                             </td>
+                                             <td class="text-center">
+                                                3055
+                                             </td>
+                                             <td class="text-center">
+                                                22
+                                             </td>
+                                             <td class="text-center">
+                                                <span class="dropdown">
+                                                   <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                      <i class="ft-more-vertical"></i>
+                                                   </button>
+
+                                                   <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-check-circle"></i>
+                                                         Enable
+                                                      </a>
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-disc"></i>
+                                                         Disable
+                                                      </a>
+                                                      <a href="#" class="dropdown-item deleted-click">
+                                                         <i class="ft-trash-2"></i>
+                                                         Delete
+                                                      </a>
+                                                      <a href="#" data-toggle="modal" data-target="#edit" class="dropdown-item">
+                                                         <i class="ft-edit-2"></i> Edit</a>
+                                                   </span>
+                                                </span>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="text-center"> 03</td>
+                                             <td class="text-center">
+                                                Feni Pouroshobha
+                                             </td>
+                                             <td class="text-center">
+                                                3 No. Ward. Trung road
+                                             </td>
+                                             <td class="text-center">
+                                                122
+                                             </td>
+                                             <td class="text-center">
+                                                20
+                                             </td>
+                                             <td class="text-center">
+                                                30
+                                             </td>
+                                             <td class="text-center">
+                                                22
+                                             </td>
+                                             <td class="text-center">
+                                                <span class="dropdown">
+                                                   <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                      <i class="ft-more-vertical"></i>
+                                                   </button>
+
+                                                   <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-check-circle"></i>
+                                                         Enable
+                                                      </a>
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-disc"></i>
+                                                         Disable
+                                                      </a>
+                                                      <a href="#" class="dropdown-item deleted-click">
+                                                         <i class="ft-trash-2"></i>
+                                                         Delete
+                                                      </a>
+                                                      <a href="#" data-toggle="modal" data-target="#edit" class="dropdown-item">
+                                                         <i class="ft-edit-2"></i> Edit</a>
+                                                   </span>
+                                                </span>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                  
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!--/ Zero configuration table -->
+               
+               <!-- Edit distric Model start -->
+               <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLabel">
+                              Edit upazila
+                           </h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                           </button>
+                        </div>
+
+                        <div class="modal-body">
+                           <form action="#" method="POST">
+                              <div class="form-group">
+                                 <label for="name" class="col-form-label">Name</label>
+                                 <input type="text" class="form-control" value="ward 3" id="name">
+                              </div>
+							  
+							  <div class="form-group">
+                                 <label for="pouroshobha" class="col-form-label">Pouroshobha</label>
+									   
+								   <select name="" id="pouroshobha" class="form-control">
+										<option value="">-select-</option>
+										<option value="">Feni Union</option>
+										<option value="" selected>Feni Pouroshobha</option>
+										<option value="">Sonagazi</option>
+								   </select>
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                 <button type="submit" class="btn btn-primary">Save</button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Edit distric Model end -->
 				</div>
+            <!-- container-fluid end -->
 			</div>
          </div>
       </div>
       <!-- END: Main Content end-->
+
       <!-- BEGIN: Customizer-->
       <div class="customizer border-left-blue-grey border-left-lighten-4 d-none d-xl-block">
          <a class="customizer-close"
-            href="#"><i class="ft-x font-medium-3"></i></a><a class="customizer-toggle bg-primary box-shadow-3" href="#"
+            href="#"><i class="ft-x font-medium-3"></i></a><a class="customizer-toggle bg-green box-shadow-3" href="#"
             id="customizer-toggle-setting">
-			<i class="ft-settings font-medium-3 spinner white"></i>
+			<i class="ft-settings font-medium-3 spinner black"></i>
          </a>
          <div class="customizer-content p-2">
             <h5 class="mt-1 mb-1 text-bold-500">Navbar Color Options</h5>
             <div class="navbar-color-options clearfix">
                <div class="gradient-colors mb-1 clearfix">
-                  <div class="bg-gradient-x-purple-blue navbar-color-option" data-bg="bg-gradient-x-purple-blue"
-                     title="bg-gradient-x-purple-blue"></div>
-                  <div class="bg-gradient-x-purple-red navbar-color-option" data-bg="bg-gradient-x-purple-red"
-                     title="bg-gradient-x-purple-red"></div>
-                  <div class="bg-gradient-x-blue-green navbar-color-option" data-bg="bg-gradient-x-blue-green"
-                     title="bg-gradient-x-blue-green"></div>
-                  <div class="bg-gradient-x-orange-yellow navbar-color-option" data-bg="bg-gradient-x-orange-yellow"
-                     title="bg-gradient-x-orange-yellow"></div>
-                  <div class="bg-gradient-x-blue-cyan navbar-color-option" data-bg="bg-gradient-x-blue-cyan"
-                     title="bg-gradient-x-blue-cyan"></div>
-                  <div class="bg-gradient-x-red-pink navbar-color-option" data-bg="bg-gradient-x-red-pink"
-                     title="bg-gradient-x-red-pink"></div>
-               </div>
-               <div class="solid-colors clearfix">
-                  <div class="bg-primary navbar-color-option" data-bg="bg-primary" title="primary"></div>
+			   
+				<div class="bg-gradient-x-blue-green navbar-color-option" data-bg="bg-gradient-x-blue-green" title="bg-gradient-x-blue-green"></div>
+			   
+                  <div class="bg-gradient-x-purple-green navbar-color-option" data-bg="bg-gradient-x-purple-green" title="bg-gradient-x-purple-green"></div>
+
                   <div class="bg-success navbar-color-option" data-bg="bg-success" title="success"></div>
-                  <div class="bg-info navbar-color-option" data-bg="bg-info" title="info"></div>
-                  <div class="bg-warning navbar-color-option" data-bg="bg-warning" title="warning"></div>
-                  <div class="bg-danger navbar-color-option" data-bg="bg-danger" title="danger"></div>
-                  <div class="bg-blue navbar-color-option" data-bg="bg-blue" title="blue"></div>
-               </div>
-            </div>
-            <hr>
-            <h5 class="my-1 text-bold-500">Layout Options</h5>
-            <div class="row">
-               <div class="col-12">
-                  <div class="d-inline-block custom-control custom-radio mb-1 col-4">
-                     <input type="radio" class="custom-control-input bg-primary" name="layouts" id="default-layout" checked>
-                     <label class="custom-control-label" for="default-layout">Default</label>
-                  </div>
-                  <div class="d-inline-block custom-control custom-radio mb-1 col-4">
-                     <input type="radio" class="custom-control-input bg-primary" name="layouts" id="fixed-layout">
-                     <label class="custom-control-label" for="fixed-layout">Fixed</label>
-                  </div>
-                  <div class="d-inline-block custom-control custom-radio mb-1 col-4">
-                     <input type="radio" class="custom-control-input bg-primary" name="layouts" id="static-layout">
-                     <label class="custom-control-label" for="static-layout">Static</label>
-                  </div>
-                  <div class="d-inline-block custom-control custom-radio mb-1">
-                     <input type="radio" class="custom-control-input bg-primary" name="layouts" id="boxed-layout">
-                     <label class="custom-control-label" for="boxed-layout">Boxed</label>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-12">
-                  <div class="d-inline-block custom-control custom-checkbox mb-1">
-                     <input type="checkbox" class="custom-control-input bg-primary" name="right-side-icons"
-                        id="right-side-icons">
-                     <label class="custom-control-label" for="right-side-icons">Right Side Icons</label>
-                  </div>
+
+                  <div class="bg-gradient-x-blue-cyan navbar-color-option" data-bg="bg-gradient-x-blue-cyan" title="bg-gradient-x-blue-cyan"></div>
+                  
                </div>
             </div>
             <hr>
@@ -623,6 +905,13 @@
       <!-- BEGIN: Page Vendor JS-->
       <script src="../assets/vendors/js/charts/chartist.min.js" type="text/javascript"></script>
       <script src="../assets/vendors/js/charts/chartist-plugin-tooltip.min.js" type="text/javascript"></script>
+      <script src="../assets/vendors/js/tables/datatable/datatables.min.js" type="text/javascript"></script>
+
+      <script src="../assets/vendors/js/tables/jquery.dataTables.min.js" type="text/javascript"></script>
+      <script src="../assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+      <script src="../assets/vendors/js/tables/datatable/dataTables.responsive.min.js" type="text/javascript"></script>
+      <script src="../assets/vendors/js/tables/datatable/dataTables.rowReorder.min.js" type="text/javascript"></script>
+      <script src="../assets/vendors/js/forms/icheck/icheck.min.js" type="text/javascript"></script>
       <!-- END: Page Vendor JS-->
       <!-- BEGIN: Theme JS-->
       <script src="../assets/js/core/app-menu.min.js" type="text/javascript"></script>
@@ -636,6 +925,33 @@
       <!-- BEGIN: Page JS-->
       <script src="../assets/js/scripts/tables/datatables/datatable-basic.min.js" type="text/javascript"></script>
       <!-- END: Page JS-->
+      <!-- END: Page JS-->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <!-- BEGIN: Page JS-->
+      <script src="../assets/js/scripts/pages/users-contacts.min.js" type="text/javascript"></script>
+      <!-- END: Page JS-->
+
+      <script>
+         $('.deleted-click').click(function(){
+            Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+            if (result.isConfirmed) {
+               Swal.fire(
+                  'Deleted!',
+                  'Your file has been deleted.',
+                  'success'
+               )
+            }
+            })
+         });
+     </script>
    </body>
    <!-- END: Body-->
 </html>
