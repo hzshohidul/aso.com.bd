@@ -485,7 +485,7 @@
       
       <!-- BEGIN: Main Content start-->
       <div class="app-content content">
-         <div class="content-wrapper">
+         <div class="content-wrapper padding-top-10">
 			<div class="content-header row">
 				<div class="content-body  container-fluid">
                
@@ -529,6 +529,51 @@
 
                <!-- Zero configuration table -->
                <section id="configuration">
+
+                  <!-- select option row start -->
+                  <div class="row">
+                     <div class="col-md-12">
+                         <div class="card card-background-blue">
+                           <div class="card-content">
+                              <div class="card-body select-card-design">
+                                 <h4 class="select-title white">Area</h4>
+
+                                 <select name="month" class="form-control width-30-percent">
+                                    <option value=''>--Select Month--</option>
+                                    <option selected value='1'>Janaury</option>
+                                    <option value='2'>February</option>
+                                    <option value='3'>March</option>
+                                    <option value='4'>April</option>
+                                    <option value='5'>May</option>
+                                    <option value='6'>June</option>
+                                    <option value='7'>July</option>
+                                    <option value='8'>August</option>
+                                    <option value='9'>September</option>
+                                    <option value='10'>October</option>
+                                    <option value='11'>November</option>
+                                    <option value='12'>December</option>
+                                  </select>
+                                  <select name="year" class="form-control width-30-percent">
+                                    <option value=''>--Select Year--</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2024">2024</option>
+                                    <option selected value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                  </select>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- select option row end -->
+
                   <div class="row">
                      <div class="col-12">
                         <div class="card">
@@ -551,22 +596,38 @@
                                     <table id="users-contacts" class="table table-white-space table-bordered table-striped row-grouping display no-wrap icheck table-middle">
                                        <thead>
                                           <tr>
-                                             <th></th>
-                                             <th>Name</th>
+                                             <th>No.</th>
+                                             <th>Pouroshoba/Union/Area</th>
+                                             <th>Ward/Road Quantity</th>
+                                             <th>Customer</th>
+                                             <th>Worker</th>
+                                             <th>Member</th>
+                                             <th>Marketer</th>
                                              <th>Actions</th>
                                           </tr>
                                        </thead>
                                        <tbody>
                                           <tr>
                                              <td class="text-center"> 01</td>
-                                             <td>
-                                                <div class="media">
-                                                   <div class="media-body media-middle">
-                                                      <span class="media-heading text-bold-700">feni union</span>
-                                                   </div>
-                                                </div>
+                                             <td class="text-center">
+                                                Feni Pouroshobha
                                              </td>
-                                             <td>
+                                             <td class="text-center">
+                                                20
+                                             </td>
+                                             <td class="text-center">
+                                                122
+                                             </td>
+                                             <td class="text-center">
+                                                20
+                                             </td>
+                                             <td class="text-center">
+                                                30
+                                             </td>
+                                             <td class="text-center">
+                                                22
+                                             </td>
+                                             <td class="text-center">
                                                 <span class="dropdown">
                                                    <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
                                                     aria-expanded="false">
@@ -574,8 +635,18 @@
                                                    </button>
 
                                                    <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-check-circle"></i>
+                                                         Enable
+                                                      </a>
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-disc"></i>
+                                                         Disable
+                                                      </a>
                                                       <a href="#" class="dropdown-item deleted-click">
-                                                         <i class="ft-trash-2"></i> Delete</a>
+                                                         <i class="ft-trash-2"></i>
+                                                         Delete
+                                                      </a>
                                                       <a href="#" data-toggle="modal" data-target="#edit" class="dropdown-item">
                                                          <i class="ft-edit-2"></i> Edit</a>
                                                    </span>
@@ -584,14 +655,25 @@
                                           </tr>
                                           <tr>
                                              <td class="text-center"> 02</td>
-                                             <td>
-                                                <div class="media">
-                                                   <div class="media-body media-middle">
-                                                      <span class="media-heading text-bold-700">feni union</span>
-                                                   </div>
-                                                </div>
+                                             <td class="text-center">
+                                                Feni Pouroshobha
                                              </td>
-                                             <td>
+                                             <td class="text-center">
+                                                20
+                                             </td>
+                                             <td class="text-center">
+                                                122
+                                             </td>
+                                             <td class="text-center">
+                                                20
+                                             </td>
+                                             <td class="text-center">
+                                                3055
+                                             </td>
+                                             <td class="text-center">
+                                                22
+                                             </td>
+                                             <td class="text-center">
                                                 <span class="dropdown">
                                                    <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
                                                     aria-expanded="false">
@@ -599,8 +681,18 @@
                                                    </button>
 
                                                    <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-check-circle"></i>
+                                                         Enable
+                                                      </a>
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-disc"></i>
+                                                         Disable
+                                                      </a>
                                                       <a href="#" class="dropdown-item deleted-click">
-                                                         <i class="ft-trash-2"></i> Delete</a>
+                                                         <i class="ft-trash-2"></i>
+                                                         Delete
+                                                      </a>
                                                       <a href="#" data-toggle="modal" data-target="#edit" class="dropdown-item">
                                                          <i class="ft-edit-2"></i> Edit</a>
                                                    </span>
@@ -609,14 +701,25 @@
                                           </tr>
                                           <tr>
                                              <td class="text-center"> 03</td>
-                                             <td>
-                                                <div class="media">
-                                                   <div class="media-body media-middle">
-                                                      <span class="media-heading text-bold-700">feni union</span>
-                                                   </div>
-                                                </div>
+                                             <td class="text-center">
+                                                Feni Pouroshobha
                                              </td>
-                                             <td>
+                                             <td class="text-center">
+                                                20
+                                             </td>
+                                             <td class="text-center">
+                                                122
+                                             </td>
+                                             <td class="text-center">
+                                                20
+                                             </td>
+                                             <td class="text-center">
+                                                30
+                                             </td>
+                                             <td class="text-center">
+                                                22
+                                             </td>
+                                             <td class="text-center">
                                                 <span class="dropdown">
                                                    <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
                                                     aria-expanded="false">
@@ -624,8 +727,18 @@
                                                    </button>
 
                                                    <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-check-circle"></i>
+                                                         Enable
+                                                      </a>
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-disc"></i>
+                                                         Disable
+                                                      </a>
                                                       <a href="#" class="dropdown-item deleted-click">
-                                                         <i class="ft-trash-2"></i> Delete</a>
+                                                         <i class="ft-trash-2"></i>
+                                                         Delete
+                                                      </a>
                                                       <a href="#" data-toggle="modal" data-target="#edit" class="dropdown-item">
                                                          <i class="ft-edit-2"></i> Edit</a>
                                                    </span>
