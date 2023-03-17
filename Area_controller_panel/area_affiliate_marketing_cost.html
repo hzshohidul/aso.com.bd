@@ -483,71 +483,22 @@
       </div>
       <!-- END: Main Menu-->
       
-      <!-- BEGIN: Main Content start-->
-      <div class="app-content content">
-         <div class="content-wrapper">
-			<div class="content-header row">
-				<div class="content-body  container-fluid">
-               
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="float-right mb-1">
-                     <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#new_create">
-                        <i class="fa fa-plus"></i>  Create New Ward/Road Name
-                     </button>
-
-                     <div class="modal fade" id="new_create" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                           <div class="modal-content">
-                              <div class="modal-header">
-                                 <h5 class="modal-title" id="exampleModalLabel">
-                                    Add a new Ward/Road
-                                 </h5>
-                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                 </button>
-                              </div>
-
-                              <div class="modal-body">
-                                 <form action="#" method="POST">
-                                    <div class="form-group">
-                                       <label for="name" class="col-form-label">Name</label>
-                                       <input type="text" class="form-control" placeholder="Enter Ward/Road Name" id="name">
-                                    </div>
-									<div class="form-group">
-                                       <label for="pouroshobha" class="col-form-label">Pouroshobha</label>
-									   
-                                       <select name="" id="pouroshobha" class="form-control">
-											<option value="">-select-</option>
-											<option value="">Feni Union</option>
-											<option value="">Feni Pouroshobha</option>
-											<option value="">Sonagazi</option>
-                                       </select>
-                                    </div>
-                                    <div class="modal-footer">
-                                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                       <button type="submit" class="btn btn-primary">Add New Ward/Road</button>
-                                    </div>
-                                 </form>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  </div>
-               </div>
-
+   <!-- BEGIN: Main Content start-->
+   <div class="app-content content">
+      <div class="content-wrapper padding-top5">
+         <div class="content-header row">
+            <div class="content-body  container-fluid">
                <!-- Zero configuration table -->
                <section id="configuration">
                   <!-- select option row start -->
-                  <div class="row">
+                  <div class="row mt-1">
                      <div class="col-md-12">
                          <div class="card card-background-blue">
                            <div class="card-content">
                               <div class="card-body select-card-design">
-                                 <h4 class="select-title white">Area</h4>
+                                 <h4 class="select-title white">Area Affiliate Marketing Cost</h4>
 
-                                 <select name="month" class="form-control width-30-percent">
+                                 <select name="month" class="form-control width-20-percent">
                                     <option value=''>--Select Month--</option>
                                     <option selected value='1'>Janaury</option>
                                     <option value='2'>February</option>
@@ -562,7 +513,7 @@
                                     <option value='11'>November</option>
                                     <option value='12'>December</option>
                                   </select>
-                                  <select name="year" class="form-control width-30-percent">
+                                  <select name="year" class="form-control width-20-percent">
                                     <option value=''>--Select Year--</option>
                                     <option value="2030">2030</option>
                                     <option value="2029">2029</option>
@@ -588,7 +539,7 @@
                         <div class="card">
                            <div class="card-head">
                               <div class="card-header">
-                                 <h4 class="card-title">Ward/Road Table</h4>
+                                 <h4 class="card-title">Bid Order</h4>
                                  <div class="heading-elements visible">
                                     <ul class="list-inline mb-0">
                                         <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
@@ -606,156 +557,79 @@
                                        <thead>
                                           <tr>
                                              <th>No.</th>
-                                             <th>Pouroshoba/Union/Area</th>
-                                             <th>Ward/Road Name</th>
-                                             <th>Customer</th>
-                                             <th>Worker</th>
-                                             <th>Member</th>
-                                             <th>Marketer</th>
-                                             <th>Actions</th>
+                                             <th>Tatal Cost</th>
+                                             <th>Order Commission</th>
+                                             <th>Worker Signup Commission</th>
+                                             <th>Membership Signup Commission</th>
+                                             <th>Bonus</th>
+                                             <th>Marketer Commission</th>
                                           </tr>
                                        </thead>
                                        <tbody>
                                           <tr>
                                              <td class="text-center"> 01</td>
                                              <td class="text-center">
-                                                Feni Pouroshobha
+                                                50000
                                              </td>
                                              <td class="text-center">
-                                                3 No. Ward. Trung road
+                                                500
                                              </td>
                                              <td class="text-center">
-                                                122
+                                                100
                                              </td>
                                              <td class="text-center">
-                                                20
+                                                100
                                              </td>
                                              <td class="text-center">
-                                                30
+                                                50
                                              </td>
                                              <td class="text-center">
-                                                22
-                                             </td>
-                                             <td class="text-center">
-                                                <span class="dropdown">
-                                                   <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                      <i class="ft-more-vertical"></i>
-                                                   </button>
-
-                                                   <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
-                                                      <a href="#" class="dropdown-item">
-                                                         <i class="ft-check-circle"></i>
-                                                         Enable
-                                                      </a>
-                                                      <a href="#" class="dropdown-item">
-                                                         <i class="ft-disc"></i>
-                                                         Disable
-                                                      </a>
-                                                      <a href="#" class="dropdown-item deleted-click">
-                                                         <i class="ft-trash-2"></i>
-                                                         Delete
-                                                      </a>
-                                                      <a href="#" data-toggle="modal" data-target="#edit" class="dropdown-item">
-                                                         <i class="ft-edit-2"></i> Edit</a>
-                                                   </span>
-                                                </span>
+                                                80
                                              </td>
                                           </tr>
                                           <tr>
                                              <td class="text-center"> 02</td>
                                              <td class="text-center">
-                                                Feni Pouroshobha
+                                                50000
                                              </td>
                                              <td class="text-center">
-                                                3 No. Ward. Trung road
+                                                500
                                              </td>
                                              <td class="text-center">
-                                                122
+                                                100
                                              </td>
                                              <td class="text-center">
-                                                20
+                                                100
                                              </td>
                                              <td class="text-center">
-                                                3055
+                                                50
                                              </td>
                                              <td class="text-center">
-                                                22
-                                             </td>
-                                             <td class="text-center">
-                                                <span class="dropdown">
-                                                   <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                      <i class="ft-more-vertical"></i>
-                                                   </button>
-
-                                                   <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
-                                                      <a href="#" class="dropdown-item">
-                                                         <i class="ft-check-circle"></i>
-                                                         Enable
-                                                      </a>
-                                                      <a href="#" class="dropdown-item">
-                                                         <i class="ft-disc"></i>
-                                                         Disable
-                                                      </a>
-                                                      <a href="#" class="dropdown-item deleted-click">
-                                                         <i class="ft-trash-2"></i>
-                                                         Delete
-                                                      </a>
-                                                      <a href="#" data-toggle="modal" data-target="#edit" class="dropdown-item">
-                                                         <i class="ft-edit-2"></i> Edit</a>
-                                                   </span>
-                                                </span>
+                                                80
                                              </td>
                                           </tr>
                                           <tr>
                                              <td class="text-center"> 03</td>
                                              <td class="text-center">
-                                                Feni Pouroshobha
+                                                50000
                                              </td>
                                              <td class="text-center">
-                                                3 No. Ward. Trung road
+                                                500
                                              </td>
                                              <td class="text-center">
-                                                122
+                                                100
                                              </td>
                                              <td class="text-center">
-                                                20
+                                                100
                                              </td>
                                              <td class="text-center">
-                                                30
+                                                50
                                              </td>
                                              <td class="text-center">
-                                                22
-                                             </td>
-                                             <td class="text-center">
-                                                <span class="dropdown">
-                                                   <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                      <i class="ft-more-vertical"></i>
-                                                   </button>
-
-                                                   <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
-                                                      <a href="#" class="dropdown-item">
-                                                         <i class="ft-check-circle"></i>
-                                                         Enable
-                                                      </a>
-                                                      <a href="#" class="dropdown-item">
-                                                         <i class="ft-disc"></i>
-                                                         Disable
-                                                      </a>
-                                                      <a href="#" class="dropdown-item deleted-click">
-                                                         <i class="ft-trash-2"></i>
-                                                         Delete
-                                                      </a>
-                                                      <a href="#" data-toggle="modal" data-target="#edit" class="dropdown-item">
-                                                         <i class="ft-edit-2"></i> Edit</a>
-                                                   </span>
-                                                </span>
+                                                80
                                              </td>
                                           </tr>
                                        </tbody>
-                  
                                     </table>
                                  </div>
                               </div>
@@ -765,53 +639,12 @@
                   </div>
                </section>
                <!--/ Zero configuration table -->
-               
-               <!-- Edit distric Model start -->
-               <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                     <div class="modal-content">
-                        <div class="modal-header">
-                           <h5 class="modal-title" id="exampleModalLabel">
-                              Edit upazila
-                           </h5>
-                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                           </button>
-                        </div>
-
-                        <div class="modal-body">
-                           <form action="#" method="POST">
-                              <div class="form-group">
-                                 <label for="name" class="col-form-label">Name</label>
-                                 <input type="text" class="form-control" value="ward 3" id="name">
-                              </div>
-							  
-							  <div class="form-group">
-                                 <label for="pouroshobha" class="col-form-label">Pouroshobha</label>
-									   
-								   <select name="" id="pouroshobha" class="form-control">
-										<option value="">-select-</option>
-										<option value="">Feni Union</option>
-										<option value="" selected>Feni Pouroshobha</option>
-										<option value="">Sonagazi</option>
-								   </select>
-                              </div>
-                              <div class="modal-footer">
-                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                 <button type="submit" class="btn btn-primary">Save</button>
-                              </div>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- Edit distric Model end -->
-				</div>
+            </div>
             <!-- container-fluid end -->
-			</div>
          </div>
       </div>
-      <!-- END: Main Content end-->
+   </div>
+   <!-- END: Main Content end-->
 
       <!-- BEGIN: Customizer-->
       <div class="customizer border-left-blue-grey border-left-lighten-4 d-none d-xl-block">

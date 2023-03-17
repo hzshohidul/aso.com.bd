@@ -411,7 +411,7 @@
             <li class=" nav-item">
                <a href="#">
                   <i class="material-icons">open_in_new</i>
-                  <span class="menu-title" data-i18n="">Customer</span></a>
+                  <span class="menu-title" data-i18n="">Worker</span></a>
                <ul class="menu-content">
                   <li>
                      <a href="worker_profile.html" class="menu-item">
@@ -620,335 +620,373 @@
 
    <!-- BEGIN: Main Content start-->
    <div class="app-content content">
-      <div class="content-wrapper">
+      <div class="content-wrapper padding-top5">
          <div class="content-header row">
             <div class="content-body  container-fluid">
-               <!-- Minimal statistics section start -->
-               <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                      <div class="card-header pb-0">
-                        <div class="card-title-wrap bar-primary">
-                          <div class="card-title">Work History</div>
-                          <hr>
+               <!-- Zero configuration table -->
+               <section id="configuration">
+                  <!-- select option row start -->
+                  <div class="row mt-1">
+                     <div class="col-md-12">
+                         <div class="card card-background-blue margin-bottom-10">
+                           <div class="card-content">
+                              <div class="card-body select-card-design">
+                                 <h4 class="select-title white">Worker</h4>
+                                  <select name="Category" class="form-control width-30-percent">
+                                    <option selected>Pourashava/Union/Area</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                  <select name="service" class="form-control width-30-percent">
+                                    <option selected>Ward/Road</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                              </div>
+                           </div>
                         </div>
-                      </div>
-                      <div class="card-content">
-                        <div class="card-body p-0 pt-0 pb-1">
-                          <ul>
-                            <li>
-                              <strong>99%</strong>
-                              Job Success
-                            </li>
-                            <li>
-                              <strong>4.9 stars </strong>
-                              <i class="fa fa-star yellow darken-2"></i>
-                              <i class="fa fa-star yellow darken-2"></i>
-                              <i class="fa fa-star yellow darken-2"></i>
-                              <i class="fa fa-star yellow darken-2"></i>
-                              <i class="fa fa-star yellow darken-2"></i>
-                              </li><li>
-                                <strong>1022</strong> Hours Worked</li>
-                              <li>
-                                <strong>26</strong> Jobs</li>
-              
-                          </ul>
-                        </div>
-                      </div>
-              
-                    </div>
-                    <div class="card">
-                      <div class="card-header pb-0">
-                        <div class="card-title-wrap bar-primary">
-                          <div class="card-title">Other Details</div>
-                          <hr>
-                        </div>
-                      </div>
-                      <div class="card-content">
-                        <div class="card-body p-0 pt-0 pb-1">
-                          <ul>
-                            <li>
-                              <strong>Availability: </strong>
-                              10-30 hrs / week
-                            </li>
-                            <li>
-                              <strong>24 hours </strong> response time
-              
-                              </li><li>
-                                <strong>Languages: </strong> English/ Spanish</li>
-              
-              
-                          </ul>
-                        </div>
-                      </div>
-              
-                    </div>
-                    <div class="card">
-                      <div class="card-header">
-                        <h4 class="card-title">Project X</h4>          
-                        <div class="heading-elements">
-                          <ul class="list-inline d-block mb-0">
-                            <li>                
-                              <i class="ft-bar-chart font-large-1 danger"></i>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="card-content collapse show">
-                        <div class="card-body pt-0 pb-1">
-                          <h6 class="text-bold-600"> Task done:
-                            <span>4/10</span>
-                          </h6>
-                          <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
-                            <div class="progress-bar bg-gradient-x-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                          <div class="media d-flex">
-                            <div class="align-self-center">
-                              <h6 class="text-bold-600 mt-2"> Client:
-                                <span class="info">Xeon Inc.</span>
-                              </h6>
-                              <h6 class="text-bold-600 mt-1"> Deadline:
-                                <span class="blue-grey">June, 2018</span>
-                              </h6>
-                            </div>
-                            <div class="media-body text-right mt-2">
-                              <ul class="list-unstyled users-list">
-                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="John Doe" class="avatar avatar-sm pull-up">
-                                  <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-19.png" alt="Avatar">
-                                </li>
-                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Katherine Nichols" class="avatar avatar-sm pull-up">
-                                  <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-18.png" alt="Avatar">
-                                </li>
-                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Joseph Weaver" class="avatar avatar-sm pull-up">
-                                  <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-17.png" alt="Avatar">
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-              
-                        </div>
-                      </div>
-                    </div>
+                     </div>
                   </div>
-                <div class="col-md-8">
-                    <!--Project Timeline div starts-->
-                    <div id="timeline">
-                      <div class="card">
-                        <div class="card-header">
-                          <div class="card-title-wrap bar-primary">
-                            <div class="card-title">Project Timeline</div>
-                          </div>
+                  <!-- select option row end -->
+
+                  <div class="row">
+                     <div class="col-12">
+                        <div class="card">
+                           <div class="card-head">
+                              <div class="card-header">
+                                 <h4 class="card-title">Customer</h4>
+                                 <div class="heading-elements visible">
+                                    <ul class="list-inline mb-0">
+                                        <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                        <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                    </ul>
+                                </div>
+                              </div>
+                           </div>
+                           <div class="card-content">
+                              <div class="card-body">
+                                 <!-- Task List table -->
+                                 <div class="table-responsive">
+                                    <table id="users-contacts" class="table table-white-space table-bordered table-striped table-sm row-grouping display no-wrap icheck table-middle">
+                                       <thead>
+                                          <tr>
+                                             <th>No.</th>
+                                             <th>Image</th>
+                                             <th>Username</th>
+                                             <th>Full Name</th>
+                                             <th>Mobile</th>
+                                             <th>Email</th>
+                                             <th>Active Order</th>
+                                             <th>Running Order</th>
+                                             <th>Completed Order</th>
+                                             <th>Canceled Order</th>
+                                             <th>Sign Up Date</th>
+                                             <th>Sarvice Categories</th>
+                                             <th>Srvice Area</th>
+                                             <th>Total income</th>
+                                             <th>Total Paid</th>
+                                             <th>Total Due</th>
+                                             <th>Actions</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td class="text-center"> 01</td>
+                                             <td class="text-center">
+                                                <img src="../assets/images/area_controller/worker/1.png" width="60" alt="">
+                                             </td>
+                                             <td class="text-center">
+                                                smith455
+                                             </td>
+                                             <td class="text-center">
+                                                Smith chomok
+                                             </td>
+                                             <td class="text-center">
+                                                018009900
+                                             </td>
+                                             <td class="text-center">
+                                                smithchomok@gmail.com
+                                             </td>
+                                             <td class="text-center">
+                                                45
+                                             </td>
+                                             <td class="text-center">
+                                                7
+                                             </td>
+                                             <td class="text-center">
+                                                5
+                                             </td>
+                                             <td class="text-center">
+                                                6
+                                             </td>
+                                             <td class="text-center">
+                                                17/03/2023
+                                             </td>
+                                             <td class="text-center">
+                                                Electricity
+                                             </td>
+                                             <td class="text-center">
+                                                Sonagazi
+                                             </td>
+                                             <td class="text-center">
+                                                3000
+                                             </td>
+                                             <td class="text-center">
+                                                2500
+                                             </td>
+                                             <td class="text-center">
+                                                2000
+                                             </td>
+                                             <td class="text-center">
+                                                <span class="dropdown">
+                                                   <a href="#" data-toggle="modal" data-target="#edit" class="btn btn-info">
+                                                      <i class="ft-edit-2"></i>
+                                                      Edit Profile
+                                                   </a>
+                                                   <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                      <i class="ft-more-vertical"></i>
+                                                   </button>
+
+                                                   <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
+                                                      <a href="#" class="dropdown-item btn btn-primary">
+                                                         <i class="ft-check-circle"></i>
+                                                         Active
+                                                      </a>
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-disc"></i>
+                                                         Disable
+                                                      </a>
+                                                      <a href="#" class="dropdown-item deleted-click">
+                                                         <i class="ft-trash-2"></i>
+                                                         Soft Delete
+                                                      </a>
+                                                   </span>
+                                                </span>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="text-center"> 02</td>
+                                             <td class="text-center">
+                                                <img src="../assets/images/area_controller/worker/2.png" width="60" alt="">
+                                             </td>
+                                             <td class="text-center">
+                                                smith455
+                                             </td>
+                                             <td class="text-center">
+                                                Smith chomok
+                                             </td>
+                                             <td class="text-center">
+                                                018009900
+                                             </td>
+                                             <td class="text-center">
+                                                smithchomok@gmail.com
+                                             </td>
+                                             <td class="text-center">
+                                                45
+                                             </td>
+                                             <td class="text-center">
+                                                7
+                                             </td>
+                                             <td class="text-center">
+                                                5
+                                             </td>
+                                             <td class="text-center">
+                                                6
+                                             </td>
+                                             <td class="text-center">
+                                                17/03/2023
+                                             </td>
+                                             <td class="text-center">
+                                                Electricity
+                                             </td>
+                                             <td class="text-center">
+                                                Sonagazi
+                                             </td>
+                                             <td class="text-center">
+                                                3000
+                                             </td>
+                                             <td class="text-center">
+                                                2500
+                                             </td>
+                                             <td class="text-center">
+                                                2000
+                                             </td>
+                                             <td class="text-center">
+                                                <span class="dropdown">
+                                                   <a href="#" data-toggle="modal" data-target="#edit" class="btn btn-info">
+                                                      <i class="ft-edit-2"></i>
+                                                      Edit Profile
+                                                   </a>
+                                                   <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                      <i class="ft-more-vertical"></i>
+                                                   </button>
+
+                                                   <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-check-circle"></i>
+                                                         Active
+                                                      </a>
+                                                      <a href="#" class="dropdown-item btn btn-danger">
+                                                         <i class="ft-disc"></i>
+                                                         Disable
+                                                      </a>
+                                                      <a href="#" class="dropdown-item deleted-click">
+                                                         <i class="ft-trash-2"></i>
+                                                         Soft Delete
+                                                      </a>
+                                                   </span>
+                                                </span>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="text-center"> 03</td>
+                                             <td class="text-center">
+                                                <img src="../assets/images/area_controller/worker/3.png" width="60" alt="">
+                                             </td>
+                                             <td class="text-center">
+                                                smith455
+                                             </td>
+                                             <td class="text-center">
+                                                Smith chomok
+                                             </td>
+                                             <td class="text-center">
+                                                018009900
+                                             </td>
+                                             <td class="text-center">
+                                                smithchomok@gmail.com
+                                             </td>
+                                             <td class="text-center">
+                                                45
+                                             </td>
+                                             <td class="text-center">
+                                                7
+                                             </td>
+                                             <td class="text-center">
+                                                5
+                                             </td>
+                                             <td class="text-center">
+                                                6
+                                             </td>
+                                             <td class="text-center">
+                                                17/03/2023
+                                             </td>
+                                             <td class="text-center">
+                                                Electricity
+                                             </td>
+                                             <td class="text-center">
+                                                Sonagazi
+                                             </td>
+                                             <td class="text-center">
+                                                3000
+                                             </td>
+                                             <td class="text-center">
+                                                2500
+                                             </td>
+                                             <td class="text-center">
+                                                2000
+                                             </td>
+                                             <td class="text-center">
+                                                <span class="dropdown">
+                                                   <a href="#" data-toggle="modal" data-target="#edit" class="btn btn-info">
+                                                      <i class="ft-edit-2"></i>
+                                                      Edit Profile
+                                                   </a>
+                                                   <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                      <i class="ft-more-vertical"></i>
+                                                   </button>
+
+                                                   <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
+                                                      <a href="#" class="dropdown-item btn btn-primary">
+                                                         <i class="ft-check-circle"></i>
+                                                         Active
+                                                      </a>
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-disc"></i>
+                                                         Disable
+                                                      </a>
+                                                      <a href="#" class="dropdown-item deleted-click">
+                                                         <i class="ft-trash-2"></i>
+                                                         Soft Delete
+                                                      </a>
+                                                   </span>
+                                                </span>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                  
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                        <div class="card-body">
-                          <div class="card-block">
-                            <div class="timeline">
-                              <h4>Project ABC</h4>
-                              <hr>
-                              <ul class="list-unstyled base-timeline activity-timeline mt-3">
-              
-                                <li>
-                                  <div class="timeline-icon bg-primary">
-                                    <i class="ft-monitor font-medium-1"></i>
-                                  </div>
-                                  <div class="act-time">Feb, 2018</div>
-                                  <div class="base-timeline-info">
-                                    <a href="#" class="text-primary text-uppercase line-height-2">Development</a>
-                                    <span class="d-block">Functionality development for dashboard, login page and user profile page are in-progress. </span>
-                                  </div>
-                                  <small class="text-muted">
-                                    15 days ago
-                                  </small>
-                                  <ul class="base-timeline-sub list-unstyled users-list m-0">
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="John Doe" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-14.png" alt="Avatar">
-                                    </li>
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Katherine Nichols" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-13.png" alt="Avatar">
-                                    </li>
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Joseph Weaver" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-12.png" alt="Avatar">
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <div class="timeline-icon bg-info">
-                                    <i class="ft-feather font-medium-1"></i>
-                                  </div>
-                                  <div class="act-time">Sep, 2017</div>
-                                  <div class="base-timeline-info">
-                                    <a href="#" class="text-info text-uppercase  line-height-2">Design</a>
-                                    <span class="d-block">Design for dashboard, login page and user profile page completed.</span>
-                                  </div>
-                                  <small class="text-muted">
-                                    15 days ago
-                                  </small>
-                                  <ul class="base-timeline-sub list-unstyled users-list m-0">
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="John Doe" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-16.png" alt="Avatar">
-                                    </li>
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Katherine Nichols" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-15.png" alt="Avatar">
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
-              
-                              <br>
-              
-                              <h4>Project X</h4>
-                              <hr>
-                              <ul class="list-unstyled base-timeline activity-timeline mt-3">
-                                <li>
-                                  <div class="timeline-icon bg-danger">
-                                    <i class="ft-users font-medium-1"></i>
-                                  </div>
-                                  <div class="act-time">July, 2019</div>
-                                  <div class="base-timeline-info">
-                                    <a href="#" class="text-danger text-uppercase  line-height-2">Implementation</a>
-                                    <span class="d-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed odio risus.</span>
-                                  </div>
-                                  <small class="text-muted">
-                                    15 days ago
-                                  </small>
-                                  <ul class="base-timeline-sub list-unstyled users-list m-0">
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="John Doe" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-13.png" alt="Avatar">
-                                    </li>
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Katherine Nichols" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-17.png" alt="Avatar">
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <div class="timeline-icon bg-primary">
-                                    <i class="ft-monitor font-medium-1"></i>
-                                  </div>
-                                  <div class="act-time">Feb, 2018</div>
-                                  <div class="base-timeline-info">
-                                    <a href="#" class="text-primary text-uppercase line-height-2">Development</a>
-                                    <span class="d-block">Integer sit amet dolor elit. Suspendisse ac neque in lacus venenatis convallis. Sed eu lacus odio</span>
-                                  </div>
-                                  <small class="text-muted">
-                                    15 days ago
-                                  </small>
-                                  <ul class="base-timeline-sub list-unstyled users-list m-0">
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="John Doe" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-14.png" alt="Avatar">
-                                    </li>
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Katherine Nichols" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-13.png" alt="Avatar">
-                                    </li>
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Joseph Weaver" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-12.png" alt="Avatar">
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
-                              <br>
-                              <h4>Project Y</h4>
-                              <hr>
-                              <ul class="list-unstyled base-timeline activity-timeline mt-3">
-                                <li>
-                                  <div class="timeline-icon bg-danger">
-                                    <i class="ft-users font-medium-1"></i>
-                                  </div>
-                                  <div class="act-time">July, 2019</div>
-                                  <div class="base-timeline-info">
-                                    <a href="#" class="text-danger text-uppercase line-height-2">Implementation</a>
-                                    <span class="d-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed odio risus.</span>
-                                  </div>
-                                  <small class="text-muted">
-                                    15 days ago
-                                  </small>
-                                  <ul class="base-timeline-sub list-unstyled users-list m-0">
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="John Doe" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-13.png" alt="Avatar">
-                                    </li>
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Katherine Nichols" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-17.png" alt="Avatar">
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <div class="timeline-icon bg-primary">
-                                    <i class="ft-monitor font-medium-1"></i>
-                                  </div>
-                                  <div class="act-time">Feb, 2018</div>
-                                  <div class="base-timeline-info">
-                                    <a href="#" class="text-primary text-uppercase line-height-2">Development</a>
-                                    <span class="d-block">Integer sit amet dolor elit. Suspendisse ac neque in lacus venenatis convallis. Sed eu lacus odio</span>
-                                  </div>
-                                  <small class="text-muted">
-                                    15 days ago
-                                  </small>
-                                  <ul class="base-timeline-sub list-unstyled users-list m-0">
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="John Doe" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-14.png" alt="Avatar">
-                                    </li>
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Katherine Nichols" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-13.png" alt="Avatar">
-                                    </li>
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Joseph Weaver" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-12.png" alt="Avatar">
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <div class="timeline-icon bg-info">
-                                    <i class="ft-feather font-medium-1"></i>
-                                  </div>
-                                  <div class="act-time">Sep, 2017</div>
-                                  <div class="base-timeline-info">
-                                    <a href="#" class="text-info text-uppercase line-height-2">Design</a>
-                                    <span class="d-block">Suspendisse ac neque in lacus venenatis convallis. Sed eu lacus odio</span>
-                                  </div>
-                                  <small class="text-muted">
-                                    15 days ago
-                                  </small>
-                                  <ul class="base-timeline-sub list-unstyled users-list m-0">
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="John Doe" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-16.png" alt="Avatar">
-                                    </li>
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Katherine Nichols" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-15.png" alt="Avatar">
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <div class="timeline-icon bg-warning">
-                                    <i class="ft-activity font-medium-1 "></i>
-                                  </div>
-                                  <div class="act-time ">Dec, 2016</div>
-                                  <div class="base-timeline-info">
-                                    <a href="#" class="text-warning text-uppercase line-height-2">Analysis</a>
-                                    <span class="d-block">Integer sit amet venenatis convallis. Sed eu lacus odio</span>
-                                  </div>
-                                  <small class="text-muted">
-                                    15 days ago
-                                  </small>
-                                  <ul class="base-timeline-sub list-unstyled users-list m-0">
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="John Doe" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-19.png" alt="Avatar">
-                                    </li>
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Katherine Nichols" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-18.png" alt="Avatar">
-                                    </li>
-                                    <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Joseph Weaver" class="avatar avatar-sm pull-up">
-                                      <img class="media-object rounded-circle" src="../assets/images/portrait/small/avatar-s-17.png" alt="Avatar">
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
+                     </div>
+                  </div>
+               </section>
+               <!--/ Zero configuration table -->
+               <!-- Edit Model start -->
+               <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLabel">
+                              Edit Profile
+                           </h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                           </button>
                         </div>
-                      </div>
-                    </div>
-                    <!--Project Timeline div ends-->
+
+                        <div class="modal-body">
+                           <form action="#" method="POST">
+                              <div class="form-group">
+
+                                 <img src="../assets/images/area_controller/customer/avatar-s-11.png" width="100" alt="" id="blah">
+                                 <input type="file" name="image" class="form-control" value="04" id="image" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+                              </div>
+                              <div class="form-group">
+                                 <label for="username" class="col-form-label">Username</label>
+                                 <input type="text" name="username" class="form-control" value="smith455" id="username">
+                              </div>
+                              <div class="form-group">
+                                 <label for="name" class="col-form-label">Full Name</label>
+                                 <input type="text" name="name" class="form-control" value="smith chomok" id="name">
+                              </div>
+                              <div class="form-group">
+                                 <label for="mobile" class="col-form-label">Mobile</label>
+                                 <input type="text" name="mobile" class="form-control" value="018990099" id="mobile">
+                              </div>
+                              <div class="form-group">
+                                 <label for="email" class="col-form-label">Email</label>
+                                 <input type="text" name="email" class="form-control" value="tazuddin34" id="email">
+                              </div>
+                              <div class="form-group">
+                                 <label for="service_area" class="col-form-label">Service Area</label>
+                                 <input type="text" name="service_area" class="form-control" value="Sonagazi" id="service_area">
+                              </div>
+                              <div class="form-group">
+                                 <label for="service_category" class="col-form-label">Service Category</label>
+                                 <input type="text" name="service_category" class="form-control" value="Electricity" id="service_category">
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                 <button type="submit" class="btn btn-primary">Update</button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
                   </div>
                </div>
-               <!-- // Minimal statistics section end -->
+               <!-- Edit Model end -->
             </div>
+            <!-- container-fluid end -->
          </div>
       </div>
    </div>
