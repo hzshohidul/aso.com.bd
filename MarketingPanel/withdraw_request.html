@@ -459,79 +459,133 @@
       <div class="content-wrapper">
          <div class="content-header row">
             <div class="content-body  container-fluid">
-               <div class="row">
-                  <div class="col-lg-12">
-                     <div class="card">
-                        <div class="card-header">
-                        </div>
-                        <div class="card-body">
-                           <form id="main-form" enctype="multipart/form-data">
-                              <div class="row">
-                                 <div class="col-md-6 col-xl-6">
-                                    <input class="user_id" type="hidden" value="39">
-                                    <label>Fullname</label>
-                                    <input value="Edd Stoltenberg" required type="text" name="full_name"
-                                       class="form-control full_name">
-                                    <label>Username</label>
-                                    <input value="zhalvorson" required type="text" name="user_name"
-                                       class="form-control user_name">
-                                    <label>Phone</label>
-                                    <input value="017990252478" required type="text" name="phone"
-                                       class="form-control phone">
-                                    <label>Password</label>
-                                    <input value="" required type="text" name="password" class="form-control password">
-                                 </div>
-                                 <div class="col-md-6 col-xl-6">
-                                    <label for="basic-select">Gender</label>
-                                    <select name="gender" class="form-control gender" id="gender">
-                                       <option selected value="male">Male</option>
-                                       <option value="female">Female</option>
-                                    </select>
-                                    <label>Chose district (Feni | ফেনী)</label>
-                                    <select name="district_id" class="form-control " id="district-id">
-                                       <option id="districtId" value="1">Feni | ফেনী</option>
-                                       <option id="districtId" value="2">Cumilla</option>
-                                       <option id="districtId" value="3">District-3</option>
-                                       <option id="districtId" value="4">District-4</option>
-                                       <option id="districtId" value="5">District-5</option>
-                                       <option id="districtId" value="6">District-6</option>
-                                       <option id="districtId" value="7">District-7</option>
-                                       <option id="districtId" value="8">District-8</option>
-                                       <option id="districtId" value="9">District-9</option>
-                                       <option id="districtId" value="10">District-10</option>
-                                       <option id="districtId" value="11">District-11</option>
-                                       <option id="districtId" value="12">District-12</option>
-                                       <option id="districtId" value="13">District-13</option>
-                                       <option id="districtId" value="14">District-14</option>
-                                       <option id="districtId" value="15">District-15</option>
-                                       <option id="districtId" value="16">District-16</option>
-                                       <option id="districtId" value="17">District-17</option>
-                                       <option id="districtId" value="18">District-18</option>
-                                       <option id="districtId" value="19">District-19</option>
-                                       <option id="districtId" value="20">District-20</option>
-                                       <option id="districtId" value="21">District-21</option>
-                                       <option id="districtId" value="22">District-22</option>
-                                       <option id="districtId" value="23">District-23</option>
-                                       <option id="districtId" value="24">District-24</option>
-                                       <option id="districtId" value="25">District-25</option>
-                                    </select>
-                                    <label>Chose upazila (Feni Sadar | ফেনী সদর)</label>
-                                    <select name="upazila_id" class="form-control upazila_id" id="upazila-id">
-                                       <option selected disabled value="" id="upazila-loader">
-                                          <span class="badge badge-warning mb-1">Loading ...</span>
-                                       </option>
-                                       <!-- Insert by ajax -->
-                                    </select>
-                                 </div>
-                                 <br>
-                                 <input type="hidden" name="page">
-                                 <button type="submit" class="btn btn-primary mt-1 btn-block waves-effect waves-light mb-1 update-btn">Update</button>
+               <!-- Minimal statistics section start -->
+               <section id="minimal-statistics">
+                  <!-- select option row -->
+                  <div class="row mt-1">
+                     <div class="col-md-12">
+                        <div class="card card-background-blue">
+                           <div class="card-content">
+                              <div class="card-body select-card-design">
+                                 <select name="pourashava" class="form-control width-20-percent">
+                                    <option selected>Select District</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                 </select>
+                                 <select name="ward" class="form-control width-20-percent">
+                                    <option selected>Upazila</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                 </select>
+                                 <select name="month" class="form-control width-20-percent">
+                                    <option value=''>--Select Month--</option>
+                                    <option selected value='1'>Janaury</option>
+                                    <option value='2'>February</option>
+                                    <option value='3'>March</option>
+                                    <option value='4'>April</option>
+                                    <option value='5'>May</option>
+                                    <option value='6'>June</option>
+                                    <option value='7'>July</option>
+                                    <option value='8'>August</option>
+                                    <option value='9'>September</option>
+                                    <option value='10'>October</option>
+                                    <option value='11'>November</option>
+                                    <option value='12'>December</option>
+                                 </select>
+                                 <select name="year" class="form-control width-20-percent">
+                                    <option value=''>--Select Year--</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2024">2024</option>
+                                    <option selected value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                 </select>
                               </div>
-                           </form>
+                           </div>
                         </div>
                      </div>
                   </div>
-               </div><!--End Row-->
+                  <!-- select option row end -->
+                  <div class="row">
+                     <div class="col-12">
+                        <div class="card">
+                           <div class="card-head">
+                              <div class="card-header">
+                                 <h4 class="card-title">Marketer Table</h4>
+                                 <div class="heading-elements visible">
+                                    <ul class="list-inline mb-0">
+                                       <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                       <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                       <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-content">
+                              <div class="card-body">
+                                 <!-- Task List table -->
+                                 <div class="table-responsive">
+                                    <table id="users-contacts"
+                                       class="table table-white-space table-bordered table-striped table-sm row-grouping display no-wrap icheck table-middle">
+                                       <thead>
+                                          <tr>
+                                             <th>No.</th>
+                                             <th>Request Date</th>
+                                             <th>Username</th>
+                                             <th>Amount</th>
+                                             <th>Via</th>
+                                             <th>A/c Number</th>
+                                             <th>Full Details</th>
+                                             <th>Action</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td class="text-center"> 01</td>
+                                             <td class="text-center">
+                                                20/03/2023
+                                             </td> marketer_list_details <td class="text-center">
+                                                17/03/2023
+                                             </td>
+                                             <td class="text-center">
+                                                018009900
+                                             </td>
+                                             <td class="text-center">
+                                                smithchomok@gmail.com
+                                             </td>
+                                             <td class="text-center">
+                                                <div class="custom-control custom-switch">
+                                                   <input type="checkbox" class="custom-control-input"
+                                                      id="customSwitch1" checked="">
+
+                                                   <label class="custom-control-label"
+                                                      for="customSwitch1">Active</label>
+                                                </div>
+                                             </td>
+                                             <td class="text-center">
+                                                <a href="marketer_list_details.html" class="btn btn-primary">
+                                                   <i class="ft-eye"></i>
+                                                   View
+                                                </a>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
             </div>
          </div>
       </div>
