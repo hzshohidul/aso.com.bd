@@ -458,136 +458,233 @@
    <div class="app-content content">
       <div class="content-wrapper">
          <div class="content-header row">
-            <div class="content-body  container-fluid">
-               <!-- Minimal statistics section start -->
-               <section id="minimal-statistics">
-                  <!-- select option row -->
-                  <div class="row mt-1">
-                     <div class="col-md-12">
-                        <div class="card card-background-blue">
-                           <div class="card-content">
-                              <div class="card-body select-card-design">
-                                 <select name="pourashava" class="form-control width-20-percent">
-                                    <option selected>Select District</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                 </select>
-                                 <select name="ward" class="form-control width-20-percent">
-                                    <option selected>Upazila</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                 </select>
-                                 <select name="month" class="form-control width-20-percent">
-                                    <option value=''>--Select Month--</option>
-                                    <option selected value='1'>Janaury</option>
-                                    <option value='2'>February</option>
-                                    <option value='3'>March</option>
-                                    <option value='4'>April</option>
-                                    <option value='5'>May</option>
-                                    <option value='6'>June</option>
-                                    <option value='7'>July</option>
-                                    <option value='8'>August</option>
-                                    <option value='9'>September</option>
-                                    <option value='10'>October</option>
-                                    <option value='11'>November</option>
-                                    <option value='12'>December</option>
-                                 </select>
-                                 <select name="year" class="form-control width-20-percent">
-                                    <option value=''>--Select Year--</option>
-                                    <option value="2030">2030</option>
-                                    <option value="2029">2029</option>
-                                    <option value="2028">2028</option>
-                                    <option value="2027">2027</option>
-                                    <option value="2026">2026</option>
-                                    <option value="2025">2025</option>
-                                    <option value="2024">2024</option>
-                                    <option selected value="2023">2023</option>
-                                    <option value="2022">2022</option>
-                                    <option value="2021">2021</option>
-                                    <option value="2020">2020</option>
-                                 </select>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- select option row end -->
+            <div class="content-body">
+               <div class="container-fluid">
+                  <!-- Breadcrumb-->
                   <div class="row">
-                     <div class="col-12">
+                     <div class="col-md-12">
+                        <div class="float-right mb-1">
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#new_create">
+                           <i class="fa fa-plus"></i> 
+                           Add new Video
+                        </button>
+                     </div>
+                     </div>
+                  </div>
+                  <!-- End Breadcrumb-->
+                  <div class="row">
+                     <div class="col-lg-12">
                         <div class="card">
-                           <div class="card-head">
-                              <div class="card-header">
-                                 <h4 class="card-title">Withdraw Request</h4>
-                                 <div class="heading-elements visible">
-                                    <ul class="list-inline mb-0">
-                                       <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
-                                       <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
-                                       <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="card-content">
-                              <div class="card-body">
-                                 <!-- Task List table -->
-                                 <div class="table-responsive">
-                                    <table id="users-contacts"
-                                       class="table table-white-space table-bordered table-striped table-sm row-grouping display no-wrap icheck table-middle">
-                                       <thead>
-                                          <tr>
-                                             <th>No.</th>
-                                             <th>Request Date</th>
-                                             <th>Username</th>
-                                             <th>Amount</th>
-                                             <th>Via</th>
-                                             <th>A/c Number</th>
-                                             <th>Full Details</th>
-                                             <th>Action</th>
-                                          </tr>
-                                       </thead>
-                                       <tbody>
-                                          <tr>
-                                             <td class="text-center"> 01</td>
-                                             <td class="text-center">
-                                                20/03/2023
-                                             </td>
-                                             <td class="text-center">
-                                                smithchomok
-                                             </td>
-                                             <td class="text-center">
-                                                1000
-                                             </td>
-                                             <td class="text-center">
-                                                Bkash / Bank
-                                             </td>
-                                             <td class="text-center">
-                                                01867307522 / 0086752252
-                                             </td>
-                                             <td class="text-center">
-                                                Personal / DBBL Feni Branch
-                                             </td>
-                                             <td>
-                                                <a href="#" class="btn btn-primary">Complete</a>
+                           <div class="card-body">
+                              <div class="row">
+                                 <div class="col-lg-4">
+                                    <div class="card">
+                                       <iframe width="100%" height="315" src="https://www.youtube.com/embed/5yhGh80T2Xg"
+                                          title="YouTube video player" frameborder="0"
+                                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                          allowfullscreen></iframe>
+                                       <div class="card-body">
+                                          <h5 class="card-title text-dark">nothing importnt</h5>
+                                          <span class="video_for">Customer</span>
+                                       </div>
+                                       <ul class="list-group list-group-flush list shadow-none">
+                                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                                             Status <span class="badge badge-danger badge-pill"> Inactive </span></li>
+                                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                                             Created at <span class="badge badge-dark badge-pill">01/07/2022
+                                                02-07-54</span></li>
+                                       </ul>
+                                       <div class="card-body">
+                                          <input type="hidden" class="hidden-url"
+                                             value="&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/5yhGh80T2Xg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;">
+                                          <input type="hidden" class="hidden-id" value="6">
+                                          <input type="hidden" class="hidden-title" value="nothing importnt">
 
-                                                <a href="#" class="btn btn-danger">Cancel</a>
-                                             </td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
+                                          <input type="hidden" class="hidden-video_for" value="Customer">
+
+                                          <a href="javascript:void();" class="card-link edit-button" data-toggle="modal" data-target="#edit">Edit Now</a>
+                                          <a href="javascript:void();" id="6"
+                                             class="card-link text-danger delete-button">Delete</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-4">
+                                    <div class="card">
+                                       <iframe width="100%" height="300"
+                                          src="https://www.youtube.com/embed/zYjSxwGM4JE?list=RDAHxqKS5djms"
+                                          title="YouTube video player" frameborder="0"
+                                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                          allowfullscreen></iframe>
+                                       <div class="card-body">
+                                          <h5 class="card-title text-dark">some thing different</h5>
+                                          <span class="video_for">Worker</span>
+                                       </div>
+                                       <ul class="list-group list-group-flush list shadow-none">
+                                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                                             Status <span class="badge badge-info badge-pill"> Active </span></li>
+                                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                                             Created at <span class="badge badge-dark badge-pill">31/07/2021
+                                                12-07-32</span></li>
+                                       </ul>
+                                       <div class="card-body">
+                                          <input type="hidden" class="hidden-url"
+                                             value="&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;https://www.youtube.com/embed/zYjSxwGM4JE?list=RDAHxqKS5djms&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;">
+                                          <input type="hidden" class="hidden-id" value="2">
+                                          <input type="hidden" class="hidden-title" value="some thing different">
+
+                                          <input type="hidden" class="hidden-video_for" value="Worker">
+
+                                          <a href="javascript:void();" class="card-link edit-button" data-toggle="modal" data-target="#edit">Edit Now</a>
+                                          <a href="javascript:void();" id="2"
+                                             class="card-link text-danger delete-button">Delete</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-4">
+                                    <div class="card">
+                                       <iframe width="100%" height="315" src="https://www.youtube.com/embed/5yhGh80T2Xg"
+                                          title="YouTube video player" frameborder="0"
+                                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                          allowfullscreen></iframe>
+                                       <div class="card-body">
+                                          <h5 class="card-title text-dark">logo design for your freelancing in fiver
+                                             upwork and other platform</h5>
+                                          <span class="video_for">Marketer</span>
+                                       </div>
+                                       <ul class="list-group list-group-flush list shadow-none">
+                                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                                             Status <span class="badge badge-info badge-pill"> Active </span></li>
+                                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                                             Created at <span class="badge badge-dark badge-pill">31/07/2021
+                                                12-07-52</span></li>
+                                       </ul>
+                                       <div class="card-body">
+                                          <input type="hidden" class="hidden-url"
+                                             value="&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/5yhGh80T2Xg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;">
+                                          <input type="hidden" class="hidden-id" value="1">
+                                          <input type="hidden" class="hidden-title"
+                                             value="logo design for your freelancing in fiver upwork and other platform">
+
+                                          <input type="hidden" class="hidden-video_for" value="Marketer">
+
+                                          <a href="javascript:void();" class="card-link edit-button" data-toggle="modal" data-target="#edit">Edit Now</a>
+                                          <a href="javascript:void();" id="1"
+                                             class="card-link text-danger delete-button">Delete</a>
+                                       </div>
+                                    </div>
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                  </div>
-               </section>
+                  </div><!--End Row-->
+               </div>
+               <!-- End container-fluid-->
             </div>
          </div>
       </div>
    </div>
    <!-- END: Main Content end-->
+
+   <!-- Add Model Start -->
+   <div class="modal fade" id="new_create" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">
+                  Add a new video
+               </h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+               </button>
+            </div>
+
+            <div class="modal-body">
+               <form action="#" id="add-new-from">
+                  <input type="hidden" id="ads-id">
+                  <div class="input-group input-group-lg mb-3">
+                     <div class="input-group-prepend">
+                        <span class="input-group-text">Video For</span>
+                     </div>
+                     <select class="form-control" name="video_for" id="training_video_for">
+                        <option value="Customer" selected="">Customer</option>
+                        <option value="Worker">Worker</option>
+                        <option value="Marketer">Marketer</option>
+                     </select>
+                  </div>
+                  <div class="input-group input-group-lg mb-3">
+                     <div class="input-group-prepend">
+                        <span class="input-group-text">title</span>
+                     </div>
+                     <input type="text" class="form-control" name="title" id="title">
+                  </div>
+                  <div class="input-group input-group-lg mb-3">
+
+                     <textarea rows="4" class="form-control detail" id="detail"
+                        placeholder="youtube embedded code here...."></textarea>
+                  </div>
+
+                  <div class="modal-footer">
+                     <button type="submit" class="btn btn-primary">ADD NEW</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Add Model End -->
+
+      <!-- edit Model Start -->
+      <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                     Add a new video
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                  </button>
+               </div>
+   
+               <div class="modal-body">
+                  <form action="#" id="add-new-from">
+                     <input type="hidden" id="ads-id">
+                     <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text">Video For</span>
+                        </div>
+                        <select class="form-control" name="video_for" id="training_video_for">
+                           <option value="Customer" selected="">Customer</option>
+                           <option value="Worker">Worker</option>
+                           <option value="Marketer">Marketer</option>
+                        </select>
+                     </div>
+                     <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text">title</span>
+                        </div>
+                        <input type="text" class="form-control" name="title" id="title">
+                     </div>
+                     <div class="input-group input-group-lg mb-3">
+   
+                        <textarea rows="4" class="form-control detail" id="detail"
+                           placeholder="youtube embedded code here...."></textarea>
+                     </div>
+   
+                     <div class="modal-footer">
+                        <button type="reset" class="btn btn-danger mr-1">
+                           <i class="ft-x"></i> Clear
+                        </button>
+   
+                        <button type="submit" class="btn btn-primary">ADD NEW</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- edit Model End -->
 
    <!-- BEGIN: Customizer-->
    <div class="customizer border-left-blue-grey border-left-lighten-4 d-none d-xl-block">
