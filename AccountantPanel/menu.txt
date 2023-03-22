@@ -1,0 +1,17 @@
+Dashboard
+Earnings
+Expenses
+  Area Controller Exp.
+    Home
+    Total income by area
+    Payment report
+Marketing Fund
+  Overview
+  Company M. Fund Reserve
+     Home
+     Company Fund Reserve
+     Company Fund Exp.
+  Area's M. Fund Reserve
+     Home
+     Area's Fund Reserve
+     Area's Fund Exp.
