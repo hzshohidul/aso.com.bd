@@ -22,7 +22,6 @@
    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/tables/extensions/responsive.dataTables.min.css">
    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/forms/icheck/icheck.css">
    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/forms/icheck/custom.css">
-   <link rel="stylesheet" type="text/css" href="../assets/vendors/css/timeline/vertical-timeline.css">
    <!-- END: Vendor CSS-->
    <!-- BEGIN: Theme CSS-->
    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
@@ -35,8 +34,6 @@
    <link rel="stylesheet" type="text/css" href="../assets/css/core/colors/palette-gradient.min.css">
    <link rel="stylesheet" type="text/css" href="../assets/css/pages/chat-application.css">
    <link rel="stylesheet" type="text/css" href="../assets/css/pages/dashboard-analytics.min.css">
-   <link rel="stylesheet" type="text/css" href="../assets/css/pages/users.min.css">
-   <link rel="stylesheet" type="text/css" href="../assets/css/pages/timeline.min.css">
    <!-- END: Page CSS-->
    <!-- BEGIN: Font CSS-->
    <link rel="stylesheet" type="text/css" href="../assets/fonts/simple-line-icons/style.min.css">
@@ -84,9 +81,6 @@
                      </a>
                      <div class="dropdown-menu">
                         <div class="arrow_box">
-                           <a class="dropdown-item" href="new_buyers.html">
-                              <i class="ft-user"></i> New Buyer
-                           </a>
                            <a class="dropdown-item" href="email-application.html">
                               <i class="ft-user"></i> Email
                            </a>
@@ -390,7 +384,7 @@
                </a>
                <ul class="menu-content" style="">
                   <li class="has-sub is-shown">
-                     <a class="menu-item" href="#">Pending Order</a>
+                     <a class="menu-item" href="#">Active Order</a>
                      <ul class="menu-content" style="">
                         <li class=""><a class="menu-item" href="bid_order.html">Bid Order</a>
                         </li>
@@ -607,22 +601,57 @@
                   <!-- select option row start -->
                   <div class="row mt-1">
                      <div class="col-md-12">
-                        <div class="card card-background-blue margin-bottom-10">
+                         <div class="card card-background-blue margin-bottom-10">
                            <div class="card-content">
                               <div class="card-body select-card-design">
-                                 <h4 class="select-title white">Worker</h4>
-                                 <select name="Category" class="form-control width-30-percent">
-                                    <option selected>Pourashava/Union/Area</option>
+                                 <h4 class="select-title white">Running Order</h4>
+                                 <select name="month" class="form-control width-12-percent">
+                                    <option value=''>--Select Month--</option>
+                                    <option selected value='1'>Janaury</option>
+                                    <option value='2'>February</option>
+                                    <option value='3'>March</option>
+                                    <option value='4'>April</option>
+                                    <option value='5'>May</option>
+                                    <option value='6'>June</option>
+                                    <option value='7'>July</option>
+                                    <option value='8'>August</option>
+                                    <option value='9'>September</option>
+                                    <option value='10'>October</option>
+                                    <option value='11'>November</option>
+                                    <option value='12'>December</option>
+                                  </select>
+                                  <select name="year" class="form-control width-10-percent">
+                                    <option value=''>--Select Year--</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2024">2024</option>
+                                    <option selected value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                  </select>
+                                 <select name="area" class="form-control width-20-percent">
+                                    <option selected>Area</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
-                                 </select>
-                                 <select name="service" class="form-control width-30-percent">
-                                    <option selected>Ward/Road</option>
+                                  </select>
+                                  <select name="Category" class="form-control width-15-percent">
+                                    <option selected>Category</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
-                                 </select>
+                                  </select>
+                                  <select name="service" class="form-control width-15-percent">
+                                    <option selected>Service</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
                               </div>
                            </div>
                         </div>
@@ -635,39 +664,29 @@
                         <div class="card">
                            <div class="card-head">
                               <div class="card-header">
-                                 <h4 class="card-title">Worker</h4>
+                                 <h4 class="card-title">Running Order</h4>
                                  <div class="heading-elements visible">
                                     <ul class="list-inline mb-0">
-                                       <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
-                                       <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
-                                       <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                                        <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                                        <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
                                     </ul>
-                                 </div>
+                                </div>
                               </div>
                            </div>
                            <div class="card-content">
                               <div class="card-body">
                                  <!-- Task List table -->
                                  <div class="table-responsive">
-                                    <table id="users-contacts"
-                                       class="table table-white-space table-bordered table-striped table-sm row-grouping display no-wrap icheck table-middle">
+                                    <table id="users-contacts" class="table table-white-space table-bordered table-striped row-grouping display no-wrap icheck table-middle">
                                        <thead>
                                           <tr>
                                              <th>No.</th>
-                                             <th>Image</th>
-                                             <th>Username</th>
-                                             <th>Full Name</th>
-                                             <th>Mobile</th>
-                                             <th>Email</th>
-                                             <th>Pending Order</th>
-                                             <th>Running Order</th>
-                                             <th>Completed Order</th>
-                                             <th>Canceled Order</th>
-                                             <th>Sign Up Date</th>
-                                             <th>Service Categories</th>
-                                             <th>Service Area</th>
-                                             <th>Total income</th>
-                                             <th>Balance</th>
+                                             <th>Order Create Date</th>
+                                             <th>Order Number</th>
+                                             <th>Price</th>
+                                             <th>Customer Username</th>
+                                             <th>Worker Username</th>
                                              <th>Actions</th>
                                           </tr>
                                        </thead>
@@ -675,93 +694,125 @@
                                           <tr>
                                              <td class="text-center"> 01</td>
                                              <td class="text-center">
-                                                <img src="../assets/images/area_controller/worker/1.png" width="60"
-                                                   alt="">
+                                                20/03/2023
                                              </td>
                                              <td class="text-center">
-                                                smith455
+                                                334455
                                              </td>
                                              <td class="text-center">
-                                                Smith chomok
+                                                360
                                              </td>
                                              <td class="text-center">
-                                                018009900
+                                                smith_hasan2
                                              </td>
                                              <td class="text-center">
-                                                smithchomok@gmail.com
-                                             </td>
-                                             <td>
-                                                Bid : 55 <br>
-                                                Gig : 44 <br>
-                                                Service Order : 66
-                                             </td>
-                                             <td>
-                                                Bid : 22 <br>
-                                                Gig : 11 <br>
-                                                Service Order : 33
-                                             </td>
-                                             <td>
-                                                Bid : 88 <br>
-                                                Gig : 77 <br>
-                                                Service Order : 99
-                                             </td>
-                                             <td>
-                                                Bid : 23 <br>
-                                                Gig : 12 <br>
-                                                Service Order : 34
-                                             </td>
-                                             <td class="text-center">
-                                                17/03/2023
-                                             </td>
-                                             <td class="text-center">
-                                                Electricity
-                                             </td>
-                                             <td class="text-center">
-                                                Sonagazi
-                                             </td>
-                                             <td class="text-center">
-                                                3000
-                                             </td>
-                                             <td class="text-center">
-                                                3000
-                                                <a href="#" data-toggle="modal" data-target="#view_balance"
-                                                   class="btn btn-primary padding-5">
-                                                   <i class="ft-eye"></i>
-                                                </a>
+                                                tazuddin34
                                              </td>
                                              <td class="text-center">
                                                 <span class="dropdown">
-                                                   <a href="#" data-toggle="modal" data-target="#edit"
-                                                      class="btn btn-info">
-                                                      <i class="ft-edit-2"></i>
-                                                      Edit Profile
+                                                   <a href="#" data-toggle="modal" data-target="#view" class="btn btn-info">
+                                                      View
                                                    </a>
-                                                   <button id="btnSearchDrop12" type="button"
-                                                      class="btn btn-sm btn-icon btn-pure font-medium-2"
-                                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                   <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
                                                       <i class="ft-more-vertical"></i>
                                                    </button>
 
-                                                   <span aria-labelledby="btnSearchDrop12"
-                                                      class="dropdown-menu dropdown-menu-button">
-                                                      <a href="#" class="dropdown-item btn btn-primary">
-                                                         <i class="ft-check-circle"></i>
-                                                         Active
-                                                      </a>
+                                                   <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
                                                       <a href="#" class="dropdown-item">
-                                                         <i class="ft-disc"></i>
-                                                         Disable
+                                                         <i class="ft-check-circle"></i>
+                                                         Completed
                                                       </a>
                                                       <a href="#" class="dropdown-item deleted-click">
                                                          <i class="ft-trash-2"></i>
-                                                         Soft Delete
+                                                         Canceled
+                                                      </a>
+                                                   </span>
+                                                </span>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="text-center"> 02</td>
+                                             <td class="text-center">
+                                                20/03/2023
+                                             </td>
+                                             <td class="text-center">
+                                                334455
+                                             </td>
+                                             <td class="text-center">
+                                                360
+                                             </td>
+                                             <td class="text-center">
+                                                smith_hasan2
+                                             </td>
+                                             <td class="text-center">
+                                                tazuddin34
+                                             </td>
+                                             <td class="text-center">
+                                                <span class="dropdown">
+                                                   <a href="#" data-toggle="modal" data-target="#view" class="btn btn-info">
+                                                      View
+                                                   </a>
+                                                   <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                      <i class="ft-more-vertical"></i>
+                                                   </button>
+
+                                                   <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-check-circle"></i>
+                                                         Completed
+                                                      </a>
+                                                      <a href="#" class="dropdown-item deleted-click">
+                                                         <i class="ft-trash-2"></i>
+                                                         Canceled
+                                                      </a>
+                                                   </span>
+                                                </span>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="text-center"> 03</td>
+                                             <td class="text-center">
+                                                20/03/2023
+                                             </td>
+                                             <td class="text-center">
+                                                334455
+                                             </td>
+                                             <td class="text-center">
+                                                360
+                                             </td>
+                                             <td class="text-center">
+                                                smith_hasan2
+                                             </td>
+                                             <td class="text-center">
+                                                tazuddin34
+                                             </td>
+                                             <td class="text-center">
+                                                <span class="dropdown">
+                                                   <a href="#" data-toggle="modal" data-target="#view" class="btn btn-info">
+                                                      View
+                                                   </a>
+                                                   <button id="btnSearchDrop12" type="button" class="btn btn-sm btn-icon btn-pure font-medium-2" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                      <i class="ft-more-vertical"></i>
+                                                   </button>
+
+                                                   <span aria-labelledby="btnSearchDrop12" class="dropdown-menu dropdown-menu-button">
+                                                      <a href="#" class="dropdown-item">
+                                                         <i class="ft-check-circle"></i>
+                                                         Completed
+                                                      </a>
+                                                      <a href="#" class="dropdown-item deleted-click">
+                                                         <i class="ft-trash-2"></i>
+                                                         Canceled
                                                       </a>
                                                    </span>
                                                 </span>
                                              </td>
                                           </tr>
                                        </tbody>
-
+                  
                                     </table>
                                  </div>
                               </div>
@@ -771,79 +822,14 @@
                   </div>
                </section>
                <!--/ Zero configuration table -->
-               <!-- balance view Model start -->
-               <div class="modal fade" id="view_balance" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+               <!-- view Model start -->
+               <div class="modal fade" id="view" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
                   <div class="modal-dialog" role="document">
                      <div class="modal-content">
                         <div class="modal-header">
                            <h5 class="modal-title" id="exampleModalLabel">
-                              Reset Balance
-                           </h5>
-                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                           </button>
-                        </div>
-
-                        <div class="modal-body">
-                           <table class="table">
-                              <tr>
-                                 <td></td>
-                                 <td>
-                                    <div class="row">
-                                       <div class="col-md-12">
-                                          <div class="float-right">
-                                             <a href="#" class="btn btn-primary" title="এখান থেকে Area Controller কাস্টম ভাবে সরাসরি টাকা রিসিভ করে পেমেন্ট গেইটওয়ে এর মাধ্যমে টাকা পে করে ব্যালেন্স বাড়াই দিতে পারবে।">
-                                                <i class="fa fa-plus"></i> Add Balance
-                                             </a>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <th>Balance</th>
-                                 <td>1000</td>
-                              </tr>
-                              <tr>
-                                 <th>Total Earnings</th>
-                                 <td>5000</td>
-                              </tr>
-                              <tr>
-                                 <th>Total Earnings (April)</th>
-                                 <td>1000</td>
-                              </tr>
-                              <tr>
-                                 <th>Total Page Earnings (April)</th>
-                                 <td>100</td>
-                              </tr>
-                              <tr>
-                                 <th>Order & Bid Limit</th>
-                                 <td>20</td>
-                              </tr>
-                              <tr>
-                                 <th>Service Charge</th>
-                                 <td>100</td>
-                              </tr>
-                              <tr>
-                                 <th>Total Page Earnings</th>
-                                 <td>344</td>
-                              </tr>
-                           </table>
-
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- balance view Model end -->
-               <!-- Edit Model start -->
-               <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                     <div class="modal-content">
-                        <div class="modal-header">
-                           <h5 class="modal-title" id="exampleModalLabel">
-                              Edit Profile
+                              view Bid (Order Create Date: 2 Feb 2023)
                            </h5>
                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
@@ -853,49 +839,30 @@
                         <div class="modal-body">
                            <form action="#" method="POST">
                               <div class="form-group">
-
-                                 <img src="../assets/images/area_controller/customer/avatar-s-11.png" width="100" alt=""
-                                    id="blah">
-                                 <input type="file" name="image" class="form-control" value="04" id="image"
-                                    onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+                                 <label for="ordernumber" class="col-form-label">Order Number</label>
+                                 <input type="text" class="form-control" value="04" readonly id="ordernumber">
                               </div>
                               <div class="form-group">
-                                 <label for="username" class="col-form-label">Username</label>
-                                 <input type="text" name="username" class="form-control" value="smith455" id="username">
+                                 <label for="price" class="col-form-label">Price</label>
+                                 <input type="text" class="form-control" readonly value="435" id="price">
                               </div>
                               <div class="form-group">
-                                 <label for="name" class="col-form-label">Full Name</label>
-                                 <input type="text" name="name" class="form-control" value="smith chomok" id="name">
+                                 <label for="username" class="col-form-label">Customer Username</label>
+                                 <input type="text" class="form-control" readonly value="smith455" id="username">
                               </div>
                               <div class="form-group">
-                                 <label for="mobile" class="col-form-label">Mobile</label>
-                                 <input type="text" name="mobile" class="form-control" value="018990099" id="mobile">
-                              </div>
-                              <div class="form-group">
-                                 <label for="email" class="col-form-label">Email</label>
-                                 <input type="text" name="email" class="form-control" value="tazuddin34" id="email">
-                              </div>
-                              <div class="form-group">
-                                 <label for="service_category" class="col-form-label">Service Category</label>
-
-                                 <select class="form-control">
-                                    <option selected>Select Category</option>
-                                    <option value="1">Option 1</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                  </select>
+                                 <label for="bid" class="col-form-label">Customer Username</label>
+                                 <input type="text" class="form-control" readonly value="tazuddin34" id="bid">
                               </div>
                               <div class="modal-footer">
                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                                 <button type="submit" class="btn btn-primary">Update</button>
                               </div>
                            </form>
                         </div>
                      </div>
                   </div>
                </div>
-               <!-- Edit Model end -->
+               <!-- view Model end -->
             </div>
             <!-- container-fluid end -->
          </div>
@@ -983,9 +950,7 @@
          <span class="float-md-left d-block d-md-inline-block">2023 &copy; Copyright <a
                class="text-bold-800 grey darken-2" href="https://aso.com.bd" target="_blank">ASO</a></span>
          <ul class="list-inline float-md-right d-block d-md-inline-blockd-none d-lg-block mb-0">
-            <li class="list-inline-item">
-               <a class="my-1" href="support.html" target="_blank"> Support</a>
-            </li>
+            <li class="list-inline-item"><a class="my-1" href="#" target="_blank"> Support</a></li>
          </ul>
       </div>
    </footer>
