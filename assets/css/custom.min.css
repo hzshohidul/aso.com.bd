@@ -4287,6 +4287,96 @@ img.img-circle {
 .padding-5{
     padding: 5px !important;
 }
+.time{
+    text-align: center;
+}
+.time_count span{
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.time_count p{
+    float: left;
+}
+.start_message {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.stars {
+    display: inline-block;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label.star-1:before, label.star-2:before, label.star-3:before, label.star-4:before, label.star-5:before {
+    content: "\f005";
+    font-family: FontAwesome;
+    font-size: 2em;
+    color: #ccc;
+    display: inline-block;
+  }
+  
+  label.star-1:hover:before, label.star-2:hover:before, label.star-3:hover:before, label.star-4:hover:before, label.star-5:hover:before, label.star-1:hover ~ label.star-1:before, label.star-2:hover ~ label.star-2:before, label.star-3:hover ~ label.star-3:before, label.star-4:hover ~ label.star-4:before, label.star-5:hover ~ label.star-5:before {
+    color: #FFD700;
+  }
+
+
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+ .rating {
+     /* width: 208px;
+     height: 40px;
+     margin: 0 auto;
+     padding: 40px 50px;
+     border: 1px solid #ccc;
+     background: #f9f9f9; */
+     float: left;
+}
+ .rating label {
+     float: right;
+     position: relative;
+     width: 40px;
+     height: 40px;
+     cursor: pointer;
+}
+ .rating label:not(:first-of-type) {
+     padding-right: 2px;
+}
+ .rating label:before {
+     content: "\2605";
+     font-size: 42px;
+     color: #ccc;
+     line-height: 1;
+}
+ .rating input {
+     display: none;
+}
+ .rating input:checked ~ label:before, .rating:not(:checked) > label:hover:before, .rating:not(:checked) > label:hover ~ label:before {
+     color: #f9df4a;
+}
+
+.modal-title img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.modal-title{
+    color: #fff;
+}
 /* ------------------------------------------ */
             /* Design end */
 /* ------------------------------------------ */
