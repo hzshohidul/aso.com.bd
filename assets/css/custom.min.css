@@ -4377,6 +4377,76 @@ img.img-circle {
 .modal-title{
     color: #fff;
 }
+.location-size {
+    font-size: 40px;
+    margin-top: 10px;
+}
+.phone-design {
+    font-size: 19px;
+    padding: 7px;
+    border-radius: 50%;
+    float: right;
+}
+.form-contro {
+    width: 90%;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.stra-design{
+    color: #ffff00;
+}
+
+
+
+
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  
+  .star {
+    color: #FFD700;
+    margin-right: 5px;
+  }
+  
+  .num-ratings {
+    font-size: 1rem;
+    color: #888;
+    margin-left: 10px;
+  }
+  
+  .reviews {
+    display: none;
+  }
+  
+  .review-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .review-list li {
+    margin-bottom: 20px;
+  }
+  
+  .reviewer {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .rating {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .review-text {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
 /* ------------------------------------------ */
             /* Design end */
 /* ------------------------------------------ */
