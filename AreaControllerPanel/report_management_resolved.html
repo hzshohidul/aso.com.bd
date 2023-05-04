@@ -680,6 +680,7 @@
                                              <th>Resolved Date</th>
                                              <th>See Report</th>
                                              <th>See Order</th>
+                                             <th>Comment</th>
                                              <th>Actions</th>
                                           </tr>
                                        </thead>
@@ -717,87 +718,14 @@
                                                 </a>
                                              </td>
                                              <td class="text-center">
-                                                <a href="#" data-toggle="modal" data-target="#edit" class="btn btn-info">
-                                                   <i class="ft-edit-2"></i>
-                                                   Resolved
-                                                </a>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td class="text-center"> 02</td>
-                                             <td class="text-center">
-                                                smith455
-                                             </td>
-                                             <td class="text-center">
-                                                chomokhasan40
-                                             </td>
-                                             <td class="text-center">
-                                                665566
-                                             </td>
-                                             <td class="text-center">
-                                                17/03/2023
-                                             </td>
-                                             <td class="text-center">
-                                                01/04/2023
-                                             </td>
-                                             <td class="text-center">
-                                                09/04/2023
-                                             </td>
-                                             <td class="text-center">
-                                                <a href="#" data-toggle="modal" data-target="#reportview" class="btn btn-danger">
-                                                   <i class="ft-eye"></i>
-                                                   Report View
-                                                </a>
-                                             </td>
-                                             <td class="text-center">
-                                                <a href="#" data-toggle="modal" data-target="#orderview" class="btn btn-primary">
-                                                   <i class="ft-eye"></i>
-                                                   Order View
+                                                <a href="#" data-toggle="modal" data-target="#comment" class="btn btn-info">
+                                                   <i class="fa fa-eye" aria-hidden="true"></i>
                                                 </a>
                                              </td>
                                              <td class="text-center">
                                                 <a href="#" data-toggle="modal" data-target="#edit" class="btn btn-info">
                                                    <i class="ft-edit-2"></i>
-                                                   Resolved
-                                                </a>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td class="text-center"> 03</td>
-                                             <td class="text-center">
-                                                smith455
-                                             </td>
-                                             <td class="text-center">
-                                                chomokhasan40
-                                             </td>
-                                             <td class="text-center">
-                                                665566
-                                             </td>
-                                             <td class="text-center">
-                                                17/03/2023
-                                             </td>
-                                             <td class="text-center">
-                                                01/04/2023
-                                             </td>
-                                             <td class="text-center">
-                                                09/04/2023
-                                             </td>
-                                             <td class="text-center">
-                                                <a href="#" data-toggle="modal" data-target="#reportview" class="btn btn-danger">
-                                                   <i class="ft-eye"></i>
-                                                   Report View
-                                                </a>
-                                             </td>
-                                             <td class="text-center">
-                                                <a href="#" data-toggle="modal" data-target="#orderview" class="btn btn-primary">
-                                                   <i class="ft-eye"></i>
-                                                   Order View
-                                                </a>
-                                             </td>
-                                             <td class="text-center">
-                                                <a href="#" data-toggle="modal" data-target="#edit" class="btn btn-info">
-                                                   <i class="ft-edit-2"></i>
-                                                   Resolved
+                                                   Reopen
                                                 </a>
                                              </td>
                                           </tr>
@@ -889,49 +817,97 @@
                   aria-hidden="true">
                   <div class="modal-dialog" role="document">
                      <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header card-background-blue">
                            <h5 class="modal-title" id="exampleModalLabel">
-                              order view
+                              <img src="../assets/images/area_controller/worker/1.png" alt="">
+                              <span>Abu Said Sheikh</span>
+                              <i class="fa fa-star stra-design" aria-hidden="true"></i> 3 (2)
                            </h5>
+                           <div class="float-right">
+                              <div class="fa fa-map-marker location-size"></div>
+                           </div>
+                        </div>
+
+                        <div class="modal-body">
+
+                           <form action="">
+                              <input type="tel" value="01800000000" class="form-contro" readonly name="" id="">
+
+                              <a href="">
+                                 <i class="fa fa-phone card-background-blue phone-design" aria-hidden="true"></i>
+                              </a>
+                           </form>
+
+
+                           <div class="price_code">
+                              <table class="table text-center">
+                                 <tr>
+                                    <th>Price</th>
+                                    <th>Code</th>
+                                 </tr>
+                                 <tr>
+                                    <td>1200</td>
+                                    <td>#937839</td>
+                                 </tr>
+                              </table>
+                           </div>
+
+                           <h3>Title:</h3>
+                           <p> I need AC Repair</p>
+
+                           <h3>Details:</h3>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, rem quae ex illum officia
+                              odit voluptatum quis voluptatibus eum id fugiat? Nostrum sit dolor exercitationem minus.
+                              Architecto quaerat eligendi officia?</p>
+
+                           <h3>Address</h3>
+                           <p>Sagardi, Barishal</p>
+                           <hr>
+
+                           <div class="start_message">
+                              <span>অর্ডার ডেলিভারি ডেট:</span>
+                              <h3>৪ ঘন্টা</h3>
+                           </div>
+
+                           <div class="start_message">
+                              <span>Probable order start date and time:</span>
+                              <span>04:15 pm, 01 April 23</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- order view Model end -->
+
+               <!-- Comment Model start -->
+               <div class="modal fade" id="comment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           
                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                            </button>
                         </div>
 
                         <div class="modal-body">
-                           <table class="table table-white-space table-bordered">
-                                 <tr>
-                                    <td>Product image</td>
-                                    <td>
-                                       <img src="../assets/images/order/1.jpg" width="200" alt="">
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Customer Username</td>
-                                    <td>smith455</td>
-                                 </tr>
-                                 <tr>
-                                    <td>Worker Username</td>
-                                    <td>chomokhasan40</td>
-                                 </tr>
-                                 <tr>
-                                    <td>Order Number</td>
-                                    <td>344554</td>
-                                 </tr>
-                                 <tr>
-                                    <td>Order Create Date</td>
-                                    <td>23/03/2023</td>
-                                 </tr>
-                                 <tr>
-                                    <td>Report Date</td>
-                                    <td>01/04/2023</td>
-                                 </tr>
-                           </table>
+                           <form action="#" method="POST">
+
+                              <div class="form-group">
+                                 <div class="mb-3">
+                                   <label for="comment" class="form-label">Comment</label>
+                                   <textarea class="form-control" name="" id="comment" rows="7">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid assumenda explicabo tempore! Nostrum officia iusto enim iste expedita tenetur, quos aliquid eum sunt a deleniti aperiam fuga blanditiis et! </textarea>
+                                 </div>
+                              </div>
+                              
+                           </form>
                         </div>
                      </div>
                   </div>
                </div>
-               <!-- order view Model end -->
+               <!-- Comment Model end -->
             </div>
             <!-- container-fluid end -->
          </div>

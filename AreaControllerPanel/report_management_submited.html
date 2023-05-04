@@ -806,41 +806,24 @@
                   <div class="modal-dialog" role="document">
                      <div class="modal-content">
                         <div class="modal-header">
-                           <h5 class="modal-title" id="exampleModalLabel">
-                              Edit Profile
-                           </h5>
-                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                           </button>
+                           
                         </div>
 
                         <div class="modal-body">
                            <form action="#" method="POST">
+                              
                               <div class="form-group">
+                                 <div class="mb-3">
+                                   <label for="info" class="form-label">Information</label>
+                                   <textarea class="form-control" name="" id="info" rows="7">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid assumenda explicabo tempore! Nostrum officia iusto enim iste expedita tenetur, quos aliquid eum sunt a deleniti aperiam fuga blanditiis et! </textarea>
+                                 </div>
+                              </div>
 
-                                 <img src="../assets//images/order/1.jpg" width="200" alt="" id="blah">
-                                 <input type="file" name="image" class="form-control" value="04" id="image" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
-                              </div>
-                              <div class="form-group">
-                                 <label for="order_number" class="col-form-label">Order Number</label>
-                                 <input type="text" name="order_number" class="form-control" value="344554" id="order_number">
-                              </div>
-                              <div class="form-group">
-                                 <label for="customer_username" class="col-form-label">Customer Username</label>
-                                 <input type="text" name="customer_username" class="form-control" value="chomokhasan40" id="customer_username">
-                              </div>
-                              <div class="form-group">
-                                 <label for="worker_username" class="col-form-label">Worker Username</label>
-                                 <input type="text" name="worker_username" class="form-control" value="smith455" id="worker_username">
-                              </div>
-                              <div class="form-group">
-                                 <label for="careate_date" class="col-form-label">Order Create Date</label>
-                                 <input type="date" name="careate_date" class="form-control" id="careate_date">
-                              </div>
                               <div class="modal-footer">
                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                                 <button type="submit" class="btn btn-primary">Update</button>
+                                 <button type="submit" class="btn btn-primary">Resolved</button>
                               </div>
                            </form>
                         </div>
@@ -878,44 +861,62 @@
                   aria-hidden="true">
                   <div class="modal-dialog" role="document">
                      <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header card-background-blue">
                            <h5 class="modal-title" id="exampleModalLabel">
-                              order view
+                              <img src="../assets/images/area_controller/worker/1.png" alt="">
+                              <span>Abu Said Sheikh</span>
+                              <i class="fa fa-star stra-design" aria-hidden="true"></i> 3 (2)
                            </h5>
-                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                           </button>
+                           <div class="float-right">
+                              <div class="fa fa-map-marker location-size"></div>
+                           </div>
                         </div>
 
                         <div class="modal-body">
-                           <table class="table table-white-space table-bordered">
+
+                           <form action="">
+                              <input type="tel" value="01800000000" class="form-contro" readonly name="" id="">
+
+                              <a href="">
+                                 <i class="fa fa-phone card-background-blue phone-design" aria-hidden="true"></i>
+                              </a>
+                           </form>
+
+
+                           <div class="price_code">
+                              <table class="table text-center">
                                  <tr>
-                                    <td>Product image</td>
-                                    <td>
-                                       <img src="../assets/images/order/1.jpg" width="200" alt="">
-                                    </td>
+                                    <th>Price</th>
+                                    <th>Code</th>
                                  </tr>
                                  <tr>
-                                    <td>Customer Username</td>
-                                    <td>smith455</td>
+                                    <td>1200</td>
+                                    <td>#937839</td>
                                  </tr>
-                                 <tr>
-                                    <td>Worker Username</td>
-                                    <td>chomokhasan40</td>
-                                 </tr>
-                                 <tr>
-                                    <td>Order Number</td>
-                                    <td>344554</td>
-                                 </tr>
-                                 <tr>
-                                    <td>Order Create Date</td>
-                                    <td>23/03/2023</td>
-                                 </tr>
-                                 <tr>
-                                    <td>Report Date</td>
-                                    <td>01/04/2023</td>
-                                 </tr>
-                           </table>
+                              </table>
+                           </div>
+
+                           <h3>Title:</h3>
+                           <p> I need AC Repair</p>
+
+                           <h3>Details:</h3>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, rem quae ex illum officia
+                              odit voluptatum quis voluptatibus eum id fugiat? Nostrum sit dolor exercitationem minus.
+                              Architecto quaerat eligendi officia?</p>
+
+                           <h3>Address</h3>
+                           <p>Sagardi, Barishal</p>
+                           <hr>
+
+                           <div class="start_message">
+                              <span>অর্ডার ডেলিভারি ডেট:</span>
+                              <h3>৪ ঘন্টা</h3>
+                           </div>
+
+                           <div class="start_message">
+                              <span>Probable order start date and time:</span>
+                              <span>04:15 pm, 01 April 23</span>
+                           </div>
                         </div>
                      </div>
                   </div>

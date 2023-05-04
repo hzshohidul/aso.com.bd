@@ -607,22 +607,51 @@
                   <!-- select option row start -->
                   <div class="row mt-1">
                      <div class="col-md-12">
-                        <div class="card card-background-blue margin-bottom-10">
+                         <div class="card card-background-blue">
                            <div class="card-content">
                               <div class="card-body select-card-design">
-                                 <h4 class="select-title white">Worker</h4>
-                                 <select name="Category" class="form-control width-30-percent">
+                                 <!-- <h4 class="select-title white">Affiliate Marketer List</h4> -->
+                                 <select name="month" class="form-control width-20-percent">
+                                    <option value=''>--Select Month--</option>
+                                    <option selected value='1'>Janaury</option>
+                                    <option value='2'>February</option>
+                                    <option value='3'>March</option>
+                                    <option value='4'>April</option>
+                                    <option value='5'>May</option>
+                                    <option value='6'>June</option>
+                                    <option value='7'>July</option>
+                                    <option value='8'>August</option>
+                                    <option value='9'>September</option>
+                                    <option value='10'>October</option>
+                                    <option value='11'>November</option>
+                                    <option value='12'>December</option>
+                                  </select>
+                                  <select name="year" class="form-control width-15-percent">
+                                    <option value=''>--Select Year--</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2024">2024</option>
+                                    <option selected value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                  </select>
+                                 <select name="pourashava" class="form-control width-30-percent">
                                     <option selected>Pourashava/Union/Area</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
-                                 </select>
-                                 <select name="service" class="form-control width-30-percent">
+                                  </select>
+                                  <select name="ward" class="form-control width-30-percent">
                                     <option selected>Ward/Road</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
-                                 </select>
+                                  </select>
                               </div>
                            </div>
                         </div>
@@ -635,7 +664,7 @@
                         <div class="card">
                            <div class="card-head">
                               <div class="card-header">
-                                 <h4 class="card-title">Worker</h4>
+                                 <h4 class="card-title">Affiliate Marketer List</h4>
                                  <div class="heading-elements visible">
                                     <ul class="list-inline mb-0">
                                        <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
@@ -657,20 +686,11 @@
                                              <th>Image</th>
                                              <th>Username</th>
                                              <th>Full Name</th>
+                                             <th>Income</th>
                                              <th>Mobile</th>
                                              <th>Email</th>
-                                             <th>Pending Order</th>
-                                             <th>Running Order</th>
-                                             <th>Completed Order</th>
-                                             <th>Canceled Order</th>
                                              <th>Sign Up Date</th>
-                                             <th>Service Categories</th>
-                                             <th>Service Area</th>
-                                             <th>Total income</th>
-                                             <th>Balance</th>
-                                             <th>Document</th>
-                                             <th>Worker</th>
-                                             <th>Actions</th>
+                                             <th>Edit Profile</th>
                                           </tr>
                                        </thead>
                                        <tbody>
@@ -687,84 +707,21 @@
                                                 Smith chomok
                                              </td>
                                              <td class="text-center">
+                                                3000
+                                             </td>
+                                             <td class="text-center">
                                                 018009900
                                              </td>
                                              <td class="text-center">
                                                 smithchomok@gmail.com
                                              </td>
-                                             <td>
-                                                Bid : 55 <br>
-                                                Gig : 44 <br>
-                                                Service Order : 66
-                                             </td>
-                                             <td>
-                                                Bid : 22 <br>
-                                                Gig : 11 <br>
-                                                Service Order : 33
-                                             </td>
-                                             <td>
-                                                Bid : 88 <br>
-                                                Gig : 77 <br>
-                                                Service Order : 99
-                                             </td>
-                                             <td>
-                                                Bid : 23 <br>
-                                                Gig : 12 <br>
-                                                Service Order : 34
-                                             </td>
                                              <td class="text-center">
                                                 17/03/2023
-                                             </td>
-                                             <td class="text-center">
-                                                Electricity
-                                             </td>
-                                             <td class="text-center">
-                                                Sonagazi
-                                             </td>
-                                             <td class="text-center">
-                                                3000
-                                             </td>
-                                             <td class="text-center">
-                                                3000
-                                                <a href="#" data-toggle="modal" data-target="#view_balance"
-                                                   class="btn btn-primary padding-5">
-                                                   <i class="ft-eye"></i>
-                                                </a>
                                              </td>
                                              <td class="text-center">
                                                 <a href="#" data-toggle="modal" data-target="#edit" class="btn btn-info">
                                                    <i class="ft-edit-2" aria-hidden="true"></i>
                                                 </a>
-                                             </td>
-                                             <td class="text-center">
-                                                <a href="Service_Provider_with_profile.html" class="btn btn-primary padding-5">
-                                                   <i class="ft-eye"></i>
-                                                </a>
-                                             </td>
-                                             <td class="text-center">
-                                                <span class="dropdown">
-                                                   <button id="btnSearchDrop12" type="button"
-                                                      class="btn btn-sm btn-icon btn-pure font-medium-2"
-                                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                      <i class="ft-more-vertical"></i>
-                                                   </button>
-
-                                                   <span aria-labelledby="btnSearchDrop12"
-                                                      class="dropdown-menu dropdown-menu-button">
-                                                      <a href="#" class="dropdown-item btn btn-primary">
-                                                         <i class="ft-check-circle"></i>
-                                                         Active
-                                                      </a>
-                                                      <a href="#" class="dropdown-item">
-                                                         <i class="ft-disc"></i>
-                                                         Disable
-                                                      </a>
-                                                      <a href="#" class="dropdown-item deleted-click">
-                                                         <i class="ft-trash-2"></i>
-                                                         Soft Delete
-                                                      </a>
-                                                   </span>
-                                                </span>
                                              </td>
                                           </tr>
                                        </tbody>
@@ -778,72 +735,7 @@
                   </div>
                </section>
                <!--/ Zero configuration table -->
-               <!-- balance view Model start -->
-               <div class="modal fade" id="view_balance" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                     <div class="modal-content">
-                        <div class="modal-header">
-                           <h5 class="modal-title" id="exampleModalLabel">
-                              Reset Balance
-                           </h5>
-                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                           </button>
-                        </div>
 
-                        <div class="modal-body">
-                           <table class="table">
-                              <tr>
-                                 <td></td>
-                                 <td>
-                                    <div class="row">
-                                       <div class="col-md-12">
-                                          <div class="float-right">
-                                             <a href="#" class="btn btn-primary" title="এখান থেকে Area Controller কাস্টম ভাবে সরাসরি টাকা রিসিভ করে পেমেন্ট গেইটওয়ে এর মাধ্যমে টাকা পে করে ব্যালেন্স বাড়াই দিতে পারবে।">
-                                                <i class="fa fa-plus"></i> Add Balance
-                                             </a>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <th>Balance</th>
-                                 <td>1000</td>
-                              </tr>
-                              <tr>
-                                 <th>Total Earnings</th>
-                                 <td>5000</td>
-                              </tr>
-                              <tr>
-                                 <th>Total Earnings (April)</th>
-                                 <td>1000</td>
-                              </tr>
-                              <tr>
-                                 <th>Total Page Earnings (April)</th>
-                                 <td>100</td>
-                              </tr>
-                              <tr>
-                                 <th>Order & Bid Limit</th>
-                                 <td>20</td>
-                              </tr>
-                              <tr>
-                                 <th>Service Charge</th>
-                                 <td>100</td>
-                              </tr>
-                              <tr>
-                                 <th>Total Page Earnings</th>
-                                 <td>344</td>
-                              </tr>
-                           </table>
-
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- balance view Model end -->
-               
                <!-- Edit Model start -->
                <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
@@ -886,16 +778,6 @@
                               <div class="form-group">
                                  <label for="email" class="col-form-label">Email</label>
                                  <input type="text" name="email" class="form-control" value="tazuddin34" id="email">
-                              </div>
-                              <div class="form-group">
-                                 <label for="service_category" class="col-form-label">Service Category</label>
-
-                                 <select class="form-control">
-                                    <option selected>Select Category</option>
-                                    <option value="1">Option 1</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                  </select>
                               </div>
                               <div class="modal-footer">
                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
