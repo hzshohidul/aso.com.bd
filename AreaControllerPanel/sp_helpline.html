@@ -22,6 +22,7 @@
    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/tables/extensions/responsive.dataTables.min.css">
    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/forms/icheck/icheck.css">
    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/forms/icheck/custom.css">
+   <link rel="stylesheet" type="text/css" href="../assets/vendors/css/timeline/vertical-timeline.css">
    <!-- END: Vendor CSS-->
    <!-- BEGIN: Theme CSS-->
    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
@@ -34,6 +35,9 @@
    <link rel="stylesheet" type="text/css" href="../assets/css/core/colors/palette-gradient.min.css">
    <link rel="stylesheet" type="text/css" href="../assets/css/pages/chat-application.css">
    <link rel="stylesheet" type="text/css" href="../assets/css/pages/dashboard-analytics.min.css">
+   <link rel="stylesheet" type="text/css" href="../assets/css/pages/users.min.css">
+   <link rel="stylesheet" type="text/css" href="../assets/css/pages/timeline.min.css">
+   <link rel="stylesheet" type="text/css" href="../assets/css/plugins/charts/chartist.min.css">
    <!-- END: Page CSS-->
    <!-- BEGIN: Font CSS-->
    <link rel="stylesheet" type="text/css" href="../assets/fonts/simple-line-icons/style.min.css">
@@ -81,6 +85,9 @@
                      </a>
                      <div class="dropdown-menu">
                         <div class="arrow_box">
+                           <a class="dropdown-item" href="new_buyers.html">
+                              <i class="ft-user"></i> New Buyer
+                           </a>
                            <a class="dropdown-item" href="email-application.html">
                               <i class="ft-user"></i> Email
                            </a>
@@ -598,220 +605,175 @@
             <div class="content-body  container-fluid">
                <!-- Minimal statistics section start -->
                <section id="minimal-statistics">
-                  <div class="row">
+
+                  <!-- select option row -->
+                  <div class="row mt-1">
 
                      <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                           <img class="card-img-top" src="../assets/images/portfolio/width-1200/portfolio-1.jpg" alt="Card image cap">
+                        <div class="card border  border-success ">
                            <div class="card-body">
-                             <h5 class="card-title">title</h5>
-                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                           </div>
-                           <ul class="list-group list-group-flush">
-                              <li class="list-group-item">
-                                 Status
-                                 <span class="float-right">Completed</span>
-                              </li>
-                              <li class="list-group-item">
-                                 Starting
-                                 <span class="float-right">05-01-2023</span>
-                              </li>
-                              <li class="list-group-item">
-                                 Ending
-                                 <span class="float-right">05-01-2024</span>
-                              </li>
-                              <li class="list-group-item">
-                                 Create at
-                                 <span class="float-right">05-01-2023 / 04-05-23</span>
-                              </li>
-                           </ul>
-                           <div class="card-body">
-                              <a href="https://www.shwapno.com/" target="_blank" class="">
-                                 <span class="fa fa-share-alt"></span>
-                                 Ads. Link 
-                              </a>
+                              <form class="form">
+                                 <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="phone">Phone:</label>
+                                    <input type="phone" class="form-control" id="phone">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="select">Customer / Worker:</label>
+                                    <select name="" id="select" class="form-control">
+                                       <option>--Select--</option>
+                                       <option value="customer" selected>Customer</option>
+                                       <option value="worker">Worker</option>
+                                    </select>
+                                 </div>
 
-                              <a href="#" class="float-right" data-toggle="modal" data-target="#edit">
-                                 <span class="fa fa-edit"></span>
-                                 Edit
-                              </a>
+                                 <input type="hidden" class="hidden-id" value="000">
+
+                                 <a href="javascript:void(0);" class="btn btn-primary">Update</a>
+
+                                 <a href="javascript:void(0);" class="btn btn-danger">Delete</a>
+                              </form>
+
                            </div>
-                         </div>
+                        </div>
                      </div>
 
                      <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                           <img class="card-img-top" src="../assets/images/portfolio/width-1200/portfolio-1.jpg" alt="Card image cap">
+                        <div class="card border  border-success ">
                            <div class="card-body">
-                             <h5 class="card-title">title</h5>
-                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                           </div>
-                           <ul class="list-group list-group-flush">
-                              <li class="list-group-item">
-                                 Status
-                                 <span class="float-right">Completed</span>
-                              </li>
-                              <li class="list-group-item">
-                                 Starting
-                                 <span class="float-right">05-01-2023</span>
-                              </li>
-                              <li class="list-group-item">
-                                 Ending
-                                 <span class="float-right">05-01-2024</span>
-                              </li>
-                              <li class="list-group-item">
-                                 Create at
-                                 <span class="float-right">05-01-2023 / 04-05-23</span>
-                              </li>
-                           </ul>
-                           <div class="card-body">
-                              <a href="https://www.shwapno.com/" target="_blank" class="">
-                                 <span class="fa fa-share-alt"></span>
-                                 Ads. Link 
-                              </a>
+                              <form class="form">
+                                 <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="phone">Phone:</label>
+                                    <input type="phone" class="form-control" id="phone">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="select">Customer / Worker:</label>
+                                    <select name="" id="select" class="form-control">
+                                       <option>--Select--</option>
+                                       <option value="customer" selected>Customer</option>
+                                       <option value="worker">Worker</option>
+                                    </select>
+                                 </div>
 
-                              <a href="#" class="float-right" data-toggle="modal" data-target="#edit">
-                                 <span class="fa fa-edit"></span>
-                                 Edit
-                              </a>
+                                 <input type="hidden" class="hidden-id" value="000">
+
+                                 <a href="javascript:void(0);" class="btn btn-primary">Update</a>
+
+                                 <a href="javascript:void(0);" class="btn btn-danger">Delete</a>
+                              </form>
+
                            </div>
-                         </div>
+                        </div>
                      </div>
 
                      <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                           <img class="card-img-top" src="../assets/images/portfolio/width-1200/portfolio-1.jpg" alt="Card image cap">
+                        <div class="card border  border-success ">
                            <div class="card-body">
-                             <h5 class="card-title">title</h5>
-                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                           </div>
-                           <ul class="list-group list-group-flush">
-                              <li class="list-group-item">
-                                 Status
-                                 <span class="float-right">Completed</span>
-                              </li>
-                              <li class="list-group-item">
-                                 Starting
-                                 <span class="float-right">05-01-2023</span>
-                              </li>
-                              <li class="list-group-item">
-                                 Ending
-                                 <span class="float-right">05-01-2024</span>
-                              </li>
-                              <li class="list-group-item">
-                                 Create at
-                                 <span class="float-right">05-01-2023 / 04-05-23</span>
-                              </li>
-                           </ul>
-                           <div class="card-body">
-                              <a href="https://www.shwapno.com/" target="_blank" class="">
-                                 <span class="fa fa-share-alt"></span>
-                                 Ads. Link 
-                              </a>
+                              <form class="form">
+                                 <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="phone">Phone:</label>
+                                    <input type="phone" class="form-control" id="phone">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="select">Customer / Worker:</label>
+                                    <select name="" id="select" class="form-control">
+                                       <option>--Select--</option>
+                                       <option value="customer" selected>Customer</option>
+                                       <option value="worker">Worker</option>
+                                    </select>
+                                 </div>
 
-                              <a href="#" class="float-right" data-toggle="modal" data-target="#edit">
-                                 <span class="fa fa-edit"></span>
-                                 Edit
-                              </a>
+                                 <input type="hidden" class="hidden-id" value="000">
+
+                                 <a href="javascript:void(0);" class="btn btn-primary">Update</a>
+
+                                 <a href="javascript:void(0);" class="btn btn-danger">Delete</a>
+                              </form>
+
                            </div>
-                         </div>
+                        </div>
                      </div>
 
                      <div class="col-md-4">
-                        <div class="card" style="width: 18rem;">
-                           <img class="card-img-top" src="../assets/images/portfolio/width-1200/portfolio-1.jpg" alt="Card image cap">
+                        <div class="card border  border-success ">
                            <div class="card-body">
-                             <h5 class="card-title">title</h5>
-                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                           </div>
-                           <ul class="list-group list-group-flush">
-                              <li class="list-group-item">
-                                 Status
-                                 <span class="float-right">Completed</span>
-                              </li>
-                              <li class="list-group-item">
-                                 Starting
-                                 <span class="float-right">05-01-2023</span>
-                              </li>
-                              <li class="list-group-item">
-                                 Ending
-                                 <span class="float-right">05-01-2024</span>
-                              </li>
-                              <li class="list-group-item">
-                                 Create at
-                                 <span class="float-right">05-01-2023 / 04-05-23</span>
-                              </li>
-                           </ul>
-                           <div class="card-body">
-                              <a href="https://www.shwapno.com/" target="_blank" class="">
-                                 <span class="fa fa-share-alt"></span>
-                                 Ads. Link 
-                              </a>
+                              <form class="form">
+                                 <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="phone">Phone:</label>
+                                    <input type="phone" class="form-control" id="phone">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="select">Customer / Worker:</label>
+                                    <select name="" id="select" class="form-control">
+                                       <option>--Select--</option>
+                                       <option value="customer" selected>Customer</option>
+                                       <option value="worker">Worker</option>
+                                    </select>
+                                 </div>
 
-                              <a href="#" class="float-right" data-toggle="modal" data-target="#edit">
-                                 <span class="fa fa-edit"></span>
-                                 Edit
-                              </a>
+                                 <input type="hidden" class="hidden-id" value="000">
+
+                                 <a href="javascript:void(0);" class="btn btn-primary">Update</a>
+
+                                 <a href="javascript:void(0);" class="btn btn-danger">Delete</a>
+                              </form>
+
                            </div>
-                         </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-4">
+                        <div class="card border  border-success ">
+                           <div class="card-body">
+                              <form class="form">
+                                 <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="phone">Phone:</label>
+                                    <input type="phone" class="form-control" id="phone">
+                                 </div>
+                                 <div class="form-group">
+                                    <label for="select">Customer / Worker:</label>
+                                    <select name="" id="select" class="form-control">
+                                       <option>--Select--</option>
+                                       <option value="customer" selected>Customer</option>
+                                       <option value="worker">Worker</option>
+                                    </select>
+                                 </div>
+
+                                 <input type="hidden" class="hidden-id" value="000">
+
+                                 <a href="javascript:void(0);" class="btn btn-primary">Update</a>
+
+                                 <a href="javascript:void(0);" class="btn btn-danger">Delete</a>
+                              </form>
+
+                           </div>
+                        </div>
                      </div>
 
                   </div>
+                  <!-- select option row end -->
+
                </section>
                <!-- // Minimal statistics section end -->
-               <!-- Edit Model -->
-               <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-               aria-hidden="true">
-               <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                           Edit new ads.
-                        </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                           <span aria-hidden="true">&times;</span>
-                        </button>
-                     </div>
-
-                     <div class="modal-body">
-                        <form action="#" method="POST">
-                           <div class="form-group">
-                              <label for="image" class="col-form-label">Image</label>
-                              <input type="file" class="form-control"
-                                 onchange="document.getElementById('blah2').src = window.URL.createObjectURL(this.files[0])"
-                                 id="image">
-                              <img src="../assets/images/portfolio/portfolio-1.jpg" id="blah2" width="200" alt="">
-                           </div>
-                           <div class="form-group">
-                              <label for="s_date" class="col-form-label">Start Date</label>
-                              <input type="date" class="form-control" id="s_date">
-                           </div>
-                           <div class="form-group">
-                              <label for="end_date" class="col-form-label">End Date</label>
-                              <input type="date" class="form-control" id="end_date">
-                           </div>
-                           <div class="form-group">
-                              <label for="url" class="col-form-label">Url</label>
-                              <input type="url" value="https://www.shwapno.com" placeholder="Enter Url" class="form-control" id="url">
-                           </div>
-                           <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3"
-                                 checked="">
-                              <label class="form-check-label" for="defaultCheck3">
-                                 Active
-                              </label>
-                           </div>
-                           <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary"
-                                 data-dismiss="modal">Close</button>
-                              <button type="submit" class="btn btn-primary">Save</button>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- Edit Model End -->
             </div>
          </div>
       </div>
@@ -845,11 +807,11 @@
          <hr>
          <h5 class="mt-1 mb-1 text-bold-500">Sidebar menu Background</h5>
          <div class="row sidebar-color-options ml-0">
-            <label for="sidebar-color-option" class="card-title font-medium-2 mr-2">White Mode</label>
-            <div class="text-center mb-1">
-               <input type="checkbox" id="sidebar-color-option" class="switchery" data-size="xs" />
-            </div>
-            <label for="sidebar-color-option" class="card-title font-medium-2 ml-2">Dark Mode</label>
+            <label for="sidebar-color-option" class="card-title font-medium-2 mr-2" Mode</label>
+               <div class="text-center mb-1">
+                  <input type="checkbox" id="sidebar-color-option" class="switchery" data-size="xs" />
+               </div>
+               <label for="sidebar-color-option" class="card-title font-medium-2 ml-2">Dark Mode</label>
          </div>
          <hr>
          <label for="collapsed-sidebar" class="font-medium-2">Menu Collapse</label>
@@ -892,15 +854,15 @@
       </div>
    </div>
    <!-- End: Customizer-->
-
-
    <!-- BEGIN: Footer-->
    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
       <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
          <span class="float-md-left d-block d-md-inline-block">2023 &copy; Copyright <a
                class="text-bold-800 grey darken-2" href="https://aso.com.bd" target="_blank">ASO</a></span>
          <ul class="list-inline float-md-right d-block d-md-inline-blockd-none d-lg-block mb-0">
-            <li class="list-inline-item"><a class="my-1" href="#" target="_blank"> Support</a></li>
+            <li class="list-inline-item">
+               <a class="my-1" href="support.html" target="_blank"> Support</a>
+            </li>
          </ul>
       </div>
    </footer>
