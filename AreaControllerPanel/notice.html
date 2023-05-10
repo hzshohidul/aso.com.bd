@@ -55,524 +55,612 @@
    <!-- BEGIN: Body-->
    <body class="vertical-layout vertical-menu 2-columns fixed-navbar" data-open="click" data-menu="vertical-menu"
       data-color="bg-gradient-x-blue-green" data-col="2-columns">
-      <!-- BEGIN: Header-->
-      <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light">
-         <div class="navbar-wrapper">
-            <div class="navbar-container content">
-               <div class="collapse navbar-collapse show" id="navbar-mobile">
-                  <ul class="nav navbar-nav mr-auto float-left">
-                     <li class="nav-item mobile-menu d-md-none mr-auto">
-                        <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
+
+
+   <!-- Common Content Start -->
+
+   <!-- BEGIN: Header-->
+   <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light">
+      <div class="navbar-wrapper">
+         <div class="navbar-container content">
+            <div class="collapse navbar-collapse show" id="navbar-mobile">
+               <ul class="nav navbar-nav mr-auto float-left">
+                  <li class="nav-item mobile-menu d-md-none mr-auto">
+                     <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
                         <i class="ft-menu"></i>
-                        </a>
-                     </li>
-                     <li class="nav-item d-none d-md-block">
-                        <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
+                     </a>
+                  </li>
+                  <li class="nav-item d-none d-md-block">
+                     <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
                         <i class="ft-menu"></i>
-                        </a>
-                     </li>
-                     <li class="dropdown d-none d-md-block mr-1">
-                        <a class="dropdown-toggle nav-link" id="apps-navbar-links" href="#" data-toggle="dropdown">
+                     </a>
+                  </li>
+                  <li class="dropdown d-none d-md-block mr-1">
+                     <a class="dropdown-toggle nav-link" id="apps-navbar-links" href="#" data-toggle="dropdown">
                         Apps
-                        </a>
-                        <div class="dropdown-menu">
-                           <div class="arrow_box">
-                              <a class="dropdown-item" href="email-application.html">
+                     </a>
+                     <div class="dropdown-menu">
+                        <div class="arrow_box">
+                           <a class="dropdown-item" href="new_buyers.html">
+                              <i class="ft-user"></i> New Buyer
+                           </a>
+                           <a class="dropdown-item" href="email-application.html">
                               <i class="ft-user"></i> Email
-                              </a>
-                              <a class="dropdown-item" href="chat-application.html">
+                           </a>
+                           <a class="dropdown-item" href="chat-application.html">
                               <i class="ft-mail"></i> Chat
-                              </a>
-                              <a class="dropdown-item" href="project-summary.html">
+                           </a>
+                           <a class="dropdown-item" href="project-summary.html">
                               <i class="ft-briefcase"></i> Project Summary
-                              </a>
-                              <a class="dropdown-item" href="full-calender.html">
-                              <i class="ft-calendar"></i> Calendar 
-                              </a>
-                           </div>
+                           </a>
+                           <a class="dropdown-item" href="full-calender.html">
+                              <i class="ft-calendar"></i> Calendar
+                           </a>
                         </div>
-                     </li>
-                     <li class="nav-item dropdown navbar-search">
-                        <a class="nav-link dropdown-toggle hide" data-toggle="dropdown"
-                           href="#">
+                     </div>
+                  </li>
+                  <li class="nav-item dropdown navbar-search">
+                     <a class="nav-link dropdown-toggle hide" data-toggle="dropdown" href="#">
                         <i class="ficon ft-search"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                           <li class="arrow_box">
-                              <form action="#" method="POST">
-                                 <div class="input-group search-box">
-                                    <div class="position-relative has-icon-right full-width">
-                                       <input class="form-control" id="search" name="search" type="text" placeholder="Search here...">
-                                       <div class="form-control-position navbar-search-close">
-                                          <i class="ft-x"></i>
-                                       </div>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li class="arrow_box">
+                           <form action="#" method="POST">
+                              <div class="input-group search-box">
+                                 <div class="position-relative has-icon-right full-width">
+                                    <input class="form-control" id="search" name="search" type="text"
+                                       placeholder="Search here...">
+                                    <div class="form-control-position navbar-search-close">
+                                       <i class="ft-x"></i>
                                     </div>
                                  </div>
-                              </form>
-                           </li>
-                        </ul>
-                     </li>
-                  </ul>
-                  <ul class="nav navbar-nav float-right">
-                     <li class="dropdown dropdown-language nav-item">
-                        <a class="dropdown-toggle nav-link" id="dropdown-flag"
-                           href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              </div>
+                           </form>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="nav navbar-nav float-right">
+                  <li class="dropdown dropdown-language nav-item">
+                     <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         <i class="flag-icon flag-icon-us"></i>
                         <span class="selected-language"></span>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown-flag">
-                           <div class="arrow_box">
-                              <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-us"></i>
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="dropdown-flag">
+                        <div class="arrow_box">
+                           <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-us"></i>
                               English</a>
-                              <a class="dropdown-item" href="#">
+                           <a class="dropdown-item" href="#">
                               <i class="flag-icon flag-icon-bd"></i> Bangla</a>
-                           </div>
                         </div>
-                     </li>
-                     <li class="dropdown dropdown-notification nav-item">
-                        <a class="nav-link nav-link-label" href="#"
-                           data-toggle="dropdown">
+                     </div>
+                  </li>
+                  <li class="dropdown dropdown-notification nav-item">
+                     <a class="nav-link nav-link-label" href="#" data-toggle="dropdown">
                         <i class="ficon ft-bell bell-shake" id="notification-navbar-link"></i>
-                        <span
-                           class="badge badge-pill badge-sm badge-danger badge-up badge-glow">5</span></a>
-                        <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
-                           <div class="arrow_box_right">
-                              <li class="dropdown-menu-header">
-                                 <h6 class="dropdown-header m-0"><span class="grey darken-2">Notifications</span></h6>
-                              </li>
-                              <li class="scrollable-container media-list w-100">
-                                 <a href="javascript:void(0)">
-                                    <div class="media">
-                                       <div class="media-left align-self-center"><i class="ft-share info font-medium-4 mt-2"></i></div>
-                                       <div class="media-body">
-                                          <h6 class="media-heading info">New Order Received</h6>
-                                          <p class="notification-text font-small-3 text-muted text-bold-600">Lorem ipsum dolor sit amet!
-                                          </p>
-                                          <small>
+                        <span class="badge badge-pill badge-sm badge-danger badge-up badge-glow">5</span></a>
+                     <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                        <div class="arrow_box_right">
+                           <li class="dropdown-menu-header">
+                              <h6 class="dropdown-header m-0"><span class="grey darken-2">Notifications</span></h6>
+                           </li>
+                           <li class="scrollable-container media-list w-100">
+                              <a href="javascript:void(0)">
+                                 <div class="media">
+                                    <div class="media-left align-self-center"><i
+                                          class="ft-share info font-medium-4 mt-2"></i></div>
+                                    <div class="media-body">
+                                       <h6 class="media-heading info">New Order Received</h6>
+                                       <p class="notification-text font-small-3 text-muted text-bold-600">Lorem ipsum
+                                          dolor sit amet!
+                                       </p>
+                                       <small>
                                           <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">3:30
-                                          PM</time></small>
-                                       </div>
+                                             PM</time></small>
                                     </div>
-                                 </a>
-                                 <a href="javascript:void(0)">
-                                    <div class="media">
-                                       <div class="media-left align-self-center"><i class="ft-save font-medium-4 mt-2 warning"></i>
-                                       </div>
-                                       <div class="media-body">
-                                          <h6 class="media-heading warning">New User Registered</h6>
-                                          <p class="notification-text font-small-3 text-muted text-bold-600">Aliquam tincidunt mauris eu
-                                             risus.
-                                          </p>
-                                          <small>
+                                 </div>
+                              </a>
+                              <a href="javascript:void(0)">
+                                 <div class="media">
+                                    <div class="media-left align-self-center"><i
+                                          class="ft-save font-medium-4 mt-2 warning"></i>
+                                    </div>
+                                    <div class="media-body">
+                                       <h6 class="media-heading warning">New User Registered</h6>
+                                       <p class="notification-text font-small-3 text-muted text-bold-600">Aliquam
+                                          tincidunt mauris eu
+                                          risus.
+                                       </p>
+                                       <small>
                                           <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">10:05
-                                          AM</time></small>
-                                       </div>
+                                             AM</time></small>
                                     </div>
-                                 </a>
-                                 <a href="javascript:void(0)">
-                                    <div class="media">
-                                       <div class="media-left align-self-center"><i class="ft-repeat font-medium-4 mt-2 danger"></i>
-                                       </div>
-                                       <div class="media-body">
-                                          <h6 class="media-heading danger">New Purchase</h6>
-                                          <p class="notification-text font-small-3 text-muted text-bold-600">Lorem ipsum dolor sit
-                                             ametest?
-                                          </p>
-                                          <small>
+                                 </div>
+                              </a>
+                              <a href="javascript:void(0)">
+                                 <div class="media">
+                                    <div class="media-left align-self-center"><i
+                                          class="ft-repeat font-medium-4 mt-2 danger"></i>
+                                    </div>
+                                    <div class="media-body">
+                                       <h6 class="media-heading danger">New Purchase</h6>
+                                       <p class="notification-text font-small-3 text-muted text-bold-600">Lorem ipsum
+                                          dolor sit
+                                          ametest?
+                                       </p>
+                                       <small>
                                           <time class="media-meta text-muted"
                                              datetime="2015-06-11T18:29:20+08:00">Yesterday</time></small>
-                                       </div>
                                     </div>
-                                 </a>
-                                 <a href="javascript:void(0)">
-                                    <div class="media">
-                                       <div class="media-left align-self-center"><i
+                                 </div>
+                              </a>
+                              <a href="javascript:void(0)">
+                                 <div class="media">
+                                    <div class="media-left align-self-center"><i
                                           class="ft-shopping-cart font-medium-4 mt-2 primary"></i></div>
-                                       <div class="media-body">
-                                          <h6 class="media-heading primary">New Item In Your Cart</h6>
-                                          <small>
+                                    <div class="media-body">
+                                       <h6 class="media-heading primary">New Item In Your Cart</h6>
+                                       <small>
                                           <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Last
-                                          week</time></small>
-                                       </div>
+                                             week</time></small>
                                     </div>
-                                 </a>
-                                 <a href="javascript:void(0)">
-                                    <div class="media">
-                                       <div class="media-left align-self-center"><i class="ft-heart font-medium-4 mt-2 info"></i></div>
-                                       <div class="media-body">
-                                          <h6 class="media-heading info">New Sale</h6>
-                                          <small>
+                                 </div>
+                              </a>
+                              <a href="javascript:void(0)">
+                                 <div class="media">
+                                    <div class="media-left align-self-center"><i
+                                          class="ft-heart font-medium-4 mt-2 info"></i></div>
+                                    <div class="media-body">
+                                       <h6 class="media-heading info">New Sale</h6>
+                                       <small>
                                           <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Last
-                                          month</time></small>
-                                       </div>
+                                             month</time></small>
                                     </div>
-                                 </a>
-                              </li>
-                              <li class="dropdown-menu-footer"><a class="dropdown-item info text-right pr-1"
+                                 </div>
+                              </a>
+                           </li>
+                           <li class="dropdown-menu-footer"><a class="dropdown-item info text-right pr-1"
                                  href="javascript:void(0)">Read all</a></li>
-                           </div>
-                        </ul>
-                     </li>
-                     <li class="dropdown dropdown-notification nav-item">
-                        <a class="nav-link nav-link-label" href="#"
-                           data-toggle="dropdown"><i class="ficon ft-mail"></i></a>
-                        <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
-                           <div class="arrow_box_right">
-                              <li class="dropdown-menu-header">
-                                 <h6 class="dropdown-header m-0"><span class="grey darken-2">Messages</span></h6>
-                              </li>
-                              <li class="scrollable-container media-list w-100">
-                                 <a href="javascript:void(0)">
-                                    <div class="media">
-                                       <div class="media-left"><span class="avatar avatar-sm rounded-circle"><img
-                                          src="../assets/images/portrait/small/avatar-s-6.png" alt="avatar"></span></div>
-                                       <div class="media-body">
-                                          <h6 class="media-heading text-bold-700">Sarah Montery<i
+                        </div>
+                     </ul>
+                  </li>
+                  <li class="dropdown dropdown-notification nav-item">
+                     <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i
+                           class="ficon ft-mail"></i></a>
+                     <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                        <div class="arrow_box_right">
+                           <li class="dropdown-menu-header">
+                              <h6 class="dropdown-header m-0"><span class="grey darken-2">Messages</span></h6>
+                           </li>
+                           <li class="scrollable-container media-list w-100">
+                              <a href="javascript:void(0)">
+                                 <div class="media">
+                                    <div class="media-left"><span class="avatar avatar-sm rounded-circle"><img
+                                             src="../assets/images/portrait/small/avatar-s-6.png" alt="avatar"></span>
+                                    </div>
+                                    <div class="media-body">
+                                       <h6 class="media-heading text-bold-700">Sarah Montery<i
                                              class="ft-circle font-small-2 success float-right"></i></h6>
-                                          <p class="notification-text font-small-3 text-muted text-bold-600">Everything looks good. I
-                                             will provide...
-                                          </p>
-                                          <small>
+                                       <p class="notification-text font-small-3 text-muted text-bold-600">Everything
+                                          looks good. I
+                                          will provide...
+                                       </p>
+                                       <small>
                                           <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">3:55
-                                          PM</time></small>
-                                       </div>
+                                             PM</time></small>
                                     </div>
-                                 </a>
-                                 <a href="javascript:void(0)">
-                                    <div class="media">
-                                       <div class="media-left"><span class="avatar avatar-sm rounded-circle"><span
-                                          class="media-object rounded-circle text-circle bg-warning">E</span></span></div>
-                                       <div class="media-body">
-                                          <h6 class="media-heading text-bold-700">Eliza Elliot<i
+                                 </div>
+                              </a>
+                              <a href="javascript:void(0)">
+                                 <div class="media">
+                                    <div class="media-left"><span class="avatar avatar-sm rounded-circle"><span
+                                             class="media-object rounded-circle text-circle bg-warning">E</span></span>
+                                    </div>
+                                    <div class="media-body">
+                                       <h6 class="media-heading text-bold-700">Eliza Elliot<i
                                              class="ft-circle font-small-2 danger float-right"></i></h6>
-                                          <p class="notification-text font-small-3 text-muted text-bold-600">Okay. here is some more
-                                             details...
-                                          </p>
-                                          <small>
+                                       <p class="notification-text font-small-3 text-muted text-bold-600">Okay. here is
+                                          some more
+                                          details...
+                                       </p>
+                                       <small>
                                           <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">2:10
-                                          AM</time></small>
-                                       </div>
+                                             AM</time></small>
                                     </div>
-                                 </a>
-                                 <a href="javascript:void(0)">
-                                    <div class="media">
-                                       <div class="media-left"><span class="avatar avatar-sm rounded-circle"><img
-                                          src="../assets/images/portrait/small/avatar-s-3.png" alt="avatar"></span></div>
-                                       <div class="media-body">
-                                          <h6 class="media-heading text-bold-700">Kelly Reyes<i
+                                 </div>
+                              </a>
+                              <a href="javascript:void(0)">
+                                 <div class="media">
+                                    <div class="media-left"><span class="avatar avatar-sm rounded-circle"><img
+                                             src="../assets/images/portrait/small/avatar-s-3.png" alt="avatar"></span>
+                                    </div>
+                                    <div class="media-body">
+                                       <h6 class="media-heading text-bold-700">Kelly Reyes<i
                                              class="ft-circle font-small-2 warning float-right"></i></h6>
-                                          <p class="notification-text font-small-3 text-muted text-bold-600">Check once and let me know
-                                             if you...
-                                          </p>
-                                          <small>
+                                       <p class="notification-text font-small-3 text-muted text-bold-600">Check once and
+                                          let me know
+                                          if you...
+                                       </p>
+                                       <small>
                                           <time class="media-meta text-muted"
                                              datetime="2015-06-11T18:29:20+08:00">Yesterday</time></small>
-                                       </div>
                                     </div>
-                                 </a>
-                                 <a href="javascript:void(0)">
-                                    <div class="media">
-                                       <div class="media-left"><span class="avatar avatar-sm rounded-circle"><img
-                                          src="../assets/images/portrait/small/avatar-s-19.png" alt="avatar"></span></div>
-                                       <div class="media-body">
-                                          <h6 class="media-heading text-bold-700">Tonny Deep<i
+                                 </div>
+                              </a>
+                              <a href="javascript:void(0)">
+                                 <div class="media">
+                                    <div class="media-left"><span class="avatar avatar-sm rounded-circle"><img
+                                             src="../assets/images/portrait/small/avatar-s-19.png" alt="avatar"></span>
+                                    </div>
+                                    <div class="media-body">
+                                       <h6 class="media-heading text-bold-700">Tonny Deep<i
                                              class="ft-circle font-small-2 danger float-right"></i></h6>
-                                          <p class="notification-text font-small-3 text-muted text-bold-600">We will start new project
-                                             development...
-                                          </p>
-                                          <small>
+                                       <p class="notification-text font-small-3 text-muted text-bold-600">We will start
+                                          new project
+                                          development...
+                                       </p>
+                                       <small>
                                           <time class="media-meta text-muted"
                                              datetime="2015-06-11T18:29:20+08:00">Friday</time></small>
-                                       </div>
                                     </div>
-                                 </a>
-                              </li>
-                              <li class="dropdown-menu-footer"><a class="dropdown-item text-right info pr-1"
+                                 </div>
+                              </a>
+                           </li>
+                           <li class="dropdown-menu-footer"><a class="dropdown-item text-right info pr-1"
                                  href="javascript:void(0)">Read all</a></li>
-                           </div>
-                        </ul>
-                     </li>
-                     <li class="dropdown dropdown-user nav-item">
-                        <a class="dropdown-toggle nav-link dropdown-user-link" href="#"
-                           data-toggle="dropdown"> <span class="avatar avatar-online"><img
-                           src="../assets/images/portrait/small/avatar-s-19.png" alt="avatar"></span></a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                           <div class="arrow_box_right">
-                              <a class="dropdown-item" href="#"><span class="avatar avatar-online"><img
-                                 src="../assets/images/portrait/small/avatar-s-19.png" alt="avatar"><span
-                                 class="user-name text-bold-700 ml-1">John Doe</span></span></a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="user-profile.html"><i
-                                 class="ft-user"></i> Edit Profile</a><a class="dropdown-item" href="email-application.html"><i
-                                 class="ft-mail"></i> My Inbox</a><a class="dropdown-item" href="project-summary.html"><i
-                                 class="ft-check-square"></i> Task</a><a class="dropdown-item" href="chat-application.html"><i
-                                 class="ft-message-square"></i> Chats</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="login.html"><i
-                                 class="ft-power"></i> Logout</a>
-                           </div>
                         </div>
-                     </li>
-                  </ul>
-               </div>
+                     </ul>
+                  </li>
+                  <li class="dropdown dropdown-user nav-item">
+                     <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"> <span
+                           class="avatar avatar-online"><img src="../assets/images/portrait/small/avatar-s-19.png"
+                              alt="avatar"></span></a>
+                     <div class="dropdown-menu dropdown-menu-right">
+                        <div class="arrow_box_right">
+                           <a class="dropdown-item" href="#"><span class="avatar avatar-online"><img
+                                    src="../assets/images/portrait/small/avatar-s-19.png" alt="avatar"><span
+                                    class="user-name text-bold-700 ml-1">John Doe</span></span></a>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href="user-profile.html"><i class="ft-user"></i> Edit Profile</a>
+
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href="login.html"><i class="ft-power"></i> Logout</a>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
             </div>
          </div>
-      </nav>
-      <!-- END: Header
-	  
-      <!-- BEGIN: Main Menu-->
-      <div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true" data-img="../assets/images/backgrounds/02.jpg">
-         <div class="navbar-header">
-            <ul class="nav navbar-nav flex-row">
-               <li class="nav-item mr-auto">
-                  <a class="navbar-brand" href="dashboard.html">
-                     <!-- <h3 class="brand-text">ASO</h3> -->
-                     <img class="brand-logo mt-1" alt="logo" src="../assets/images/logo/logo.png" style="width:120px" />
-                  </a>
-               </li>
-               <li class="nav-item d-md-none"><a class="nav-link close-navbar"><i class="ft-x"></i></a></li>
-            </ul>
-         </div>
-         <div class="navigation-background"></div>
-
-         <div class="main-menu-content">
-            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-
-               <li class="nav-item">
-                  <a href="dashboard.html">
-                     <i class="material-icons dark-blue">home</i>
-                     <span class="menu-title" data-i18n="">
-                        Dashboard
-                     </span>
-                  </a>
-               </li>
-               <li class=" nav-item">
-                  <a href="#">
-                     <i class="material-icons dark-blue">location_searching</i>
-                     <span class="menu-title" data-i18n="">Area</span>
-                  </a>
-                  <ul class="menu-content">
-                     <li>
-                        <a href="pouroshobha.html" class="menu-item">Pouroshobha/Union/Area</a>
-                     </li>
-                     <li>
-                        <a href="upazila_ward.html" class="menu-item">Ward/Road/Name</a>
-                     </li>
-                  </ul>
-               </li>
-               <li class="nav-item has-sub">
-                  <a href="#">
-                     <i class="ft-life-buoy"></i>
-                     <span class="menu-title" data-i18n="">Order Management</span>
-                  </a>
-                  <ul class="menu-content" style="">
-                     <li class="has-sub is-shown">
-                        <a class="menu-item" href="#">Active Order</a>
-                        <ul class="menu-content" style="">
-                           <li class=""><a class="menu-item" href="bid_order.html">Bid Order</a>
-                           </li>
-                           <li class=""><a class="menu-item" href="gig_order.html">Gig Order</a>
-                           </li>
-                        </ul>
-                     </li>
-                     <li>
-                        <a class="menu-item" href="running_order.html">Running Order</a>
-                     </li>
-                     <li>
-                        <a class="menu-item" href="completed_order.html">Completed Order</a>
-                     </li>
-                     <li>
-                        <a class="menu-item" href="canceled_order.html">Canceled Order</a>
-                     </li>
-                     <li>
-                        <a class="menu-item" href="customer_profile.html">Customer</a>
-                     </li>
-                  </ul>
-               </li>
-               <li class=" nav-item">
-                  <a href="#">
-                     <i class="material-icons dark-blue">portrait</i>
-                     <span class="menu-title" data-i18n="">Customer</span></a>
-                  <ul class="menu-content">
-                     <li>
-                        <a href="worker_profile.html" class="menu-item">
-                           Worker
-                        </a>
-                     </li>
-                  </ul>
-               </li>
-               <li class=" nav-item">
-                  <a href="#">
-                     <i class="material-icons dark-blue">apps</i>
-                     <span class="menu-title" data-i18n="">Marketer list</span></a>
-                  <ul class="menu-content">
-                     <li>
-                        <a href="area_affiliate_marketing_cost.html" class="menu-item">
-                           Area Affiliate Marketing Cost
-                        </a>
-                     </li>
-                  </ul>
-               </li>
-               <li class=" nav-item">
-                  <a href="#">
-                     <i class="material-icons dark-blue">business</i>
-                     <span class="menu-title" data-i18n="">Area Marketing Cost</span>
-                  </a>
-                  <ul class="menu-content">
-                     <li>
-                        <a class="menu-item" href="#">Marketing Fund</a>
-                        <ul class="menu-content">
-                           <li><a class="menu-item" href="marketing_fund_home.html">Home</a>
-                           </li>
-                           <li><a class="menu-item" href="marketing_fund_reserve.html">Reserve Fund</a>
-                           </li>
-                           <li><a class="menu-item" href="marketing_fund_report.html">Fund Exp. Report</a>
-                           </li>
-                        </ul>
-                     </li>
-                  </ul>
-               </li>
-               <li class=" nav-item">
-                  <a href="#">
-                     <i class="material-icons dark-blue">credit_card</i>
-                     <span class="menu-title" data-i18n="">Marketing Fund</span>
-                  </a>
-                  <ul class="menu-content">
-                     <li>
-                        <a class="menu-item" href="#">Report Management</a>
-                        <ul class="menu-content">
-                           <li><a class="menu-item" href="report_management_submited.html">Submited</a></li>
-                           <li><a class="menu-item" href="report_management_resolved.html">Resolved</a></li>
-                        </ul>
-                     </li>
-                  </ul>
-               </li>
-               <li class=" nav-item">
-                  <a href="#">
-                     <i class="material-icons dark-blue">open_in_new</i>
-                     <span class="menu-title" data-i18n="">Gigs/Page/Service</span></a>
-                  <ul class="menu-content">
-                     <li>
-                        <a href="worker_gigs.html" class="menu-item">
-                           Worker Gig
-                        </a>
-                     </li>
-                     <li>
-                        <a href="worker_page.html" class="menu-item">
-                           Worker Page
-                        </a>
-                     </li>
-                     <li>
-                        <a href="worker_service.html" class="menu-item">
-                           Worker Service
-                        </a>
-                     </li>
-                  </ul>
-               </li>
-               <li class="nav-item">
-                  <a href="users.html">
-                     <i class="material-icons dark-blue">people_outline</i>
-                     <span class="menu-title" data-i18n="">
-                        Users
-                     </span>
-                  </a>
-                  <ul class="menu-content">
-                     <li>
-                        <a href="worker.html" class="menu-item">
-                           Worker
-                        </a>
-                     </li>
-                     <li>
-                        <a href="membership.html" class="menu-item">
-                           Membership
-                        </a>
-                     </li>
-                     <li>
-                        <a href="customer.html" class="menu-item">
-                           Customer
-                        </a>
-                     </li>
-                  </ul>
-               </li>
-               <li class="nav-item">
-                  <a href="notice.html">
-                     <i class="material-icons dark-blue">assignment_turned_in</i>
-                     <span class="menu-title" data-i18n="">
-                        Notice
-                     </span>
-                  </a>
-               </li>
-               <li class="nav-item">
-                  <a href="customer-complain.html">
-                     <i class="material-icons dark-blue">portrait</i>
-                     <span class="menu-title" data-i18n="">
-                        Customer complain
-                     </span>
-                  </a>
-               </li>
-               <li class="nav-item">
-                  <a href="ads.html">
-                     <i class="material-icons dark-blue">spellcheck</i>
-                     <span class="menu-title" data-i18n="">
-                        Ads.
-                     </span>
-                  </a>
-               </li>
-               <li class="nav-item">
-                  <a href="special_service.html">
-                     <i class="material-icons dark-blue">star_border</i>
-                     <span class="menu-title" data-i18n="">
-                        Special
-                     </span>
-                  </a>
-               </li>
-               <li class="nav-item">
-                  <a href="special_service_orders.html">
-                     <i class="material-icons dark-blue">border_all</i>
-                     <span class="menu-title" data-i18n="">
-                        Special Service Order
-                     </span>
-                  </a>
-               </li>
-               <li class="nav-item">
-                  <a href="helpline.html">
-                     <i class="material-icons dark-blue">phone</i>
-                     <span class="menu-title" data-i18n="">
-                        Helpline
-                     </span>
-                  </a>
-               </li>
-               <li class=" nav-item">
-                  <a href="#">
-                     <i class="ft-life-buoy"></i>
-                     <span class="menu-title" data-i18n="">Menu Sub Menu</span>
-                  </a>
-                  <ul class="menu-content">
-                     <li>
-                        <a class="menu-item" href="#">Vertical</a>
-                        <ul class="menu-content">
-                           <li><a class="menu-item" href="#">Classic
-                                 Menu</a>
-                           </li>
-                           <li><a class="menu-item" href="#">Modern
-                                 Menu</a>
-                           </li>
-                        </ul>
-                     </li>
-                     <li>
-                        <a class="menu-item" href="#">Horizontal</a>
-                        <ul class="menu-content">
-                           <li><a class="menu-item" href="#">Full
-                                 Width</a>
-                           </li>
-                        </ul>
-                     </li>
-                  </ul>
-               </li>
-            </ul>
-         </div>
       </div>
-      <!-- END: Main Menu-->
+   </nav>
+   <!-- END: Header-->
+
+   <!-- BEGIN: Main Menu-->
+   <div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true"
+      data-img="../assets/images/backgrounds/02.jpg">
+      <div class="navbar-header">
+         <ul class="nav navbar-nav flex-row">
+            <li class="nav-item mr-auto">
+               <a class="navbar-brand" href="dashboard.html">
+                  <!-- <h3 class="brand-text">ASO</h3> -->
+                  <img class="brand-logo mt-1" alt="logo" src="../assets/images/logo/logo.png" style="width:120px" />
+               </a>
+            </li>
+            <li class="nav-item d-md-none"><a class="nav-link close-navbar"><i class="ft-x"></i></a></li>
+         </ul>
+      </div>
+      <div class="navigation-background"></div>
+
+      <div class="main-menu-content">
+         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+
+            <li class="nav-item">
+               <a href="dashboard.html">
+                  <i class="material-icons dark-blue">home</i>
+                  <span class="menu-title" data-i18n="">
+                     Dashboard
+                  </span>
+               </a>
+            </li>
+            <li class=" nav-item">
+               <a href="#">
+                  <i class="material-icons dark-blue">location_searching</i>
+                  <span class="menu-title" data-i18n="">Area</span>
+               </a>
+               <ul class="menu-content">
+                  <li>
+                     <a href="pouroshobha.html" class="menu-item">Pouroshobha/Union/Area</a>
+                  </li>
+                  <li>
+                     <a href="upazila_ward.html" class="menu-item">Ward/Road</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="nav-item has-sub">
+               <a href="#">
+                  <i class="ft-life-buoy"></i>
+                  <span class="menu-title" data-i18n="">Order Management</span>
+               </a>
+               <ul class="menu-content" style="">
+
+                  <li class="has-sub is-shown">
+                     <a class="menu-item" href="#">Bid Order</a>
+                     <ul class="menu-content" style="">
+                        <li class=""><a class="menu-item" href="bid_pending.html">Pending Order</a>
+                        </li>
+                        <li class=""><a class="menu-item" href="bid_running_order.html">Running Order</a>
+                        <li class=""><a class="menu-item" href="bid_Completedd_order.html">Completed Order</a>
+                        <li class=""><a class="menu-item" href="bid_canceled_order.html">Canceled Order</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="has-sub is-shown">
+                     <a class="menu-item" href="#">Gig Order</a>
+                     <ul class="menu-content" style="">
+                        <li class=""><a class="menu-item" href="gig_pending.html">Pending Order</a>
+                        </li>
+                        <li class=""><a class="menu-item" href="gig_running_order.html">Running Order</a>
+                        <li class=""><a class="menu-item" href="gig_Completedd_order.html">Completed Order</a>
+                        <li class=""><a class="menu-item" href="gig_canceled_order.html">Canceled Order</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="has-sub is-shown">
+                     <a class="menu-item" href="#">Service Order</a>
+                     <ul class="menu-content" style="">
+                        <li class=""><a class="menu-item" href="service_pending.html">Pending Order</a>
+                        </li>
+                        <li class=""><a class="menu-item" href="service_running_order.html">Running Order</a>
+                        <li class=""><a class="menu-item" href="service_Completedd_order.html">Completed Order</a>
+                        <li class=""><a class="menu-item" href="service_canceled_order.html">Canceled Order</a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li class="nav-item">
+               <a href="customer_profile.html">
+                  <i class="material-icons dark-blue">portrait</i>
+                  <span class="menu-title" data-i18n="">
+                     Customer
+                  </span>Order Quantity
+               </a>
+            </li>
+            <li class="nav-item">
+               <a href="worker_profile.html">
+                  <i class="material-icons dark-blue">portrait</i>
+                  <span class="menu-title" data-i18n="" style="font-size:11px">
+                     Membership by Categories & Area
+                  </span>
+               </a>
+            </li>
+            <li class=" nav-item">
+               <a href="#">
+                  <i class="material-icons dark-blue">apps</i>
+                  <span class="menu-title" data-i18n="">Marketer list</span></a>
+               <ul class="menu-content">
+                  <li>
+                     <a href="area_affiliate_marketing_cost.html" class="menu-item">
+                        Area Affiliate Marketing Cost
+                     </a>
+                  </li>
+               </ul>
+            </li>
+            <li class=" nav-item">
+               <a href="#">
+                  <i class="material-icons dark-blue">business</i>
+                  <span class="menu-title" data-i18n="">Area Marketing Cost</span>
+               </a>
+               <ul class="menu-content">
+                  <li>
+                     <a class="menu-item" href="#">Marketing Fund</a>
+                     <ul class="menu-content">
+                        <li><a class="menu-item" href="marketing_fund_home.html">Home</a>
+                        </li>
+                        <li><a class="menu-item" href="marketing_fund_reserve.html">Reserve Fund</a>
+                        </li>
+                        <li><a class="menu-item" href="marketing_fund_report.html">Fund Exp. Report</a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li class=" nav-item">
+               <a href="#">
+                  <i class="material-icons dark-blue">credit_card</i>
+                  <span class="menu-title" data-i18n="">Report Management</span>
+               </a>
+               <ul class="menu-content">
+                  <li><a class="menu-item" href="report_management_submited.html">Submited</a></li>
+                  <li><a class="menu-item" href="report_management_resolved.html">Resolved</a></li>
+               </ul>
+            </li>
+            <li class=" nav-item">
+               <a href="#">
+                  <i class="material-icons dark-blue">apps</i>
+                  <span class="menu-title" data-i18n="">Marketer list</span>
+               </a>
+               <ul class="menu-content">
+                  <li>
+                     <a href="area_affiliate_marketing_cost.html" class="menu-item">
+                        Area Affiliate Marketing Cost
+                     </a>
+                  </li>
+               </ul>
+            </li>
+
+            <li class="nav-item has-sub">
+               <a href="#">
+                  <i class="material-icons dark-blue">open_in_new</i>
+                  <span class="menu-title" data-i18n="">Gigs/Page/Service</span>
+               </a>
+               <ul class="menu-content" style="">
+
+                  <li class="has-sub is-shown">
+                     <a class="menu-item" href="#">Worker Gig</a>
+                     <ul class="menu-content" style="">
+                        <li class=""><a class="menu-item" href="worker_gigs_pending.html">Pending</a>
+                        </li>
+                        <li class=""><a class="menu-item" href="worker_gigs_active.html">Active</a>
+                        <li class=""><a class="menu-item" href="worker_gigs_disabled.html">Disabled </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="has-sub is-shown">
+                     <a class="menu-item" href="#">Worker Page</a>
+                     <ul class="menu-content" style="">
+                        <li class=""><a class="menu-item" href="worker_page_pending.html">Pending</a>
+                        </li>
+                        <li class=""><a class="menu-item" href="worker_page_active.html">Active</a>
+                        <li class=""><a class="menu-item" href="worker_page_disabled.html">Disabled </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="has-sub is-shown">
+                     <a class="menu-item" href="#">Worker Service</a>
+                     <ul class="menu-content" style="">
+                        <li class=""><a class="menu-item" href="worker_service_pending.html">Pending</a>
+                        </li>
+                        <li class=""><a class="menu-item" href="worker_service_active.html">Active</a>
+                        <li class=""><a class="menu-item" href="worker_service_disabled.html">Disabled </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+
+            <li class="nav-item">
+               <a href="users.html">
+                  <i class="material-icons dark-blue">people_outline</i>
+                  <span class="menu-title" data-i18n="">
+                     Users
+                  </span>
+               </a>
+               <ul class="menu-content">
+                  <li>
+                     <a href="worker.html" class="menu-item">
+                        Worker
+                     </a>
+                  </li>
+                  <li>
+                     <a href="membership.html" class="menu-item">
+                        Membership
+                     </a>
+                  </li>
+                  <li>
+                     <a href="customer.html" class="menu-item">
+                        Customer
+                     </a>
+                  </li>
+               </ul>
+            </li>
+            <li class="nav-item">
+               <a href="sp_by_category_and_area.html">
+                  <i class="material-icons dark-blue">people_outline</i>
+                  <span class="menu-title" data-i18n="">
+                     SP by Categories & Area
+                  </span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a href="membership_by_category_and_area.html">
+                  <i class="material-icons dark-blue">people_outline</i>
+                  <span class="menu-title" data-i18n="" style="font-size:11px">
+                     Membership by Categories & Area
+                  </span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a href="notice.html">
+                  <i class="material-icons dark-blue">assignment_turned_in</i>
+                  <span class="menu-title" data-i18n="">
+                     Notice
+                  </span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a href="affiliate_marketer_list.html">
+                  <i class="material-icons dark-blue">directions_boat</i>
+                  <span class="menu-title" data-i18n="">
+                     Affiliate Marketer List
+                  </span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a href="ads.html">
+                  <i class="material-icons dark-blue">spellcheck</i>
+                  <span class="menu-title" data-i18n="">
+                     Ads.
+                  </span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a href="special_service.html">
+                  <i class="material-icons dark-blue">star_border</i>
+                  <span class="menu-title" data-i18n="">
+                     Special Service
+                  </span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a href="#">
+                  <i class="material-icons dark-blue">border_all</i>
+                  <span class="menu-title" data-i18n="">
+                     Special Service Order
+                  </span>
+               </a>
+               <ul class="menu-content">
+                  <li>
+                     <a href="special_service_pending_orders.html" class="menu-item">
+                        Pending Order
+                     </a>
+                  </li>
+                  <li>
+                     <a href="special_service_running_orders.html" class="menu-item">
+                        Running Order
+                     </a>
+                  </li>
+                  <li>
+                     <a href="special_service_competed_orders.html" class="menu-item">
+                        Competed Order
+                     </a>
+                  </li>
+                  <li>
+                     <a href="special_service_canceled_orders.html" class="menu-item">
+                        Canceled Order
+                     </a>
+                  </li>
+               </ul>
+            </li>
+
+            <li class="nav-item">
+               <a href="">
+                  <i class="material-icons dark-blue">phone</i>
+                  <span class="menu-title" data-i18n="">
+                     Helpline
+                  </span>
+               </a>
+               <ul class="menu-content">
+                  <li>
+                     <a href="customer_helpline.html" class="menu-item">
+                        Customer Helpline
+                     </a>
+                  </li>
+                  <li>
+                     <a href="sp_helpline.html" class="menu-item">
+                        SP Helpline
+                     </a>
+                  </li>
+               </ul>
+            </li>
+
+         </ul>
+      </div>
+   </div>
+   <!-- END: Main Menu-->
+
+   <!-- Common Content End -->
       
       <!-- BEGIN: Main Content start-->
       <div class="app-content content">

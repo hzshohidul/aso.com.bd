@@ -62,9 +62,12 @@
 
 <body class="vertical-layout vertical-menu 2-columns fixed-navbar" data-open="click" data-menu="vertical-menu"
    data-color="bg-gradient-x-blue-green" data-col="2-columns">
+
+
+   <!-- Common Content Start -->
+
    <!-- BEGIN: Header-->
-   <nav
-      class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light">
+   <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light">
       <div class="navbar-wrapper">
          <div class="navbar-container content">
             <div class="collapse navbar-collapse show" id="navbar-mobile">
@@ -85,6 +88,9 @@
                      </a>
                      <div class="dropdown-menu">
                         <div class="arrow_box">
+                           <a class="dropdown-item" href="new_buyers.html">
+                              <i class="ft-user"></i> New Buyer
+                           </a>
                            <a class="dropdown-item" href="email-application.html">
                               <i class="ft-user"></i> Email
                            </a>
@@ -323,11 +329,8 @@
                                     src="../assets/images/portrait/small/avatar-s-19.png" alt="avatar"><span
                                     class="user-name text-bold-700 ml-1">John Doe</span></span></a>
                            <div class="dropdown-divider"></div>
-                           <a class="dropdown-item" href="user-profile.html"><i class="ft-user"></i> Edit Profile</a><a
-                              class="dropdown-item" href="email-application.html"><i class="ft-mail"></i> My Inbox</a><a
-                              class="dropdown-item" href="project-summary.html"><i class="ft-check-square"></i>
-                              Task</a><a class="dropdown-item" href="chat-application.html"><i
-                                 class="ft-message-square"></i> Chats</a>
+                           <a class="dropdown-item" href="user-profile.html"><i class="ft-user"></i> Edit Profile</a>
+
                            <div class="dropdown-divider"></div>
                            <a class="dropdown-item" href="login.html"><i class="ft-power"></i> Logout</a>
                         </div>
@@ -377,7 +380,7 @@
                      <a href="pouroshobha.html" class="menu-item">Pouroshobha/Union/Area</a>
                   </li>
                   <li>
-                     <a href="upazila_ward.html" class="menu-item">Ward/Road/Name</a>
+                     <a href="upazila_ward.html" class="menu-item">Ward/Road</a>
                   </li>
                </ul>
             </li>
@@ -387,40 +390,57 @@
                   <span class="menu-title" data-i18n="">Order Management</span>
                </a>
                <ul class="menu-content" style="">
+
                   <li class="has-sub is-shown">
-                     <a class="menu-item" href="#">Active Order</a>
+                     <a class="menu-item" href="#">Bid Order</a>
                      <ul class="menu-content" style="">
-                        <li class=""><a class="menu-item" href="bid_order.html">Bid Order</a>
+                        <li class=""><a class="menu-item" href="bid_pending.html">Pending Order</a>
                         </li>
-                        <li class=""><a class="menu-item" href="gig_order.html">Gig Order</a>
+                        <li class=""><a class="menu-item" href="bid_running_order.html">Running Order</a>
+                        <li class=""><a class="menu-item" href="bid_Completedd_order.html">Completed Order</a>
+                        <li class=""><a class="menu-item" href="bid_canceled_order.html">Canceled Order</a>
                         </li>
                      </ul>
                   </li>
-                  <li>
-                     <a class="menu-item" href="running_order.html">Running Order</a>
+                  <li class="has-sub is-shown">
+                     <a class="menu-item" href="#">Gig Order</a>
+                     <ul class="menu-content" style="">
+                        <li class=""><a class="menu-item" href="gig_pending.html">Pending Order</a>
+                        </li>
+                        <li class=""><a class="menu-item" href="gig_running_order.html">Running Order</a>
+                        <li class=""><a class="menu-item" href="gig_Completedd_order.html">Completed Order</a>
+                        <li class=""><a class="menu-item" href="gig_canceled_order.html">Canceled Order</a>
+                        </li>
+                     </ul>
                   </li>
-                  <li>
-                     <a class="menu-item" href="completed_order.html">Completed Order</a>
-                  </li>
-                  <li>
-                     <a class="menu-item" href="canceled_order.html">Canceled Order</a>
-                  </li>
-                  <li>
-                     <a class="menu-item" href="customer_profile.html">Customer</a>
+                  <li class="has-sub is-shown">
+                     <a class="menu-item" href="#">Service Order</a>
+                     <ul class="menu-content" style="">
+                        <li class=""><a class="menu-item" href="service_pending.html">Pending Order</a>
+                        </li>
+                        <li class=""><a class="menu-item" href="service_running_order.html">Running Order</a>
+                        <li class=""><a class="menu-item" href="service_Completedd_order.html">Completed Order</a>
+                        <li class=""><a class="menu-item" href="service_canceled_order.html">Canceled Order</a>
+                        </li>
+                     </ul>
                   </li>
                </ul>
             </li>
-            <li class=" nav-item">
-               <a href="#">
+            <li class="nav-item">
+               <a href="customer_profile.html">
                   <i class="material-icons dark-blue">portrait</i>
-                  <span class="menu-title" data-i18n="">Customer</span></a>
-               <ul class="menu-content">
-                  <li>
-                     <a href="worker_profile.html" class="menu-item">
-                        Worker
-                     </a>
-                  </li>
-               </ul>
+                  <span class="menu-title" data-i18n="">
+                     Customer
+                  </span>Order Quantity
+               </a>
+            </li>
+            <li class="nav-item">
+               <a href="worker_profile.html">
+                  <i class="material-icons dark-blue">portrait</i>
+                  <span class="menu-title" data-i18n="" style="font-size:11px">
+                     Membership by Categories & Area
+                  </span>
+               </a>
             </li>
             <li class=" nav-item">
                <a href="#">
@@ -456,40 +476,67 @@
             <li class=" nav-item">
                <a href="#">
                   <i class="material-icons dark-blue">credit_card</i>
-                  <span class="menu-title" data-i18n="">Marketing Fund</span>
+                  <span class="menu-title" data-i18n="">Report Management</span>
                </a>
                <ul class="menu-content">
-                  <li>
-                     <a class="menu-item" href="#">Report Management</a>
-                     <ul class="menu-content">
-                        <li><a class="menu-item" href="report_management_submited.html">Submited</a></li>
-                        <li><a class="menu-item" href="report_management_resolved.html">Resolved</a></li>
-                     </ul>
-                  </li>
+                  <li><a class="menu-item" href="report_management_submited.html">Submited</a></li>
+                  <li><a class="menu-item" href="report_management_resolved.html">Resolved</a></li>
                </ul>
             </li>
             <li class=" nav-item">
                <a href="#">
-                  <i class="material-icons dark-blue">open_in_new</i>
-                  <span class="menu-title" data-i18n="">Gigs/Page/Service</span></a>
+                  <i class="material-icons dark-blue">apps</i>
+                  <span class="menu-title" data-i18n="">Marketer list</span>
+               </a>
                <ul class="menu-content">
                   <li>
-                     <a href="worker_gigs.html" class="menu-item">
-                        Worker Gig
-                     </a>
-                  </li>
-                  <li>
-                     <a href="worker_page.html" class="menu-item">
-                        Worker Page
-                     </a>
-                  </li>
-                  <li>
-                     <a href="worker_service.html" class="menu-item">
-                        Worker Service
+                     <a href="area_affiliate_marketing_cost.html" class="menu-item">
+                        Area Affiliate Marketing Cost
                      </a>
                   </li>
                </ul>
             </li>
+
+            <li class="nav-item has-sub">
+               <a href="#">
+                  <i class="material-icons dark-blue">open_in_new</i>
+                  <span class="menu-title" data-i18n="">Gigs/Page/Service</span>
+               </a>
+               <ul class="menu-content" style="">
+
+                  <li class="has-sub is-shown">
+                     <a class="menu-item" href="#">Worker Gig</a>
+                     <ul class="menu-content" style="">
+                        <li class=""><a class="menu-item" href="worker_gigs_pending.html">Pending</a>
+                        </li>
+                        <li class=""><a class="menu-item" href="worker_gigs_active.html">Active</a>
+                        <li class=""><a class="menu-item" href="worker_gigs_disabled.html">Disabled </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="has-sub is-shown">
+                     <a class="menu-item" href="#">Worker Page</a>
+                     <ul class="menu-content" style="">
+                        <li class=""><a class="menu-item" href="worker_page_pending.html">Pending</a>
+                        </li>
+                        <li class=""><a class="menu-item" href="worker_page_active.html">Active</a>
+                        <li class=""><a class="menu-item" href="worker_page_disabled.html">Disabled </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="has-sub is-shown">
+                     <a class="menu-item" href="#">Worker Service</a>
+                     <ul class="menu-content" style="">
+                        <li class=""><a class="menu-item" href="worker_service_pending.html">Pending</a>
+                        </li>
+                        <li class=""><a class="menu-item" href="worker_service_active.html">Active</a>
+                        <li class=""><a class="menu-item" href="worker_service_disabled.html">Disabled </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+
             <li class="nav-item">
                <a href="users.html">
                   <i class="material-icons dark-blue">people_outline</i>
@@ -516,6 +563,22 @@
                </ul>
             </li>
             <li class="nav-item">
+               <a href="sp_by_category_and_area.html">
+                  <i class="material-icons dark-blue">people_outline</i>
+                  <span class="menu-title" data-i18n="">
+                     SP by Categories & Area
+                  </span>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a href="membership_by_category_and_area.html">
+                  <i class="material-icons dark-blue">people_outline</i>
+                  <span class="menu-title" data-i18n="" style="font-size:11px">
+                     Membership by Categories & Area
+                  </span>
+               </a>
+            </li>
+            <li class="nav-item">
                <a href="notice.html">
                   <i class="material-icons dark-blue">assignment_turned_in</i>
                   <span class="menu-title" data-i18n="">
@@ -524,10 +587,10 @@
                </a>
             </li>
             <li class="nav-item">
-               <a href="customer-complain.html">
-                  <i class="material-icons dark-blue">portrait</i>
+               <a href="affiliate_marketer_list.html">
+                  <i class="material-icons dark-blue">directions_boat</i>
                   <span class="menu-title" data-i18n="">
-                     Customer complain
+                     Affiliate Marketer List
                   </span>
                </a>
             </li>
@@ -543,57 +606,68 @@
                <a href="special_service.html">
                   <i class="material-icons dark-blue">star_border</i>
                   <span class="menu-title" data-i18n="">
-                     Special
+                     Special Service
                   </span>
                </a>
             </li>
             <li class="nav-item">
-               <a href="special_service_orders.html">
+               <a href="#">
                   <i class="material-icons dark-blue">border_all</i>
                   <span class="menu-title" data-i18n="">
                      Special Service Order
                   </span>
                </a>
+               <ul class="menu-content">
+                  <li>
+                     <a href="special_service_pending_orders.html" class="menu-item">
+                        Pending Order
+                     </a>
+                  </li>
+                  <li>
+                     <a href="special_service_running_orders.html" class="menu-item">
+                        Running Order
+                     </a>
+                  </li>
+                  <li>
+                     <a href="special_service_competed_orders.html" class="menu-item">
+                        Competed Order
+                     </a>
+                  </li>
+                  <li>
+                     <a href="special_service_canceled_orders.html" class="menu-item">
+                        Canceled Order
+                     </a>
+                  </li>
+               </ul>
             </li>
+
             <li class="nav-item">
-               <a href="helpline.html">
+               <a href="">
                   <i class="material-icons dark-blue">phone</i>
                   <span class="menu-title" data-i18n="">
                      Helpline
                   </span>
                </a>
-            </li>
-            <li class=" nav-item">
-               <a href="#">
-                  <i class="ft-life-buoy"></i>
-                  <span class="menu-title" data-i18n="">Menu Sub Menu</span>
-               </a>
                <ul class="menu-content">
                   <li>
-                     <a class="menu-item" href="#">Vertical</a>
-                     <ul class="menu-content">
-                        <li><a class="menu-item" href="#">Classic
-                              Menu</a>
-                        </li>
-                        <li><a class="menu-item" href="#">Modern
-                              Menu</a>
-                        </li>
-                     </ul>
+                     <a href="customer_helpline.html" class="menu-item">
+                        Customer Helpline
+                     </a>
                   </li>
                   <li>
-                     <a class="menu-item" href="#">Horizontal</a>
-                     <ul class="menu-content">
-                        <li><a class="menu-item" href="#">Full
-                              Width</a>
-                        </li>
-                     </ul>
+                     <a href="sp_helpline.html" class="menu-item">
+                        SP Helpline
+                     </a>
                   </li>
                </ul>
             </li>
+
          </ul>
       </div>
    </div>
    <!-- END: Main Menu-->
+
+   <!-- Common Content End -->
 
    <!-- BEGIN: Main Content start-->
    <div class="app-content content">
