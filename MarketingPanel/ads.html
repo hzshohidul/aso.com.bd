@@ -455,282 +455,219 @@
                <!-- Minimal statistics section start -->
                <section id="minimal-statistics">
                   <div class="row">
-                     <div class="col-md-12">
-                        <div class="float-right mb-1">
-                           <button type="button" class="btn btn-outline-primary" data-toggle="modal"
-                              data-target="#new_create">
-                              <i class="fa fa-plus"></i> Create New Ads.
-                           </button>
 
-                           <!-- add Model -->
-                           <div class="modal fade" id="new_create" tabindex="-1" role="dialog"
-                              aria-labelledby="exampleModalLabel" aria-hidden="true">
-                              <div class="modal-dialog" role="document">
-                                 <div class="modal-content">
-                                    <div class="modal-header">
-                                       <h5 class="modal-title" id="exampleModalLabel">
-                                          Add new ads.
-                                       </h5>
-                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">&times;</span>
-                                       </button>
-                                    </div>
-
-                                    <div class="modal-body">
-                                       <form action="#" method="POST">
-                                          <div class="form-group">
-                                             <label for="image" class="col-form-label">Image</label>
-                                             <input type="file" class="form-control"
-                                                onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])"
-                                                id="image">
-                                             <img src="" id="blah" width="200" alt="">
-                                          </div>
-                                          <div class="form-group">
-                                             <label for="s_date" class="col-form-label">Start Date</label>
-                                             <input type="date" class="form-control" id="s_date">
-                                          </div>
-                                          <div class="form-group">
-                                             <label for="end_date" class="col-form-label">End Date</label>
-                                             <input type="date" class="form-control" id="end_date">
-                                          </div>
-                                          <div class="form-group">
-                                             <label for="url" class="col-form-label">Url</label>
-                                             <input type="url" placeholder="Enter Url" class="form-control" id="url">
-                                          </div>
-                                          <div class="form-check">
-                                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck3"
-                                                checked="">
-                                             <label class="form-check-label" for="defaultCheck3">
-                                                Active
-                                             </label>
-                                          </div>
-                                          <div class="modal-footer">
-                                             <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-                                             <button type="submit" class="btn btn-primary">ADD NEW</button>
-                                          </div>
-                                       </form>
-                                    </div>
-                                 </div>
-                              </div>
+                     <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                           <img class="card-img-top" src="../assets/images/portfolio/width-1200/portfolio-1.jpg" alt="Card image cap">
+                           <div class="card-body">
+                             <h5 class="card-title">title</h5>
+                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                            </div>
-                           <!-- add Model End -->
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <!-- card repeat -->
-                     <div class="timeline-card card border-grey border-lighten-2">
-                        <div class="card-header">
-                           <h4 class="card-title">
-                              <a href="#">Recent Project</a>
-                           </h4>
-                           <p class="card-subtitle text-muted mb-0 pt-1">
-                              <span class="font-small-3">5 hours ago</span>
-                           </p>
-                           <a class="heading-elements-toggle">
-                              <i class="la la-ellipsis-v font-medium-3"></i>
-                           </a>
-                           <div class="heading-elements">
-                              <ul class="list-inline mb-0">
-                                 <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
-                                 <li>
-                                    <a data-action="reload">
-                                       <i class="ft-rotate-cw"></i>
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a data-action="expand">
-                                       <i class="ft-maximize"></i>
-                                    </a>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div class="card-content">
-                           <div class="row m-1">
-                              <div class="col-lg-4">
-                                 <div class="align-self-center">
-                                    <img class="img-fluid" src="../assets/images/portfolio/width-1200/portfolio-1.jpg"
-                                       alt="Timeline Image 1">
-                                 </div>
-                              </div>
-                              <div class="col-lg-8">
-                                 <div class="text-center">
-                                    <h3 class="font-large-1">Project A</h3>
-                                    <div class="row my-2">
-                                       <div
-                                          class="col-sm-4 col-12 border-right-blue-grey border-right-lighten-5 text-center">
-                                          <p class="blue-grey lighten-2 mb-0">Status</p>
-                                          <p class="font-medium-3 text-bold-400">Completed</p>
-                                       </div>
-                                       <div
-                                          class="col-sm-4 col-12 border-right-blue-grey border-right-lighten-5 text-center">
-                                          <p class="blue-grey lighten-2 mb-0">Starting</p>
-                                          <p class="font-medium-3 text-bold-400">05-01-2022</p>
-                                       </div>
-                                       <div class="col-sm-4 col-12 text-center">
-                                          <p class="blue-grey lighten-2 mb-0">Ending</p>
-                                          <p class="font-medium-3 text-bold-400">05-01-2023</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <p class="line-height-2 p-1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                              sed odio risus. Integer sit amet dolor elit. Suspendisse ac neque in lacus venenatis
-                              convallis. Sed eu lacus odio</p>
-
-
-                           <ul class="list-inline mb-1 mr-1 float-right">
-                              <li class="pr-1">
-                                 <a href="#" class="" data-toggle="modal" data-target="#edit">
-                                    <span class="fa fa-edit"></span> Edit</a>
+                           <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                 Status
+                                 <span class="float-right">Completed</span>
                               </li>
-                              <li>
-                                 <a href="https://www.shwapno.com/" target="_blank" class="">
-                                    <span class="fa fa-share-alt"></span> Ads. Link </a>
+                              <li class="list-group-item">
+                                 Starting
+                                 <span class="float-right">05-01-2023</span>
+                              </li>
+                              <li class="list-group-item">
+                                 Ending
+                                 <span class="float-right">05-01-2024</span>
+                              </li>
+                              <li class="list-group-item">
+                                 Create at
+                                 <span class="float-right">05-01-2023 / 04-05-23</span>
                               </li>
                            </ul>
-                        </div>
+                           <div class="card-body">
+                              <a href="https://www.shwapno.com/" target="_blank" class="">
+                                 <span class="fa fa-share-alt"></span>
+                                 Ads. Link 
+                              </a>
+
+                              <a href="#" class="float-right" data-toggle="modal" data-target="#edit">
+                                 <span class="fa fa-edit"></span>
+                                 Edit
+                              </a>
+                           </div>
+                         </div>
                      </div>
-                     <!-- card repeat -->
 
-                     <!-- card repeat -->
-                     <div class="timeline-card card border-grey border-lighten-2">
-                        <div class="card-header">
-                           <h4 class="card-title">
-                              <a href="#">Recent Project</a>
-                           </h4>
-                           <p class="card-subtitle text-muted mb-0 pt-1">
-                              <span class="font-small-3">5 hours ago</span>
-                           </p>
-                           <a class="heading-elements-toggle">
-                              <i class="la la-ellipsis-v font-medium-3"></i>
-                           </a>
-                           <div class="heading-elements">
-                              <ul class="list-inline mb-0">
-                                 <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
-                                 <li>
-                                    <a data-action="reload">
-                                       <i class="ft-rotate-cw"></i>
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a data-action="expand">
-                                       <i class="ft-maximize"></i>
-                                    </a>
-                                 </li>
-                              </ul>
+                     <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                           <img class="card-img-top" src="../assets/images/portfolio/width-1200/portfolio-1.jpg" alt="Card image cap">
+                           <div class="card-body">
+                             <h5 class="card-title">title</h5>
+                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                            </div>
-                        </div>
-                        <div class="card-content">
-                           <div class="row m-1">
-                              <div class="col-lg-4">
-                                 <div class="align-self-center">
-                                    <img class="img-fluid" src="../assets/images/portfolio/width-1200/portfolio-1.jpg"
-                                       alt="Timeline Image 1">
-                                 </div>
-                              </div>
-                              <div class="col-lg-8">
-                                 <div class="text-center">
-                                    <h3 class="font-large-1">Project A</h3>
-                                    <div class="row my-2">
-                                       <div
-                                          class="col-sm-4 col-12 border-right-blue-grey border-right-lighten-5 text-center">
-                                          <p class="blue-grey lighten-2 mb-0">Status</p>
-                                          <p class="font-medium-3 text-bold-400">Completed</p>
-                                       </div>
-                                       <div
-                                          class="col-sm-4 col-12 border-right-blue-grey border-right-lighten-5 text-center">
-                                          <p class="blue-grey lighten-2 mb-0">Starting</p>
-                                          <p class="font-medium-3 text-bold-400">05-01-2022</p>
-                                       </div>
-                                       <div class="col-sm-4 col-12 text-center">
-                                          <p class="blue-grey lighten-2 mb-0">Ending</p>
-                                          <p class="font-medium-3 text-bold-400">05-01-2023</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <p class="line-height-2 p-1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                              sed odio risus. Integer sit amet dolor elit. Suspendisse ac neque in lacus venenatis
-                              convallis. Sed eu lacus odio</p>
-
-
-                           <ul class="list-inline mb-1 mr-1 float-right">
-                              <li class="pr-1">
-                                 <a href="#" class="" data-toggle="modal" data-target="#edit">
-                                    <span class="fa fa-edit"></span> Edit</a>
+                           <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                 Status
+                                 <span class="float-right">Completed</span>
                               </li>
-                              <li>
-                                 <a href="https://www.shwapno.com/" target="_blank" class="">
-                                    <span class="fa fa-share-alt"></span> Ads. Link </a>
+                              <li class="list-group-item">
+                                 Starting
+                                 <span class="float-right">05-01-2023</span>
+                              </li>
+                              <li class="list-group-item">
+                                 Ending
+                                 <span class="float-right">05-01-2024</span>
+                              </li>
+                              <li class="list-group-item">
+                                 Create at
+                                 <span class="float-right">05-01-2023 / 04-05-23</span>
                               </li>
                            </ul>
-                        </div>
-                     </div>
-                     <!-- card repeat -->
+                           <div class="card-body">
+                              <a href="https://www.shwapno.com/" target="_blank" class="">
+                                 <span class="fa fa-share-alt"></span>
+                                 Ads. Link 
+                              </a>
 
-                     <!-- Edit Model -->
-                     <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                           <div class="modal-content">
-                              <div class="modal-header">
-                                 <h5 class="modal-title" id="exampleModalLabel">
-                                    Edit new ads.
-                                 </h5>
-                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                 </button>
-                              </div>
-
-                              <div class="modal-body">
-                                 <form action="#" method="POST">
-                                    <div class="form-group">
-                                       <label for="image" class="col-form-label">Image</label>
-                                       <input type="file" class="form-control"
-                                          onchange="document.getElementById('blah2').src = window.URL.createObjectURL(this.files[0])"
-                                          id="image">
-                                       <img src="../assets/images/portfolio/portfolio-1.jpg" id="blah2" width="200" alt="">
-                                    </div>
-                                    <div class="form-group">
-                                       <label for="s_date" class="col-form-label">Start Date</label>
-                                       <input type="date" class="form-control" id="s_date">
-                                    </div>
-                                    <div class="form-group">
-                                       <label for="end_date" class="col-form-label">End Date</label>
-                                       <input type="date" class="form-control" id="end_date">
-                                    </div>
-                                    <div class="form-group">
-                                       <label for="url" class="col-form-label">Url</label>
-                                       <input type="url" value="https://www.shwapno.com" placeholder="Enter Url" class="form-control" id="url">
-                                    </div>
-                                    <div class="form-check">
-                                       <input class="form-check-input" type="checkbox" value="" id="defaultCheck3"
-                                          checked="">
-                                       <label class="form-check-label" for="defaultCheck3">
-                                          Active
-                                       </label>
-                                    </div>
-                                    <div class="modal-footer">
-                                       <button type="button" class="btn btn-secondary"
-                                          data-dismiss="modal">Close</button>
-                                       <button type="submit" class="btn btn-primary">Save</button>
-                                    </div>
-                                 </form>
-                              </div>
+                              <a href="#" class="float-right" data-toggle="modal" data-target="#edit">
+                                 <span class="fa fa-edit"></span>
+                                 Edit
+                              </a>
                            </div>
-                        </div>
+                         </div>
                      </div>
-                     <!-- Edit Model End -->
 
+                     <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                           <img class="card-img-top" src="../assets/images/portfolio/width-1200/portfolio-1.jpg" alt="Card image cap">
+                           <div class="card-body">
+                             <h5 class="card-title">title</h5>
+                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           </div>
+                           <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                 Status
+                                 <span class="float-right">Completed</span>
+                              </li>
+                              <li class="list-group-item">
+                                 Starting
+                                 <span class="float-right">05-01-2023</span>
+                              </li>
+                              <li class="list-group-item">
+                                 Ending
+                                 <span class="float-right">05-01-2024</span>
+                              </li>
+                              <li class="list-group-item">
+                                 Create at
+                                 <span class="float-right">05-01-2023 / 04-05-23</span>
+                              </li>
+                           </ul>
+                           <div class="card-body">
+                              <a href="https://www.shwapno.com/" target="_blank" class="">
+                                 <span class="fa fa-share-alt"></span>
+                                 Ads. Link 
+                              </a>
+
+                              <a href="#" class="float-right" data-toggle="modal" data-target="#edit">
+                                 <span class="fa fa-edit"></span>
+                                 Edit
+                              </a>
+                           </div>
+                         </div>
+                     </div>
+
+                     <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                           <img class="card-img-top" src="../assets/images/portfolio/width-1200/portfolio-1.jpg" alt="Card image cap">
+                           <div class="card-body">
+                             <h5 class="card-title">title</h5>
+                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           </div>
+                           <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                 Status
+                                 <span class="float-right">Completed</span>
+                              </li>
+                              <li class="list-group-item">
+                                 Starting
+                                 <span class="float-right">05-01-2023</span>
+                              </li>
+                              <li class="list-group-item">
+                                 Ending
+                                 <span class="float-right">05-01-2024</span>
+                              </li>
+                              <li class="list-group-item">
+                                 Create at
+                                 <span class="float-right">05-01-2023 / 04-05-23</span>
+                              </li>
+                           </ul>
+                           <div class="card-body">
+                              <a href="https://www.shwapno.com/" target="_blank" class="">
+                                 <span class="fa fa-share-alt"></span>
+                                 Ads. Link 
+                              </a>
+
+                              <a href="#" class="float-right" data-toggle="modal" data-target="#edit">
+                                 <span class="fa fa-edit"></span>
+                                 Edit
+                              </a>
+                           </div>
+                         </div>
+                     </div>
 
                   </div>
                </section>
                <!-- // Minimal statistics section end -->
+               <!-- Edit Model -->
+               <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                           Edit new ads.
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                        </button>
+                     </div>
+
+                     <div class="modal-body">
+                        <form action="#" method="POST">
+                           <div class="form-group">
+                              <label for="image" class="col-form-label">Image</label>
+                              <input type="file" class="form-control"
+                                 onchange="document.getElementById('blah2').src = window.URL.createObjectURL(this.files[0])"
+                                 id="image">
+                              <img src="../assets/images/portfolio/portfolio-1.jpg" id="blah2" width="200" alt="">
+                           </div>
+                           <div class="form-group">
+                              <label for="s_date" class="col-form-label">Start Date</label>
+                              <input type="date" class="form-control" id="s_date">
+                           </div>
+                           <div class="form-group">
+                              <label for="end_date" class="col-form-label">End Date</label>
+                              <input type="date" class="form-control" id="end_date">
+                           </div>
+                           <div class="form-group">
+                              <label for="url" class="col-form-label">Url</label>
+                              <input type="url" value="https://www.shwapno.com" placeholder="Enter Url" class="form-control" id="url">
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3"
+                                 checked="">
+                              <label class="form-check-label" for="defaultCheck3">
+                                 Active
+                              </label>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                 data-dismiss="modal">Close</button>
+                              <button type="submit" class="btn btn-primary">Save</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Edit Model End -->
             </div>
          </div>
       </div>
@@ -811,6 +748,8 @@
       </div>
    </div>
    <!-- End: Customizer-->
+
+
    <!-- BEGIN: Footer-->
    <footer class="footer footer-static footer-light navbar-border navbar-shadow">
       <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
