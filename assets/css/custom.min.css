@@ -5404,3 +5404,11 @@ label.star-5:hover~label.star-5:before {
 /* ------------------------------------------ */
 /* Design end */
 /* ------------------------------------------ */
+
+.text-center{
+    text-align: center;
+    display: block;
+}
+.login-logo{
+    width: 200px;
+}
